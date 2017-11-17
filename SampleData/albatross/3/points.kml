@@ -1,0 +1,6558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document><Style id="style-3"><LineStyle><color>ffff9f00</color><width>1</width></LineStyle><IconStyle><color>ffff9f00</color><scale>1</scale><Icon><href>http://maps.google.com/mapfiles/kml/pal4/icon57.png</href></Icon></IconStyle></Style>
+
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-23 17:58:02</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-23 17:58:02.998
+Location Long: -89.6210501
+Location Lat: -1.3896374
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3444
+Eobs Horizontal Accuracy Estimate: 3.33
+Eobs Key Bin Checksum: 4076721095
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-06-23 17:57:05.000
+Eobs Status: A
+Eobs Temperature: 42
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 57
+Ground Speed: 0.0
+Heading: 331.61
+Height Above Ellipsoid: 5.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208325.63767180964
+Utm Northing: 9846241.133627374
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210501,-1.3896374,5.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-23T17:58:02Z</begin>
+			<end>2008-06-23T18:01:26Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-23 18:01:27</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-23 18:01:27.998
+Location Long: -89.6210141
+Location Lat: -1.3896472
+Eobs Battery Voltage: 3615
+Eobs Fix Battery Voltage: 3437
+Eobs Horizontal Accuracy Estimate: 5.38
+Eobs Key Bin Checksum: 941937319
+Eobs Speed Accuracy Estimate: 4.84
+Eobs Start Timestamp: 2008-06-23 18:00:01.000
+Eobs Status: A
+Eobs Temperature: 41
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 86
+Ground Speed: 0.16
+Heading: 14.42
+Height Above Ellipsoid: 16.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208329.64782127732
+Utm Northing: 9846240.053736523
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210141,-1.3896472,16.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-23T18:01:27Z</begin>
+			<end>2008-06-23T19:30:35Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-23 19:30:36</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-23 19:30:36.999
+Location Long: -89.6210671
+Location Lat: -1.3896306
+Eobs Battery Voltage: 3662
+Eobs Fix Battery Voltage: 3476
+Eobs Horizontal Accuracy Estimate: 3.84
+Eobs Key Bin Checksum: 1031359717
+Eobs Speed Accuracy Estimate: 0.39
+Eobs Start Timestamp: 2008-06-23 19:30:00.000
+Eobs Status: A
+Eobs Temperature: 33
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 36
+Ground Speed: 0.29
+Heading: 2.62
+Height Above Ellipsoid: -3.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208323.74372323195
+Utm Northing: 9846241.883925918
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210671,-1.3896306,-3.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-23T19:30:36Z</begin>
+			<end>2008-06-23T21:00:26Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-23 21:00:27</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-23 21:00:27.001
+Location Long: -89.6210668
+Location Lat: -1.3896641
+Eobs Battery Voltage: 3662
+Eobs Fix Battery Voltage: 3471
+Eobs Horizontal Accuracy Estimate: 5.89
+Eobs Key Bin Checksum: 2604485782
+Eobs Speed Accuracy Estimate: 3.27
+Eobs Start Timestamp: 2008-06-23 21:00:01.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 26
+Ground Speed: 0.32
+Heading: 344.06
+Height Above Ellipsoid: -0.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208323.78124629502
+Utm Northing: 9846238.1772852
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210668,-1.3896641,-0.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-23T21:00:27Z</begin>
+			<end>2008-06-23T22:30:49Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-23 22:30:50</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-23 22:30:50.000
+Location Long: -89.6211015
+Location Lat: -1.3896498
+Eobs Battery Voltage: 3662
+Eobs Fix Battery Voltage: 3452
+Eobs Horizontal Accuracy Estimate: 3.58
+Eobs Key Bin Checksum: 2847689568
+Eobs Speed Accuracy Estimate: 2.52
+Eobs Start Timestamp: 2008-06-23 22:30:00.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 50
+Ground Speed: 0.14
+Heading: 353.89
+Height Above Ellipsoid: 2.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208319.9153113428
+Utm Northing: 9846239.755248638
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6211015,-1.3896498,2.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-23T22:30:50Z</begin>
+			<end>2008-06-24T00:00:12Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 00:00:13</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 00:00:13.001
+Location Long: -89.6210761
+Location Lat: -1.3896663
+Eobs Battery Voltage: 3662
+Eobs Fix Battery Voltage: 3524
+Eobs Horizontal Accuracy Estimate: 6.66
+Eobs Key Bin Checksum: 4056953583
+Eobs Speed Accuracy Estimate: 3.92
+Eobs Start Timestamp: 2008-06-24 00:00:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 13
+Ground Speed: 0.28
+Heading: 237.24
+Height Above Ellipsoid: -4.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208322.74587223533
+Utm Northing: 9846237.932711786
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210761,-1.3896663,-4.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T00:00:13Z</begin>
+			<end>2008-06-24T01:30:21Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 01:30:22</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 01:30:22.999
+Location Long: -89.621108
+Location Lat: -1.3896112
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3479
+Eobs Horizontal Accuracy Estimate: 27.39
+Eobs Key Bin Checksum: 527323913
+Eobs Speed Accuracy Estimate: 7.8
+Eobs Start Timestamp: 2008-06-24 01:29:59.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 23
+Ground Speed: 0.31
+Heading: 32.77
+Height Above Ellipsoid: -10.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208319.18673220498
+Utm Northing: 9846244.025423167
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.621108,-1.3896112,-10.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T01:30:22Z</begin>
+			<end>2008-06-24T03:00:54Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 03:00:55</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 03:00:55.999
+Location Long: -89.6210692
+Location Lat: -1.3896452
+Eobs Battery Voltage: 3666
+Eobs Fix Battery Voltage: 3442
+Eobs Horizontal Accuracy Estimate: 3.33
+Eobs Key Bin Checksum: 1482617650
+Eobs Speed Accuracy Estimate: 2.53
+Eobs Start Timestamp: 2008-06-24 03:00:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 55
+Ground Speed: 0.16
+Heading: 12.45
+Height Above Ellipsoid: -1.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208323.51166153356
+Utm Northing: 9846240.26821865
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210692,-1.3896452,-1.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T03:00:55Z</begin>
+			<end>2008-06-24T04:30:55Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 04:30:56</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 04:30:56.001
+Location Long: -89.6210585
+Location Lat: -1.389624
+Eobs Battery Voltage: 3666
+Eobs Fix Battery Voltage: 3439
+Eobs Horizontal Accuracy Estimate: 2.56
+Eobs Key Bin Checksum: 432066829
+Eobs Speed Accuracy Estimate: 2.19
+Eobs Start Timestamp: 2008-06-24 04:30:01.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 55
+Ground Speed: 0.17
+Heading: 357.83
+Height Above Ellipsoid: 0.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208324.70060509356
+Utm Northing: 9846242.615259988
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210585,-1.389624,0.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T04:30:56Z</begin>
+			<end>2008-06-24T06:00:26Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 06:00:27</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 06:00:27.000
+Location Long: -89.6211276
+Location Lat: -1.3896249
+Eobs Battery Voltage: 3663
+Eobs Fix Battery Voltage: 3483
+Eobs Horizontal Accuracy Estimate: 4.86
+Eobs Key Bin Checksum: 1269927961
+Eobs Speed Accuracy Estimate: 3.6
+Eobs Start Timestamp: 2008-06-24 06:00:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 27
+Ground Speed: 0.17
+Heading: 324.4
+Height Above Ellipsoid: 11.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208317.0057667722
+Utm Northing: 9846242.507134663
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6211276,-1.3896249,11.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T06:00:27Z</begin>
+			<end>2008-06-24T07:30:30Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 07:30:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 07:30:31.001
+Location Long: -89.6211028
+Location Lat: -1.3896353
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3477
+Eobs Horizontal Accuracy Estimate: 4.61
+Eobs Key Bin Checksum: 2000229013
+Eobs Speed Accuracy Estimate: 3.8
+Eobs Start Timestamp: 2008-06-24 07:30:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 31
+Ground Speed: 0.07
+Heading: 343.41
+Height Above Ellipsoid: 8.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208319.7687626349
+Utm Northing: 9846241.35947089
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6211028,-1.3896353,8.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T07:30:31Z</begin>
+			<end>2008-06-24T09:00:49Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 09:00:50</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 09:00:50.001
+Location Long: -89.6210486
+Location Lat: -1.3896285
+Eobs Battery Voltage: 3662
+Eobs Fix Battery Voltage: 3452
+Eobs Horizontal Accuracy Estimate: 4.1
+Eobs Key Bin Checksum: 2511311601
+Eobs Speed Accuracy Estimate: 2.83
+Eobs Start Timestamp: 2008-06-24 09:00:00.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 50
+Ground Speed: 0.08
+Heading: 330.96
+Height Above Ellipsoid: 1.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208325.80361794686
+Utm Northing: 9846242.118571984
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210486,-1.3896285,1.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T09:00:50Z</begin>
+			<end>2008-06-24T10:30:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 10:30:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 10:30:28.001
+Location Long: -89.6210558
+Location Lat: -1.3896299
+Eobs Battery Voltage: 3664
+Eobs Fix Battery Voltage: 3483
+Eobs Horizontal Accuracy Estimate: 3.84
+Eobs Key Bin Checksum: 2501927424
+Eobs Speed Accuracy Estimate: 2.72
+Eobs Start Timestamp: 2008-06-24 10:30:00.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 28
+Ground Speed: 0.14
+Heading: 0.0
+Height Above Ellipsoid: -0.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208325.00200077548
+Utm Northing: 9846241.962775912
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210558,-1.3896299,-0.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T10:30:28Z</begin>
+			<end>2008-06-24T12:00:49Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 12:00:50</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 12:00:50.000
+Location Long: -89.6211
+Location Lat: -1.3896376
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3444
+Eobs Horizontal Accuracy Estimate: 2.82
+Eobs Key Bin Checksum: 1571659237
+Eobs Speed Accuracy Estimate: 3.0
+Eobs Start Timestamp: 2008-06-24 12:00:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 50
+Ground Speed: 0.46
+Heading: 349.31
+Height Above Ellipsoid: -5.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208320.0808520745
+Utm Northing: 9846241.10532873
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6211,-1.3896376,-5.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T12:00:50Z</begin>
+			<end>2008-06-24T13:30:26Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 13:30:27</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 13:30:27.000
+Location Long: -89.6212041
+Location Lat: -1.389643
+Eobs Battery Voltage: 3662
+Eobs Fix Battery Voltage: 3471
+Eobs Horizontal Accuracy Estimate: 3.07
+Eobs Key Bin Checksum: 4114052924
+Eobs Speed Accuracy Estimate: 2.35
+Eobs Start Timestamp: 2008-06-24 13:30:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 27
+Ground Speed: 0.15
+Heading: 0.66
+Height Above Ellipsoid: -1.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208308.48897982162
+Utm Northing: 9846240.494963882
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6212041,-1.389643,-1.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T13:30:27Z</begin>
+			<end>2008-06-24T15:00:35Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 15:00:36</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 15:00:36.998
+Location Long: -89.5921568
+Location Lat: -1.4201929
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3447
+Eobs Horizontal Accuracy Estimate: 4.35
+Eobs Key Bin Checksum: 1031362264
+Eobs Speed Accuracy Estimate: 2.63
+Eobs Start Timestamp: 2008-06-24 14:59:59.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 37
+Ground Speed: 1.01
+Heading: 330.3
+Height Above Ellipsoid: -4.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 211546.89958866296
+Utm Northing: 9842863.8862822
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.5921568,-1.4201929,-4.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T15:00:36Z</begin>
+			<end>2008-06-24T16:31:13Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 16:31:14</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 16:31:14.998
+Location Long: -89.6241515
+Location Lat: -1.4120296
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3444
+Eobs Horizontal Accuracy Estimate: 5.89
+Eobs Key Bin Checksum: 376772965
+Eobs Speed Accuracy Estimate: 1.1
+Eobs Start Timestamp: 2008-06-24 16:30:00.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 74
+Ground Speed: 0.38
+Heading: 281.15
+Height Above Ellipsoid: -15.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 207983.0426663201
+Utm Northing: 9843763.111676525
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6241515,-1.4120296,-15.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T16:31:14Z</begin>
+			<end>2008-06-24T18:00:48Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 18:00:49</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 18:00:49.999
+Location Long: -89.6710217
+Location Lat: -1.4215289
+Eobs Battery Voltage: 3677
+Eobs Fix Battery Voltage: 3442
+Eobs Horizontal Accuracy Estimate: 10.75
+Eobs Key Bin Checksum: 2585274737
+Eobs Speed Accuracy Estimate: 4.91
+Eobs Start Timestamp: 2008-06-24 18:00:00.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 49
+Ground Speed: 1.87
+Heading: 273.94
+Height Above Ellipsoid: -14.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 202764.74601327116
+Utm Northing: 9842706.051198851
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6710217,-1.4215289,-14.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T18:00:49Z</begin>
+			<end>2008-06-24T19:30:20Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 19:30:21</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 19:30:21.000
+Location Long: -89.6987503
+Location Lat: -1.4147862
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3508
+Eobs Horizontal Accuracy Estimate: 10.5
+Eobs Key Bin Checksum: 3923020366
+Eobs Speed Accuracy Estimate: 5.75
+Eobs Start Timestamp: 2008-06-24 19:30:01.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 20
+Ground Speed: 0.63
+Heading: 249.69
+Height Above Ellipsoid: -20.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 199675.9114538139
+Utm Northing: 9843448.566358449
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6987503,-1.4147862,-20.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T19:30:21Z</begin>
+			<end>2008-06-24T21:00:55Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 21:00:56</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 21:00:56.001
+Location Long: -89.7138956
+Location Lat: -1.4102263
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3447
+Eobs Horizontal Accuracy Estimate: 4.35
+Eobs Key Bin Checksum: 3973610998
+Eobs Speed Accuracy Estimate: 3.51
+Eobs Start Timestamp: 2008-06-24 21:00:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 56
+Ground Speed: 0.48
+Heading: 336.86
+Height Above Ellipsoid: -13.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 197988.647905457
+Utm Northing: 9843951.175909204
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.7138956,-1.4102263,-13.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T21:00:56Z</begin>
+			<end>2008-06-24T22:30:49Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-24 22:30:50</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-24 22:30:50.998
+Location Long: -89.6658027
+Location Lat: -1.4220248
+Eobs Battery Voltage: 3679
+Eobs Fix Battery Voltage: 3443
+Eobs Horizontal Accuracy Estimate: 4.35
+Eobs Key Bin Checksum: 3835635009
+Eobs Speed Accuracy Estimate: 2.73
+Eobs Start Timestamp: 2008-06-24 22:29:59.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 51
+Ground Speed: 4.58
+Heading: 156.63
+Height Above Ellipsoid: 3.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 203346.00957081758
+Utm Northing: 9842651.851295166
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6658027,-1.4220248,3.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-24T22:30:50Z</begin>
+			<end>2008-06-25T00:00:42Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-25 00:00:43</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-25 00:00:43.998
+Location Long: -89.7057055
+Location Lat: -1.4159723
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3471
+Eobs Horizontal Accuracy Estimate: 7.17
+Eobs Key Bin Checksum: 2028488155
+Eobs Speed Accuracy Estimate: 4.7
+Eobs Start Timestamp: 2008-06-25 00:00:00.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 43
+Ground Speed: 1.47
+Heading: 252.97
+Height Above Ellipsoid: -2.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 198901.49335525854
+Utm Northing: 9843316.416105391
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.7057055,-1.4159723,-2.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-25T00:00:43Z</begin>
+			<end>2008-06-25T01:30:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-25 01:30:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-25 01:30:30.999
+Location Long: -89.7191199
+Location Lat: -1.4064799
+Eobs Battery Voltage: 3681
+Eobs Fix Battery Voltage: 3474
+Eobs Horizontal Accuracy Estimate: 10.75
+Eobs Key Bin Checksum: 2563879866
+Eobs Speed Accuracy Estimate: 7.55
+Eobs Start Timestamp: 2008-06-25 01:30:00.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 30
+Ground Speed: 0.36
+Heading: 30.15
+Height Above Ellipsoid: -40.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 197406.34767667408
+Utm Northing: 9844365.058115287
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.7191199,-1.4064799,-40.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-25T01:30:30Z</begin>
+			<end>2008-06-25T03:00:43Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-25 03:00:44</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-25 03:00:44.001
+Location Long: -89.7250673
+Location Lat: -1.401105
+Eobs Battery Voltage: 3679
+Eobs Fix Battery Voltage: 3447
+Eobs Horizontal Accuracy Estimate: 6.14
+Eobs Key Bin Checksum: 1703046637
+Eobs Speed Accuracy Estimate: 3.76
+Eobs Start Timestamp: 2008-06-25 03:00:01.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 43
+Ground Speed: 0.36
+Heading: 334.89
+Height Above Ellipsoid: -17.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 196743.30396605813
+Utm Northing: 9844959.052962868
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.7250673,-1.401105,-17.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-25T03:00:44Z</begin>
+			<end>2008-06-25T04:30:55Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-25 04:30:56</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-25 04:30:56.001
+Location Long: -89.7432704
+Location Lat: -1.3928737
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3447
+Eobs Horizontal Accuracy Estimate: 23.04
+Eobs Key Bin Checksum: 2348464531
+Eobs Speed Accuracy Estimate: 7.48
+Eobs Start Timestamp: 2008-06-25 04:30:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 56
+Ground Speed: 1.65
+Heading: 294.26
+Height Above Ellipsoid: -23.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 194714.97155795438
+Utm Northing: 9845867.546673212
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.7432704,-1.3928737,-23.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-25T04:30:56Z</begin>
+			<end>2008-06-25T06:00:49Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-25 06:00:50</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-25 06:00:50.001
+Location Long: -89.7581191
+Location Lat: -1.3921166
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3464
+Eobs Horizontal Accuracy Estimate: 4.61
+Eobs Key Bin Checksum: 682819455
+Eobs Speed Accuracy Estimate: 3.28
+Eobs Start Timestamp: 2008-06-25 06:00:00.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 50
+Ground Speed: 0.34
+Heading: 7.86
+Height Above Ellipsoid: 6.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 193061.1538864423
+Utm Northing: 9845949.395675626
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.7581191,-1.3921166,6.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-25T06:00:50Z</begin>
+			<end>2008-06-25T07:30:24Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-25 07:30:25</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-25 07:30:25.000
+Location Long: -89.755684
+Location Lat: -1.3946754
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3468
+Eobs Horizontal Accuracy Estimate: 8.45
+Eobs Key Bin Checksum: 1184496933
+Eobs Speed Accuracy Estimate: 4.72
+Eobs Start Timestamp: 2008-06-25 07:30:00.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 25
+Ground Speed: 0.22
+Heading: 351.93
+Height Above Ellipsoid: -6.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 193332.6871614902
+Utm Northing: 9845666.557742573
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.755684,-1.3946754,-6.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-25T07:30:25Z</begin>
+			<end>2008-06-25T09:00:43Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-25 09:00:44</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-25 09:00:44.000
+Location Long: -89.760325
+Location Lat: -1.3939813
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3452
+Eobs Horizontal Accuracy Estimate: 4.1
+Eobs Key Bin Checksum: 2427666008
+Eobs Speed Accuracy Estimate: 3.44
+Eobs Start Timestamp: 2008-06-25 09:00:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 44
+Ground Speed: 0.34
+Heading: 224.13
+Height Above Ellipsoid: -17.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 192815.7198738053
+Utm Northing: 9845742.760666177
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.760325,-1.3939813,-17.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-25T09:00:44Z</begin>
+			<end>2008-06-25T10:30:48Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-25 10:30:49</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-25 10:30:49.999
+Location Long: -89.7726987
+Location Lat: -1.3950147
+Eobs Battery Voltage: 3677
+Eobs Fix Battery Voltage: 3463
+Eobs Horizontal Accuracy Estimate: 2.56
+Eobs Key Bin Checksum: 3973312945
+Eobs Speed Accuracy Estimate: 2.26
+Eobs Start Timestamp: 2008-06-25 10:29:59.000
+Eobs Status: A
+Eobs Temperature: 23
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 50
+Ground Speed: 0.47
+Heading: 327.68
+Height Above Ellipsoid: -10.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 191437.76134908176
+Utm Northing: 9845626.783580901
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.7726987,-1.3950147,-10.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-25T10:30:49Z</begin>
+			<end>2008-06-25T16:30:55Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-25 16:30:56</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-25 16:30:56.999
+Location Long: -89.8609899
+Location Lat: -0.947373
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3447
+Eobs Horizontal Accuracy Estimate: 3.84
+Eobs Key Bin Checksum: 934301058
+Eobs Speed Accuracy Estimate: 3.09
+Eobs Start Timestamp: 2008-06-25 16:29:59.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 57
+Ground Speed: 15.18
+Heading: 22.94
+Height Above Ellipsoid: 5.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 181553.50000862533
+Utm Northing: 9895155.184013734
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.8609899,-0.947373,5.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-25T16:30:56Z</begin>
+			<end>2008-06-25T18:00:32Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-25 18:00:33</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-25 18:00:33.998
+Location Long: -89.8119214
+Location Lat: -0.850364
+Eobs Battery Voltage: 3674
+Eobs Fix Battery Voltage: 3477
+Eobs Horizontal Accuracy Estimate: 7.68
+Eobs Key Bin Checksum: 1615888690
+Eobs Speed Accuracy Estimate: 4.28
+Eobs Start Timestamp: 2008-06-25 18:00:00.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 33
+Ground Speed: 0.67
+Heading: 328.99
+Height Above Ellipsoid: -3.0
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 187011.32052494632
+Utm Northing: 9905895.104391573
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.8119214,-0.850364,-3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-25T18:00:33Z</begin>
+			<end>2008-06-25T19:30:21Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-25 19:30:22</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-25 19:30:22.000
+Location Long: -89.8388004
+Location Lat: -0.7981921
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3476
+Eobs Horizontal Accuracy Estimate: 18.43
+Eobs Key Bin Checksum: 2955684804
+Eobs Speed Accuracy Estimate: 6.0
+Eobs Start Timestamp: 2008-06-25 19:30:01.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 21
+Ground Speed: 15.27
+Heading: 1.31
+Height Above Ellipsoid: -12.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 184012.90647550434
+Utm Northing: 9911666.615883015
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.8388004,-0.7981921,-12.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-25T19:30:22Z</begin>
+			<end>2008-06-25T23:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-26 10:31:20</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-26 10:31:20.999
+Location Long: -89.7538904
+Location Lat: -1.4044991
+Eobs Battery Voltage: 3613
+Eobs Fix Battery Voltage: 3438
+Eobs Horizontal Accuracy Estimate: 5.12
+Eobs Key Bin Checksum: 4242614812
+Eobs Speed Accuracy Estimate: 0.44
+Eobs Start Timestamp: 2008-06-26 10:29:57.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 83
+Ground Speed: 0.62
+Heading: 350.62
+Height Above Ellipsoid: -8.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 193533.72053988872
+Utm Northing: 9844579.708769087
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.7538904,-1.4044991,-8.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-26T10:31:20Z</begin>
+			<end>2008-06-26T16:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-26 16:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-26 16:32:29.001
+Location Long: -89.8907822
+Location Lat: -1.424932
+Eobs Battery Voltage: 3666
+Eobs Fix Battery Voltage: 3464
+Eobs Horizontal Accuracy Estimate: 2.56
+Eobs Key Bin Checksum: 1569447066
+Eobs Speed Accuracy Estimate: 0.31
+Eobs Start Timestamp: 2008-06-26 16:30:00.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.45
+Heading: 290.98
+Height Above Ellipsoid: -2.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 178289.85565321898
+Utm Northing: 9842299.928421581
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.8907822,-1.424932,-2.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-26T16:32:29Z</begin>
+			<end>2008-06-26T18:02:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-26 18:02:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-26 18:02:28.998
+Location Long: -89.9342806
+Location Lat: -1.4282003
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3457
+Eobs Horizontal Accuracy Estimate: 2.56
+Eobs Key Bin Checksum: 2167133575
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-06-26 17:59:59.000
+Eobs Status: A
+Eobs Temperature: 30
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.53
+Heading: 286.39
+Height Above Ellipsoid: -3.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 173445.22809932148
+Utm Northing: 9841932.07399223
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.9342806,-1.4282003,-3.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-26T18:02:28Z</begin>
+			<end>2008-06-26T19:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-26 19:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-26 19:32:29.999
+Location Long: -89.9376689
+Location Lat: -1.4059673
+Eobs Battery Voltage: 3681
+Eobs Fix Battery Voltage: 3459
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3336546881
+Eobs Speed Accuracy Estimate: 0.25
+Eobs Start Timestamp: 2008-06-26 19:30:00.000
+Eobs Status: A
+Eobs Temperature: 30
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.38
+Heading: 330.3
+Height Above Ellipsoid: -6.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 173064.69050734
+Utm Northing: 9844392.27259802
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.9376689,-1.4059673,-6.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-26T19:32:29Z</begin>
+			<end>2008-06-26T21:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-26 21:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-26 21:02:30.000
+Location Long: -89.8277267
+Location Lat: -1.3531491
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3464
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 3985511441
+Eobs Speed Accuracy Estimate: 0.24
+Eobs Start Timestamp: 2008-06-26 21:00:01.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 1.06
+Heading: 317.85
+Height Above Ellipsoid: -8.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 185303.4787346123
+Utm Northing: 9850252.59176777
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.8277267,-1.3531491,-8.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-26T21:02:30Z</begin>
+			<end>2008-06-26T22:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-26 22:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-26 22:32:29.001
+Location Long: -89.6236775
+Location Lat: -1.4052635
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3464
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 2655254039
+Eobs Speed Accuracy Estimate: 0.31
+Eobs Start Timestamp: 2008-06-26 22:30:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.46
+Heading: 312.61
+Height Above Ellipsoid: -8.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208034.9833769729
+Utm Northing: 9844511.822288187
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6236775,-1.4052635,-8.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-26T22:32:29Z</begin>
+			<end>2008-06-27T00:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-27 00:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-27 00:02:29.001
+Location Long: -89.6210178
+Location Lat: -1.3898462
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3466
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 2873842964
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-06-27 00:00:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 2.62
+Height Above Ellipsoid: 5.0
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208329.26023745013
+Utm Northing: 9846218.034507295
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210178,-1.3898462,5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-27T00:02:29Z</begin>
+			<end>2008-06-27T01:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-27 01:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-27 01:32:29.999
+Location Long: -89.6210349
+Location Lat: -1.3898552
+Eobs Battery Voltage: 3679
+Eobs Fix Battery Voltage: 3466
+Eobs Horizontal Accuracy Estimate: 3.33
+Eobs Key Bin Checksum: 1925366146
+Eobs Speed Accuracy Estimate: 2.53
+Eobs Start Timestamp: 2008-06-27 01:29:59.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.09
+Heading: 0.0
+Height Above Ellipsoid: -0.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208327.35709416267
+Utm Northing: 9846217.03656905
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210349,-1.3898552,-0.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-27T01:32:29Z</begin>
+			<end>2008-06-27T02:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-27 07:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-27 07:32:28.999
+Location Long: -89.620982
+Location Lat: -1.3898346
+Eobs Battery Voltage: 3679
+Eobs Fix Battery Voltage: 3471
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 1533770869
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-06-27 07:29:59.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 349.96
+Height Above Ellipsoid: 1.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.245485618
+Utm Northing: 9846219.322440108
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.620982,-1.3898346,1.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-27T07:32:28Z</begin>
+			<end>2008-06-27T08:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-27 10:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-27 10:32:30.001
+Location Long: -89.6210004
+Location Lat: -1.389857
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3457
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1856603624
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-06-27 10:30:01.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 359.79
+Height Above Ellipsoid: 1.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.19922115584
+Utm Northing: 9846216.841670152
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210004,-1.389857,1.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-27T10:32:30Z</begin>
+			<end>2008-06-27T12:02:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-27 12:02:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-27 12:02:28.999
+Location Long: -89.6210192
+Location Lat: -1.3898435
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3457
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2516153227
+Eobs Speed Accuracy Estimate: 0.27
+Eobs Start Timestamp: 2008-06-27 11:59:59.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 12.45
+Height Above Ellipsoid: -3.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208329.10400231165
+Utm Northing: 9846218.333081344
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210192,-1.3898435,-3.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-27T12:02:28Z</begin>
+			<end>2008-06-28T03:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-28 03:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-28 03:02:30.000
+Location Long: -89.6209938
+Location Lat: -1.3898464
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3400
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3359594318
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-06-28 03:00:00.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 348.0
+Height Above Ellipsoid: -3.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.93289216573
+Utm Northing: 9846218.015345406
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209938,-1.3898464,-3.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-28T03:02:30Z</begin>
+			<end>2008-06-28T04:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-28 06:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-28 06:02:30.001
+Location Long: -89.6209675
+Location Lat: -1.3898251
+Eobs Battery Voltage: 3674
+Eobs Fix Battery Voltage: 3427
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3483343230
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-06-28 06:00:00.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 4.59
+Height Above Ellipsoid: -0.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.85903252894
+Utm Northing: 9846220.37538031
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209675,-1.3898251,-0.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-28T06:02:30Z</begin>
+			<end>2008-06-28T07:32:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-28 07:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-28 07:32:28.998
+Location Long: -89.6209859
+Location Lat: -1.3898461
+Eobs Battery Voltage: 3679
+Eobs Fix Battery Voltage: 3432
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2671357532
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-06-28 07:29:59.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 309.99
+Height Above Ellipsoid: -7.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.8125960527
+Utm Northing: 9846218.049516339
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209859,-1.3898461,-7.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-28T07:32:28Z</begin>
+			<end>2008-06-28T09:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-28 09:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-28 09:02:29.998
+Location Long: -89.6209849
+Location Lat: -1.3898592
+Eobs Battery Voltage: 3679
+Eobs Fix Battery Voltage: 3427
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 3599908253
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-06-28 09:00:00.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 348.0
+Height Above Ellipsoid: -2.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.92556504783
+Utm Northing: 9846216.600163085
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209849,-1.3898592,-2.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-28T09:02:29Z</begin>
+			<end>2008-06-28T10:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-28 10:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-28 10:32:30.001
+Location Long: -89.6209851
+Location Lat: -1.3898515
+Eobs Battery Voltage: 3679
+Eobs Fix Battery Voltage: 3398
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 4035822007
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-06-28 10:30:01.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 353.89
+Height Above Ellipsoid: -4.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.9023471402
+Utm Northing: 9846217.452120962
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209851,-1.3898515,-4.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-28T10:32:30Z</begin>
+			<end>2008-06-28T12:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-28 12:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-28 12:02:29.000
+Location Long: -89.6209798
+Location Lat: -1.3898502
+Eobs Battery Voltage: 3679
+Eobs Fix Battery Voltage: 3421
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 624507636
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-06-28 12:00:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 355.21
+Height Above Ellipsoid: -2.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.49239323934
+Utm Northing: 9846217.596617505
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209798,-1.3898502,-2.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-28T12:02:29Z</begin>
+			<end>2008-06-28T13:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-28 13:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-28 13:32:29.998
+Location Long: -89.6209829
+Location Lat: -1.3898516
+Eobs Battery Voltage: 3686
+Eobs Fix Battery Voltage: 3408
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 3399208925
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-06-28 13:29:59.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 337.51
+Height Above Ellipsoid: -2.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.14735051763
+Utm Northing: 9846217.441328274
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209829,-1.3898516,-2.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-28T13:32:29Z</begin>
+			<end>2008-06-28T14:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-28 18:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-28 18:02:30.999
+Location Long: -89.6209599
+Location Lat: -1.3898407
+Eobs Battery Voltage: 3681
+Eobs Fix Battery Voltage: 3447
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 4291064523
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-06-28 18:00:00.000
+Eobs Status: A
+Eobs Temperature: 31
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 331.61
+Height Above Ellipsoid: 1.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.70728188695
+Utm Northing: 9846218.650225405
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209599,-1.3898407,1.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-28T18:02:30Z</begin>
+			<end>2008-06-28T19:32:30Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-28 19:32:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-28 19:32:31.000
+Location Long: -89.620999
+Location Lat: -1.3898362
+Eobs Battery Voltage: 3686
+Eobs Fix Battery Voltage: 3442
+Eobs Horizontal Accuracy Estimate: 3.33
+Eobs Key Bin Checksum: 1833725175
+Eobs Speed Accuracy Estimate: 0.3
+Eobs Start Timestamp: 2008-06-28 19:30:01.000
+Eobs Status: A
+Eobs Temperature: 30
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.02
+Heading: 29.49
+Height Above Ellipsoid: -11.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.35256918147
+Utm Northing: 9846219.14330279
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.620999,-1.3898362,-11.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-28T19:32:31Z</begin>
+			<end>2008-06-28T20:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-28 22:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-28 22:32:29.998
+Location Long: -89.6212537
+Location Lat: -1.38838
+Eobs Battery Voltage: 3674
+Eobs Fix Battery Voltage: 3417
+Eobs Horizontal Accuracy Estimate: 4.86
+Eobs Key Bin Checksum: 2423128464
+Eobs Speed Accuracy Estimate: 8.94
+Eobs Start Timestamp: 2008-06-28 22:29:59.000
+Eobs Status: A
+Eobs Temperature: 22
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 18.73
+Heading: 101.58
+Height Above Ellipsoid: 11.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208302.8104541452
+Utm Northing: 9846380.236137457
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6212537,-1.38838,11.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-28T22:32:29Z</begin>
+			<end>2008-06-29T00:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-29 00:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-29 00:02:30.000
+Location Long: -89.6209574
+Location Lat: -1.3898607
+Eobs Battery Voltage: 3677
+Eobs Fix Battery Voltage: 3437
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 776923986
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-06-29 00:00:01.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 353.89
+Height Above Ellipsoid: 4.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.98813793238
+Utm Northing: 9846216.437592732
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209574,-1.3898607,4.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-29T00:02:30Z</begin>
+			<end>2008-06-29T01:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-29 01:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-29 01:32:29.001
+Location Long: -89.62097
+Location Lat: -1.3898683
+Eobs Battery Voltage: 3681
+Eobs Fix Battery Voltage: 3437
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 2537837995
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-06-29 01:30:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 127.8
+Height Above Ellipsoid: 2.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.5859408672
+Utm Northing: 9846215.595116902
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.62097,-1.3898683,2.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-29T01:32:29Z</begin>
+			<end>2008-06-29T02:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-29 10:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-29 10:32:28.998
+Location Long: -89.6209724
+Location Lat: -1.3898557
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3427
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 459056681
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-06-29 10:29:59.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 320.47
+Height Above Ellipsoid: -4.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.31712988042
+Utm Northing: 9846216.988973487
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209724,-1.3898557,-4.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-29T10:32:28Z</begin>
+			<end>2008-06-29T12:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-29 12:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-29 12:02:30.001
+Location Long: -89.6209979
+Location Lat: -1.3898477
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3430
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1586939475
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-06-29 12:00:01.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 35.39
+Height Above Ellipsoid: -4.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.47647756425
+Utm Northing: 9846217.870997233
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209979,-1.3898477,-4.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-29T12:02:30Z</begin>
+			<end>2008-06-29T13:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-29 13:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-29 13:32:29.001
+Location Long: -89.62099
+Location Lat: -1.3898788
+Eobs Battery Voltage: 3674
+Eobs Fix Battery Voltage: 3437
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 3127694669
+Eobs Speed Accuracy Estimate: 0.23
+Eobs Start Timestamp: 2008-06-29 13:30:00.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.02
+Heading: 49.15
+Height Above Ellipsoid: -5.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.3600391532
+Utm Northing: 9846214.43084948
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.62099,-1.3898788,-5.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-29T13:32:29Z</begin>
+			<end>2008-06-29T14:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-29 16:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-29 16:32:29.001
+Location Long: -89.6209767
+Location Lat: -1.3898588
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3448
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 4285066469
+Eobs Speed Accuracy Estimate: 0.32
+Eobs Start Timestamp: 2008-06-29 16:30:00.000
+Eobs Status: A
+Eobs Temperature: 33
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 210.37
+Height Above Ellipsoid: 4.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.83866451302
+Utm Northing: 9846216.645435827
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209767,-1.3898588,4.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-29T16:32:29Z</begin>
+			<end>2008-06-29T18:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-29 18:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-29 18:02:29.000
+Location Long: -89.6209541
+Location Lat: -1.3898613
+Eobs Battery Voltage: 3684
+Eobs Fix Battery Voltage: 3452
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 2519590840
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-06-29 18:00:00.000
+Eobs Status: A
+Eobs Temperature: 31
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 343.41
+Height Above Ellipsoid: -1.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208336.35569827206
+Utm Northing: 9846216.37161251
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209541,-1.3898613,-1.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-29T18:02:29Z</begin>
+			<end>2008-06-29T19:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-29 19:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-29 19:32:29.999
+Location Long: -89.6210062
+Location Lat: -1.3898509
+Eobs Battery Voltage: 3686
+Eobs Fix Battery Voltage: 3447
+Eobs Horizontal Accuracy Estimate: 3.07
+Eobs Key Bin Checksum: 3942174763
+Eobs Speed Accuracy Estimate: 0.28
+Eobs Start Timestamp: 2008-06-29 19:29:59.000
+Eobs Status: A
+Eobs Temperature: 31
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 43.25
+Height Above Ellipsoid: -15.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208330.5525861166
+Utm Northing: 9846217.515900265
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210062,-1.3898509,-15.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-29T19:32:29Z</begin>
+			<end>2008-06-29T21:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-29 21:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-29 21:02:30.000
+Location Long: -89.6209902
+Location Lat: -1.389855
+Eobs Battery Voltage: 3686
+Eobs Fix Battery Voltage: 3447
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 2742638676
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-06-29 21:00:01.000
+Eobs Status: A
+Eobs Temperature: 30
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 125.83
+Height Above Ellipsoid: -3.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.33484324068
+Utm Northing: 9846217.064225541
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209902,-1.389855,-3.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-29T21:02:30Z</begin>
+			<end>2008-06-29T23:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 01:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 01:32:29.999
+Location Long: -89.6209737
+Location Lat: -1.3898705
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3422
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 2306926779
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-06-30 01:30:00.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.04
+Heading: 19.66
+Height Above Ellipsoid: 2.0
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.17418068653
+Utm Northing: 9846215.351235807
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209737,-1.3898705,2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T01:32:29Z</begin>
+			<end>2008-06-30T03:02:30Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 03:02:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 03:02:31.001
+Location Long: -89.6209948
+Location Lat: -1.3898679
+Eobs Battery Voltage: 3684
+Eobs Fix Battery Voltage: 3437
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3022046438
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-06-30 03:00:01.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 32.11
+Height Above Ellipsoid: -5.0
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.82417398778
+Utm Northing: 9846215.63630927
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209948,-1.3898679,-5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T03:02:31Z</begin>
+			<end>2008-06-30T04:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 04:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 04:32:30.000
+Location Long: -89.6209792
+Location Lat: -1.3898598
+Eobs Battery Voltage: 3681
+Eobs Fix Battery Voltage: 3437
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 190141285
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-06-30 04:30:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 24.25
+Height Above Ellipsoid: 1.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.56038840365
+Utm Northing: 9846216.534479618
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209792,-1.3898598,1.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T04:32:30Z</begin>
+			<end>2008-06-30T06:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 06:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 06:02:29.000
+Location Long: -89.6209871
+Location Lat: -1.3898603
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3439
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 4265964636
+Eobs Speed Accuracy Estimate: 0.34
+Eobs Start Timestamp: 2008-06-30 06:00:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 329.65
+Height Above Ellipsoid: -0.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.68070909812
+Utm Northing: 9846216.47817926
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209871,-1.3898603,-0.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T06:02:29Z</begin>
+			<end>2008-06-30T07:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 07:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 07:32:30.001
+Location Long: -89.6209815
+Location Lat: -1.3898648
+Eobs Battery Voltage: 3681
+Eobs Fix Battery Voltage: 3437
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1224409305
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-06-30 07:30:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 341.44
+Height Above Ellipsoid: -3.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.30487563595
+Utm Northing: 9846215.980959773
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209815,-1.3898648,-3.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T07:32:30Z</begin>
+			<end>2008-06-30T09:02:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 09:02:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 09:02:28.998
+Location Long: -89.6209737
+Location Lat: -1.3898888
+Eobs Battery Voltage: 3679
+Eobs Fix Battery Voltage: 3417
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 3532701191
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-06-30 08:59:59.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 333.58
+Height Above Ellipsoid: -4.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.1764289764
+Utm Northing: 9846213.326394048
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209737,-1.3898888,-4.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T09:02:28Z</begin>
+			<end>2008-06-30T10:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 10:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 10:32:30.999
+Location Long: -89.6209638
+Location Lat: -1.3898546
+Eobs Battery Voltage: 3674
+Eobs Fix Battery Voltage: 3430
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2623467813
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-06-30 10:30:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 349.96
+Height Above Ellipsoid: -0.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.27468717576
+Utm Northing: 9846217.111748643
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209638,-1.3898546,-0.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T10:32:30Z</begin>
+			<end>2008-06-30T12:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 12:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 12:02:30.999
+Location Long: -89.6209777
+Location Lat: -1.3898676
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3427
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 2203753334
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-06-30 12:00:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 76.68
+Height Above Ellipsoid: -8.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.72838606028
+Utm Northing: 9846215.67161778
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209777,-1.3898676,-8.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T12:02:30Z</begin>
+			<end>2008-06-30T14:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 16:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 16:32:30.000
+Location Long: -89.6129651
+Location Lat: -1.3916841
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3447
+Eobs Horizontal Accuracy Estimate: 5.63
+Eobs Key Bin Checksum: 776236554
+Eobs Speed Accuracy Estimate: 3.62
+Eobs Start Timestamp: 2008-06-30 16:30:00.000
+Eobs Status: A
+Eobs Temperature: 31
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.87
+Heading: 215.61
+Height Above Ellipsoid: 5.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 209226.22796338686
+Utm Northing: 9846015.67168678
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6129651,-1.3916841,5.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T16:32:30Z</begin>
+			<end>2008-06-30T18:02:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 18:02:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 18:02:28.998
+Location Long: -89.6248286
+Location Lat: -1.4141347
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3447
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 2740085435
+Eobs Speed Accuracy Estimate: 0.24
+Eobs Start Timestamp: 2008-06-30 17:59:59.000
+Eobs Status: A
+Eobs Temperature: 30
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.9
+Heading: 231.34
+Height Above Ellipsoid: -6.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 207907.90492123266
+Utm Northing: 9843530.102557477
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6248286,-1.4141347,-6.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T18:02:28Z</begin>
+			<end>2008-06-30T19:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 19:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 19:32:29.999
+Location Long: -89.651571
+Location Lat: -1.4420924
+Eobs Battery Voltage: 3679
+Eobs Fix Battery Voltage: 3439
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2366499574
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-06-30 19:30:00.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.92
+Heading: 243.14
+Height Above Ellipsoid: -10.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 204933.44239054265
+Utm Northing: 9840433.200596452
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.651571,-1.4420924,-10.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T19:32:29Z</begin>
+			<end>2008-06-30T21:02:30Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 21:02:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 21:02:31.001
+Location Long: -89.6209879
+Location Lat: -1.3898531
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3437
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 1817919298
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-06-30 21:00:01.000
+Eobs Status: A
+Eobs Temperature: 34
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 342.75
+Height Above Ellipsoid: -3.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.59073686425
+Utm Northing: 9846217.274739403
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209879,-1.3898531,-3.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T21:02:31Z</begin>
+			<end>2008-06-30T22:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-06-30 22:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-06-30 22:32:29.001
+Location Long: -89.6210097
+Location Lat: -1.3898595
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3447
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 1331879642
+Eobs Speed Accuracy Estimate: 0.26
+Eobs Start Timestamp: 2008-06-30 22:30:00.000
+Eobs Status: A
+Eobs Temperature: 31
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 23.59
+Height Above Ellipsoid: 3.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208330.1638841235
+Utm Northing: 9846216.563902492
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210097,-1.3898595,3.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-06-30T22:32:29Z</begin>
+			<end>2008-07-01T00:02:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-01 00:02:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-01 00:02:28.999
+Location Long: -89.620973
+Location Lat: -1.3898606
+Eobs Battery Voltage: 3676
+Eobs Fix Battery Voltage: 3447
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 77600988
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-06-30 23:59:59.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 189.4
+Height Above Ellipsoid: 1.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.25091612054
+Utm Northing: 9846216.446728557
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.620973,-1.3898606,1.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-01T00:02:28Z</begin>
+			<end>2008-07-01T01:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-01 01:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-01 01:32:30.001
+Location Long: -89.6209817
+Location Lat: -1.3898724
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3442
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 1164816191
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-01 01:30:01.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 14.42
+Height Above Ellipsoid: -1.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.28353743075
+Utm Northing: 9846215.14001715
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209817,-1.3898724,-1.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-01T01:32:30Z</begin>
+			<end>2008-07-01T02:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-01 06:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-01 06:02:29.001
+Location Long: -89.620968
+Location Lat: -1.3898538
+Eobs Battery Voltage: 3652
+Eobs Fix Battery Voltage: 3432
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 1401587898
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-01 06:00:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 345.37
+Height Above Ellipsoid: 0.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.80687863223
+Utm Northing: 9846217.199747002
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.620968,-1.3898538,0.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-01T06:02:29Z</begin>
+			<end>2008-07-01T07:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-01 07:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-01 07:32:30.001
+Location Long: -89.6209744
+Location Lat: -1.389852
+Eobs Battery Voltage: 3662
+Eobs Fix Battery Voltage: 3428
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1031405915
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-01 07:30:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 355.86
+Height Above Ellipsoid: -2.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.0939561451
+Utm Northing: 9846217.398120431
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209744,-1.389852,-2.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-01T07:32:30Z</begin>
+			<end>2008-07-01T08:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-01 10:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-01 10:32:28.999
+Location Long: -89.6209701
+Location Lat: -1.3898644
+Eobs Battery Voltage: 3652
+Eobs Fix Battery Voltage: 3417
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 3688641719
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-01 10:29:59.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 51.77
+Height Above Ellipsoid: 4.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.57432577177
+Utm Northing: 9846216.026628189
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209701,-1.3898644,4.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-01T10:32:28Z</begin>
+			<end>2008-07-01T12:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-01 12:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-01 12:02:30.999
+Location Long: -89.6209871
+Location Lat: -1.3898621
+Eobs Battery Voltage: 3654
+Eobs Fix Battery Voltage: 3421
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 16800669
+Eobs Speed Accuracy Estimate: 0.19
+Eobs Start Timestamp: 2008-07-01 12:00:00.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 359.14
+Height Above Ellipsoid: -4.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.6809302396
+Utm Northing: 9846216.279014494
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209871,-1.3898621,-4.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-01T12:02:30Z</begin>
+			<end>2008-07-01T13:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-01 13:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-01 13:32:29.998
+Location Long: -89.6485011
+Location Lat: -1.4211906
+Eobs Battery Voltage: 3657
+Eobs Fix Battery Voltage: 3428
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1336110901
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-01 13:30:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.26
+Heading: 255.59
+Height Above Ellipsoid: -6.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 205272.63255941594
+Utm Northing: 9842746.374245899
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6485011,-1.4211906,-6.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-01T13:32:29Z</begin>
+			<end>2008-07-01T15:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-01 15:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-01 15:02:30.998
+Location Long: -89.813795
+Location Lat: -1.4461701
+Eobs Battery Voltage: 3657
+Eobs Fix Battery Voltage: 3432
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1436093253
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-01 15:00:00.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.28
+Heading: 287.05
+Height Above Ellipsoid: -1.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 186867.5481072712
+Utm Northing: 9839960.24026306
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.813795,-1.4461701,-1.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-01T15:02:30Z</begin>
+			<end>2008-07-01T16:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-01 16:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-01 16:32:30.000
+Location Long: -89.9360208
+Location Lat: -1.5020111
+Eobs Battery Voltage: 3664
+Eobs Fix Battery Voltage: 3437
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 181326018
+Eobs Speed Accuracy Estimate: 0.39
+Eobs Start Timestamp: 2008-07-01 16:30:01.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.22
+Heading: 259.52
+Height Above Ellipsoid: 0.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 173262.10420839844
+Utm Northing: 9833762.680187522
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.9360208,-1.5020111,0.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-01T16:32:30Z</begin>
+			<end>2008-07-01T18:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-01 18:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-01 18:02:29.000
+Location Long: -89.9638247
+Location Lat: -1.4989039
+Eobs Battery Voltage: 3671
+Eobs Fix Battery Voltage: 3427
+Eobs Horizontal Accuracy Estimate: 2.3
+Eobs Key Bin Checksum: 1248459440
+Eobs Speed Accuracy Estimate: 0.27
+Eobs Start Timestamp: 2008-07-01 18:00:00.000
+Eobs Status: A
+Eobs Temperature: 31
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.53
+Heading: 247.73
+Height Above Ellipsoid: -6.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 170164.69014277752
+Utm Northing: 9834102.400734887
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.9638247,-1.4989039,-6.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-01T18:02:29Z</begin>
+			<end>2008-07-01T21:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-01 21:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-01 21:02:30.000
+Location Long: -89.6437164
+Location Lat: -1.4158138
+Eobs Battery Voltage: 3662
+Eobs Fix Battery Voltage: 3422
+Eobs Horizontal Accuracy Estimate: 2.3
+Eobs Key Bin Checksum: 1654933248
+Eobs Speed Accuracy Estimate: 0.43
+Eobs Start Timestamp: 2008-07-01 21:00:00.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.46
+Heading: 103.55
+Height Above Ellipsoid: -6.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 205804.77839754592
+Utm Northing: 9843341.923315518
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6437164,-1.4158138,-6.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-01T21:02:30Z</begin>
+			<end>2008-07-01T22:32:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-01 22:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-01 22:32:28.998
+Location Long: -89.6210003
+Location Lat: -1.3898638
+Eobs Battery Voltage: 3658
+Eobs Fix Battery Voltage: 3437
+Eobs Horizontal Accuracy Estimate: 2.3
+Eobs Key Bin Checksum: 1237966109
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-01 22:29:59.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 349.96
+Height Above Ellipsoid: 6.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.21119254007
+Utm Northing: 9846216.089282284
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210003,-1.3898638,6.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-01T22:32:28Z</begin>
+			<end>2008-07-02T00:02:30Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-02 00:02:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-02 00:02:31.000
+Location Long: -89.6209864
+Location Lat: -1.3898574
+Eobs Battery Voltage: 3652
+Eobs Fix Battery Voltage: 3430
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 566626768
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-02 00:00:01.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 9.18
+Height Above Ellipsoid: 1.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.75830452453
+Utm Northing: 9846216.79914238
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209864,-1.3898574,1.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-02T00:02:31Z</begin>
+			<end>2008-07-02T01:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-02 03:02:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-02 03:02:28.999
+Location Long: -89.6210036
+Location Lat: -1.3898564
+Eobs Battery Voltage: 3648
+Eobs Fix Battery Voltage: 3437
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 2508370061
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-02 02:59:59.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 7.21
+Height Above Ellipsoid: -3.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208330.8427967594
+Utm Northing: 9846216.907662734
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210036,-1.3898564,-3.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-02T03:02:28Z</begin>
+			<end>2008-07-02T04:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-02 04:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-02 04:32:30.000
+Location Long: -89.6209715
+Location Lat: -1.3898396
+Eobs Battery Voltage: 3647
+Eobs Fix Battery Voltage: 3427
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 927056214
+Eobs Speed Accuracy Estimate: 0.25
+Eobs Start Timestamp: 2008-07-02 04:30:01.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 329.65
+Height Above Ellipsoid: -0.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.41537555173
+Utm Northing: 9846218.770502925
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209715,-1.3898396,-0.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-02T04:32:30Z</begin>
+			<end>2008-07-02T06:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-02 06:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-02 06:02:29.001
+Location Long: -89.6209547
+Location Lat: -1.3898301
+Eobs Battery Voltage: 3645
+Eobs Fix Battery Voltage: 3408
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 142147984
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-02 06:00:00.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 357.83
+Height Above Ellipsoid: 0.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208336.28504949453
+Utm Northing: 9846219.823727496
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209547,-1.3898301,0.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-02T06:02:29Z</begin>
+			<end>2008-07-02T07:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-02 12:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-02 12:02:29.998
+Location Long: -89.6209925
+Location Lat: -1.3898591
+Eobs Battery Voltage: 3647
+Eobs Fix Battery Voltage: 3417
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2165205630
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-02 11:59:59.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 3.28
+Height Above Ellipsoid: -6.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.07921989838
+Utm Northing: 9846216.610288074
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209925,-1.3898591,-6.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-02T12:02:29Z</begin>
+			<end>2008-07-02T13:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-02 13:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-02 13:32:30.001
+Location Long: -89.6210038
+Location Lat: -1.3898555
+Eobs Battery Voltage: 3652
+Eobs Fix Battery Voltage: 3422
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 4063978140
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-02 13:30:01.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 18.35
+Height Above Ellipsoid: -2.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208330.82041426975
+Utm Northing: 9846217.00722039
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210038,-1.3898555,-2.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-02T13:32:30Z</begin>
+			<end>2008-07-02T15:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-02 15:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-02 15:02:29.001
+Location Long: -89.6209865
+Location Lat: -1.3898457
+Eobs Battery Voltage: 3647
+Eobs Fix Battery Voltage: 3432
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1266638500
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-02 15:00:00.000
+Eobs Status: A
+Eobs Temperature: 31
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 29.49
+Height Above Ellipsoid: 3.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.74573115818
+Utm Northing: 9846218.093700988
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209865,-1.3898457,3.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-02T15:02:29Z</begin>
+			<end>2008-07-02T16:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-02 16:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-02 16:32:29.001
+Location Long: -89.6209786
+Location Lat: -1.3898589
+Eobs Battery Voltage: 3654
+Eobs Fix Battery Voltage: 3438
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 4170278239
+Eobs Speed Accuracy Estimate: 0.23
+Eobs Start Timestamp: 2008-07-02 16:30:00.000
+Eobs Status: A
+Eobs Temperature: 33
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 19.01
+Height Above Ellipsoid: 5.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.6270935852
+Utm Northing: 9846216.634136189
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209786,-1.3898589,5.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-02T16:32:29Z</begin>
+			<end>2008-07-02T18:02:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-02 18:02:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-02 18:02:28.999
+Location Long: -89.6209881
+Location Lat: -1.3898589
+Eobs Battery Voltage: 3638
+Eobs Fix Battery Voltage: 3422
+Eobs Horizontal Accuracy Estimate: 2.56
+Eobs Key Bin Checksum: 1679267162
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-02 17:59:59.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 38.01
+Height Above Ellipsoid: -1.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.5691775105
+Utm Northing: 9846216.632961541
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209881,-1.3898589,-1.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-02T18:02:28Z</begin>
+			<end>2008-07-02T19:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-03 00:02:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-03 00:02:31.000
+Location Long: -89.6209658
+Location Lat: -1.3898795
+Eobs Battery Voltage: 3627
+Eobs Fix Battery Voltage: 3398
+Eobs Horizontal Accuracy Estimate: 2.56
+Eobs Key Bin Checksum: 2045464082
+Eobs Speed Accuracy Estimate: 0.24
+Eobs Start Timestamp: 2008-07-03 00:00:01.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 29.49
+Height Above Ellipsoid: 2.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.0550271175
+Utm Northing: 9846214.356388813
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209658,-1.3898795,2.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-03T00:02:31Z</begin>
+			<end>2008-07-03T03:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-03 03:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-03 03:02:29.000
+Location Long: -89.6208886
+Location Lat: -1.3898497
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3383
+Eobs Horizontal Accuracy Estimate: 11.01
+Eobs Key Bin Checksum: 3969567825
+Eobs Speed Accuracy Estimate: 1.64
+Eobs Start Timestamp: 2008-07-03 03:00:00.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.18
+Heading: 283.12
+Height Above Ellipsoid: -3.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208343.64832575415
+Utm Northing: 9846217.66321738
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6208886,-1.3898497,-3.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-03T03:02:29Z</begin>
+			<end>2008-07-03T04:32:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-03 04:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-03 04:32:28.998
+Location Long: -89.6210002
+Location Lat: -1.3898521
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3413
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 781989262
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-03 04:29:59.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 8.52
+Height Above Ellipsoid: -5.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.22089107672
+Utm Northing: 9846217.383865638
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210002,-1.3898521,-5.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-03T04:32:28Z</begin>
+			<end>2008-07-03T06:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-03 06:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-03 06:02:30.000
+Location Long: -89.620981
+Location Lat: -1.3898502
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3388
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 826144927
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-03 06:00:01.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 19.66
+Height Above Ellipsoid: -2.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.3587617352
+Utm Northing: 9846217.59646913
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.620981,-1.3898502,-2.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-03T06:02:30Z</begin>
+			<end>2008-07-03T07:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-03 07:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-03 07:32:29.001
+Location Long: -89.6209593
+Location Lat: -1.3898399
+Eobs Battery Voltage: 3624
+Eobs Fix Battery Voltage: 3389
+Eobs Horizontal Accuracy Estimate: 4.86
+Eobs Key Bin Checksum: 3689717902
+Eobs Speed Accuracy Estimate: 4.1
+Eobs Start Timestamp: 2008-07-03 07:30:00.000
+Eobs Status: A
+Eobs Temperature: 23
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.18
+Heading: 349.96
+Height Above Ellipsoid: 3.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.77399935707
+Utm Northing: 9846218.738817262
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209593,-1.3898399,3.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-03T07:32:29Z</begin>
+			<end>2008-07-03T09:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-03 09:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-03 09:02:29.000
+Location Long: -89.6209684
+Location Lat: -1.389866
+Eobs Battery Voltage: 3632
+Eobs Fix Battery Voltage: 3406
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 654149995
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-03 09:00:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 49.81
+Height Above Ellipsoid: -1.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.76383363467
+Utm Northing: 9846215.849803044
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209684,-1.389866,-1.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-03T09:02:29Z</begin>
+			<end>2008-07-03T10:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-03 10:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-03 10:32:29.999
+Location Long: -89.6209637
+Location Lat: -1.3898728
+Eobs Battery Voltage: 3637
+Eobs Fix Battery Voltage: 3404
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2484358738
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-03 10:29:59.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 327.02
+Height Above Ellipsoid: 2.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.28805910255
+Utm Northing: 9846215.097983975
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209637,-1.3898728,2.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-03T10:32:29Z</begin>
+			<end>2008-07-03T12:02:30Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-03 12:02:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-03 12:02:31.001
+Location Long: -89.6209975
+Location Lat: -1.389868
+Eobs Battery Voltage: 3613
+Eobs Fix Battery Voltage: 3398
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 338666410
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-03 12:00:01.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 325.71
+Height Above Ellipsoid: -8.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.52351538843
+Utm Northing: 9846215.62491071
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209975,-1.389868,-8.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-03T12:02:31Z</begin>
+			<end>2008-07-03T13:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-03 15:02:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-03 15:02:28.999
+Location Long: -89.6209926
+Location Lat: -1.3898596
+Eobs Battery Voltage: 3627
+Eobs Fix Battery Voltage: 3408
+Eobs Horizontal Accuracy Estimate: 3.07
+Eobs Key Bin Checksum: 1966559525
+Eobs Speed Accuracy Estimate: 2.15
+Eobs Start Timestamp: 2008-07-03 14:59:59.000
+Eobs Status: A
+Eobs Temperature: 31
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.06
+Heading: 344.72
+Height Above Ellipsoid: 0.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.06814536953
+Utm Northing: 9846216.554952163
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209926,-1.3898596,0.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-03T15:02:28Z</begin>
+			<end>2008-07-03T18:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-03 18:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-03 18:02:30.000
+Location Long: -89.620947
+Location Lat: -1.3898615
+Eobs Battery Voltage: 3635
+Eobs Fix Battery Voltage: 3417
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 2975945682
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-03 18:00:01.000
+Eobs Status: A
+Eobs Temperature: 32
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 56.36
+Height Above Ellipsoid: 0.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208337.14637588663
+Utm Northing: 9846216.350360977
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.620947,-1.3898615,0.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-03T18:02:30Z</begin>
+			<end>2008-07-03T19:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-03 19:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-03 19:32:29.000
+Location Long: -89.6209724
+Location Lat: -1.389877
+Eobs Battery Voltage: 3635
+Eobs Fix Battery Voltage: 3424
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 839218644
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-03 19:30:00.000
+Eobs Status: A
+Eobs Temperature: 34
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 40.63
+Height Above Ellipsoid: -4.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.31974671618
+Utm Northing: 9846214.63219046
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209724,-1.389877,-4.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-03T19:32:29Z</begin>
+			<end>2008-07-03T20:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-03 22:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-03 22:32:30.001
+Location Long: -89.6209743
+Location Lat: -1.3898678
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3388
+Eobs Horizontal Accuracy Estimate: 2.82
+Eobs Key Bin Checksum: 2358063800
+Eobs Speed Accuracy Estimate: 0.24
+Eobs Start Timestamp: 2008-07-03 22:30:00.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 20.97
+Height Above Ellipsoid: 4.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.1070332229
+Utm Northing: 9846215.649908762
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209743,-1.3898678,4.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-03T22:32:30Z</begin>
+			<end>2008-07-04T00:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-04 00:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-04 00:02:30.001
+Location Long: -89.6110584
+Location Lat: -1.3900604
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3378
+Eobs Horizontal Accuracy Estimate: 2.56
+Eobs Key Bin Checksum: 2487116319
+Eobs Speed Accuracy Estimate: 0.45
+Eobs Start Timestamp: 2008-07-04 00:00:00.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.89
+Heading: 354.55
+Height Above Ellipsoid: -2.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 209438.35672758054
+Utm Northing: 9846195.563197024
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6110584,-1.3900604,-2.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-04T00:02:30Z</begin>
+			<end>2008-07-04T01:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-04 01:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-04 01:32:29.000
+Location Long: -89.6209751
+Location Lat: -1.3898582
+Eobs Battery Voltage: 3613
+Eobs Fix Battery Voltage: 3405
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 1460962290
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-04 01:30:00.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 124.52
+Height Above Ellipsoid: -1.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.0167661378
+Utm Northing: 9846216.712021915
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209751,-1.3898582,-1.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-04T01:32:29Z</begin>
+			<end>2008-07-04T03:02:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-04 03:02:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-04 03:02:28.999
+Location Long: -89.6210087
+Location Lat: -1.3898653
+Eobs Battery Voltage: 3613
+Eobs Fix Battery Voltage: 3387
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 4281125070
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-04 02:59:59.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 356.52
+Height Above Ellipsoid: -5.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208330.27595628635
+Utm Northing: 9846215.922272997
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210087,-1.3898653,-5.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-04T03:02:28Z</begin>
+			<end>2008-07-04T04:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-04 06:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-04 06:02:30.999
+Location Long: -89.6209936
+Location Lat: -1.3898941
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3382
+Eobs Horizontal Accuracy Estimate: 3.84
+Eobs Key Bin Checksum: 3186851664
+Eobs Speed Accuracy Estimate: 0.36
+Eobs Start Timestamp: 2008-07-04 06:00:00.000
+Eobs Status: A
+Eobs Temperature: 23
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 1.31
+Height Above Ellipsoid: 17.0
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.96102438332
+Utm Northing: 9846212.737503827
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209936,-1.3898941,17</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-04T06:02:30Z</begin>
+			<end>2008-07-04T09:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-04 09:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-04 09:02:30.000
+Location Long: -89.6209787
+Location Lat: -1.3898676
+Eobs Battery Voltage: 3615
+Eobs Fix Battery Voltage: 3398
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2521532566
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-04 09:00:01.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 348.0
+Height Above Ellipsoid: -2.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.61702647537
+Utm Northing: 9846215.671494132
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209787,-1.3898676,-2.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-04T09:02:30Z</begin>
+			<end>2008-07-04T10:32:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-04 10:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-04 10:32:28.999
+Location Long: -89.6209854
+Location Lat: -1.3898735
+Eobs Battery Voltage: 3615
+Eobs Fix Battery Voltage: 3374
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 166404973
+Eobs Speed Accuracy Estimate: 0.23
+Eobs Start Timestamp: 2008-07-04 10:29:59.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 352.58
+Height Above Ellipsoid: 1.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.8716421057
+Utm Northing: 9846215.01784785
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209854,-1.3898735,1.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-04T10:32:28Z</begin>
+			<end>2008-07-04T12:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-04 12:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-04 12:02:30.998
+Location Long: -89.6210029
+Location Lat: -1.3898617
+Eobs Battery Voltage: 3615
+Eobs Fix Battery Voltage: 3385
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 2212466311
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-04 12:00:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.02
+Heading: 359.14
+Height Above Ellipsoid: -5.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208330.92139961297
+Utm Northing: 9846216.321319694
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210029,-1.3898617,-5.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-04T12:02:30Z</begin>
+			<end>2008-07-04T13:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-04 15:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-04 15:02:30.001
+Location Long: -89.6209647
+Location Lat: -1.3898534
+Eobs Battery Voltage: 3615
+Eobs Fix Battery Voltage: 3400
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2293279791
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-04 15:00:01.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 278.53
+Height Above Ellipsoid: 1.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.17431612284
+Utm Northing: 9846217.24441387
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209647,-1.3898534,1.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-04T15:02:30Z</begin>
+			<end>2008-07-04T16:32:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-04 16:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-04 16:32:28.999
+Location Long: -89.6209716
+Location Lat: -1.3898617
+Eobs Battery Voltage: 3632
+Eobs Fix Battery Voltage: 3413
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3133802554
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-04 16:29:59.000
+Eobs Status: A
+Eobs Temperature: 31
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 325.06
+Height Above Ellipsoid: 4.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.40695468104
+Utm Northing: 9846216.325189862
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209716,-1.3898617,4.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-04T16:32:28Z</begin>
+			<end>2008-07-04T17:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-04 19:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-04 19:32:30.000
+Location Long: -89.6209866
+Location Lat: -1.3898642
+Eobs Battery Voltage: 3632
+Eobs Fix Battery Voltage: 3414
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2115618831
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-04 19:30:01.000
+Eobs Status: A
+Eobs Temperature: 34
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 7.86
+Height Above Ellipsoid: -2.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.73686803196
+Utm Northing: 9846216.046717426
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209866,-1.3898642,-2.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-04T19:32:30Z</begin>
+			<end>2008-07-04T21:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-04 21:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-04 21:02:30.000
+Location Long: -89.6209989
+Location Lat: -1.389868
+Eobs Battery Voltage: 3632
+Eobs Fix Battery Voltage: 3410
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 1701035370
+Eobs Speed Accuracy Estimate: 0.23
+Eobs Start Timestamp: 2008-07-04 21:00:00.000
+Eobs Status: A
+Eobs Temperature: 31
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 19.01
+Height Above Ellipsoid: 2.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.36761196487
+Utm Northing: 9846215.624737602
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209989,-1.389868,2.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-04T21:02:30Z</begin>
+			<end>2008-07-05T00:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-05 00:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-05 00:02:30.999
+Location Long: -89.6209795
+Location Lat: -1.3898683
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3408
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 2627002750
+Eobs Speed Accuracy Estimate: 0.23
+Eobs Start Timestamp: 2008-07-05 00:00:00.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 313.92
+Height Above Ellipsoid: 6.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.52802480542
+Utm Northing: 9846215.59394225
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209795,-1.3898683,6.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-05T00:02:30Z</begin>
+			<end>2008-07-05T01:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-05 03:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-05 03:02:30.001
+Location Long: -89.6210137
+Location Lat: -1.3898586
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3400
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3728227108
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-05 03:00:01.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 25.56
+Height Above Ellipsoid: -7.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208329.7183351948
+Utm Northing: 9846216.662990281
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210137,-1.3898586,-7.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-05T03:02:30Z</begin>
+			<end>2008-07-05T04:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-05 06:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-05 06:02:29.001
+Location Long: -89.6209705
+Location Lat: -1.3898555
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3410
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3215930563
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-05 06:00:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 168.43
+Height Above Ellipsoid: -2.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.52868852206
+Utm Northing: 9846217.011337833
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209705,-1.3898555,-2.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-05T06:02:29Z</begin>
+			<end>2008-07-05T07:32:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-05 07:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-05 07:32:28.999
+Location Long: -89.6209647
+Location Lat: -1.3898522
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3400
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 285985601
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-05 07:29:59.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 345.37
+Height Above Ellipsoid: 0.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.17416869733
+Utm Northing: 9846217.377190378
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209647,-1.3898522,0.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-05T07:32:28Z</begin>
+			<end>2008-07-05T09:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-05 09:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-05 09:02:30.001
+Location Long: -89.6209686
+Location Lat: -1.3898518
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3411
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 505657382
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-05 09:00:01.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 296.22
+Height Above Ellipsoid: -1.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.73981717287
+Utm Northing: 9846217.420966996
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209686,-1.3898518,-1.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-05T09:02:30Z</begin>
+			<end>2008-07-05T10:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-05 10:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-05 10:32:30.001
+Location Long: -89.6210079
+Location Lat: -1.3898436
+Eobs Battery Voltage: 3593
+Eobs Fix Battery Voltage: 3408
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1569759551
+Eobs Speed Accuracy Estimate: 0.27
+Eobs Start Timestamp: 2008-07-05 10:30:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 17.69
+Height Above Ellipsoid: -0.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208330.36237796518
+Utm Northing: 9846218.323413847
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210079,-1.3898436,-0.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-05T10:32:30Z</begin>
+			<end>2008-07-05T12:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-05 12:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-05 12:02:29.999
+Location Long: -89.6049877
+Location Lat: -1.3899409
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3393
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 1096747977
+Eobs Speed Accuracy Estimate: 0.33
+Eobs Start Timestamp: 2008-07-05 11:59:59.000
+Eobs Status: A
+Eobs Temperature: 21
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.4
+Heading: 256.25
+Height Above Ellipsoid: -7.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 210114.36569867714
+Utm Northing: 9846209.532363055
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6049877,-1.3899409,-7.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-05T12:02:29Z</begin>
+			<end>2008-07-05T14:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-05 16:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-05 16:32:29.001
+Location Long: -89.6209658
+Location Lat: -1.3898445
+Eobs Battery Voltage: 3627
+Eobs Fix Battery Voltage: 3410
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3128530588
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-05 16:30:00.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 13.11
+Height Above Ellipsoid: 2.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.050727177
+Utm Northing: 9846218.229036959
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209658,-1.3898445,2.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-05T16:32:29Z</begin>
+			<end>2008-07-05T18:02:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-05 18:02:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-05 18:02:28.998
+Location Long: -89.6209755
+Location Lat: -1.3898266
+Eobs Battery Voltage: 3627
+Eobs Fix Battery Voltage: 3413
+Eobs Horizontal Accuracy Estimate: 2.3
+Eobs Key Bin Checksum: 1203116080
+Eobs Speed Accuracy Estimate: 0.46
+Eobs Start Timestamp: 2008-07-05 17:59:59.000
+Eobs Status: A
+Eobs Temperature: 31
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.02
+Heading: 8.52
+Height Above Ellipsoid: -1.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.96834011114
+Utm Northing: 9846220.208420526
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209755,-1.3898266,-1.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-05T18:02:28Z</begin>
+			<end>2008-07-05T19:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-05 19:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-05 19:32:30.001
+Location Long: -89.6209738
+Location Lat: -1.3898584
+Eobs Battery Voltage: 3632
+Eobs Fix Battery Voltage: 3417
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1165047178
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-05 19:30:01.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.03
+Heading: 9.18
+Height Above Ellipsoid: -7.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.1615581687
+Utm Northing: 9846216.690053238
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209738,-1.3898584,-7.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-05T19:32:30Z</begin>
+			<end>2008-07-05T20:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-06 00:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-06 00:02:29.998
+Location Long: -89.6209833
+Location Lat: -1.389869
+Eobs Battery Voltage: 3627
+Eobs Fix Battery Voltage: 3427
+Eobs Horizontal Accuracy Estimate: 2.3
+Eobs Key Bin Checksum: 3431516698
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-05 23:59:59.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 14.42
+Height Above Ellipsoid: 1.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.10494437878
+Utm Northing: 9846215.516019424
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209833,-1.389869,1.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-06T00:02:29Z</begin>
+			<end>2008-07-06T01:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-06 03:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-06 03:02:30.998
+Location Long: -89.620981
+Location Lat: -1.3898668
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3419
+Eobs Horizontal Accuracy Estimate: 2.82
+Eobs Key Bin Checksum: 3494345395
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-06 03:00:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 341.44
+Height Above Ellipsoid: 3.0
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.3608011423
+Utm Northing: 9846215.759727415
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.620981,-1.3898668,3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-06T03:02:30Z</begin>
+			<end>2008-07-06T06:02:30Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-06 06:02:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-06 06:02:31.000
+Location Long: -89.6209738
+Location Lat: -1.3898725
+Eobs Battery Voltage: 3625
+Eobs Fix Battery Voltage: 3400
+Eobs Horizontal Accuracy Estimate: 8.7
+Eobs Key Bin Checksum: 1695084012
+Eobs Speed Accuracy Estimate: 0.84
+Eobs Start Timestamp: 2008-07-06 06:00:01.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 8.52
+Height Above Ellipsoid: 12.9
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.1632904401
+Utm Northing: 9846215.129929261
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209738,-1.3898725,12.9</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-06T06:02:31Z</begin>
+			<end>2008-07-06T07:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-06 09:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-06 09:02:30.001
+Location Long: -89.6209608
+Location Lat: -1.3898727
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3417
+Eobs Horizontal Accuracy Estimate: 3.58
+Eobs Key Bin Checksum: 204055376
+Eobs Speed Accuracy Estimate: 0.27
+Eobs Start Timestamp: 2008-07-06 09:00:00.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 7.21
+Height Above Ellipsoid: -3.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.61098961107
+Utm Northing: 9846215.109407261
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209608,-1.3898727,-3.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-06T09:02:30Z</begin>
+			<end>2008-07-06T10:32:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-06 10:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-06 10:32:28.998
+Location Long: -89.6209758
+Location Lat: -1.389871
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3420
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2440888319
+Eobs Speed Accuracy Estimate: 0.23
+Eobs Start Timestamp: 2008-07-06 10:29:59.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 16.38
+Height Above Ellipsoid: 2.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.94038698502
+Utm Northing: 9846215.2956526
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209758,-1.389871,2.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-06T10:32:28Z</begin>
+			<end>2008-07-06T12:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-06 12:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-06 12:02:29.999
+Location Long: -89.6209862
+Location Lat: -1.3898632
+Eobs Battery Voltage: 3627
+Eobs Fix Battery Voltage: 3398
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 587323895
+Eobs Speed Accuracy Estimate: 0.34
+Eobs Start Timestamp: 2008-07-06 12:00:00.000
+Eobs Status: A
+Eobs Temperature: 23
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.04
+Heading: 7.86
+Height Above Ellipsoid: -3.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.7812890091
+Utm Northing: 9846216.157413976
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209862,-1.3898632,-3.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-06T12:02:29Z</begin>
+			<end>2008-07-06T13:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-06 13:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-06 13:32:30.000
+Location Long: -89.6209829
+Location Lat: -1.3897859
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3417
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3166727268
+Eobs Speed Accuracy Estimate: 0.25
+Eobs Start Timestamp: 2008-07-06 13:30:01.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 356.52
+Height Above Ellipsoid: -0.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.13927911333
+Utm Northing: 9846224.71084218
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209829,-1.3897859,-0.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-06T13:32:30Z</begin>
+			<end>2008-07-06T14:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-06 16:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-06 16:32:30.000
+Location Long: -89.6064861
+Location Lat: -1.3849472
+Eobs Battery Voltage: 3637
+Eobs Fix Battery Voltage: 3420
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 1810461967
+Eobs Speed Accuracy Estimate: 0.31
+Eobs Start Timestamp: 2008-07-06 16:30:00.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.09
+Heading: 309.99
+Height Above Ellipsoid: -3.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 209946.8974968915
+Utm Northing: 9846761.880115004
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6064861,-1.3849472,-3.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-06T16:32:30Z</begin>
+			<end>2008-07-06T18:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-06 18:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-06 18:02:30.000
+Location Long: -89.6210067
+Location Lat: -1.3898464
+Eobs Battery Voltage: 3627
+Eobs Fix Battery Voltage: 3437
+Eobs Horizontal Accuracy Estimate: 3.58
+Eobs Key Bin Checksum: 3543472461
+Eobs Speed Accuracy Estimate: 0.23
+Eobs Start Timestamp: 2008-07-06 18:00:00.000
+Eobs Status: A
+Eobs Temperature: 32
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 3.93
+Height Above Ellipsoid: -2.0
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208330.49635346892
+Utm Northing: 9846218.013750361
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210067,-1.3898464,-2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-06T18:02:30Z</begin>
+			<end>2008-07-06T21:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-06 21:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-06 21:02:30.998
+Location Long: -89.6209741
+Location Lat: -1.3898671
+Eobs Battery Voltage: 3632
+Eobs Fix Battery Voltage: 3432
+Eobs Horizontal Accuracy Estimate: 5.12
+Eobs Key Bin Checksum: 596129158
+Eobs Speed Accuracy Estimate: 0.37
+Eobs Start Timestamp: 2008-07-06 21:00:00.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 343.41
+Height Above Ellipsoid: -2.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.12921914004
+Utm Northing: 9846215.727386456
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209741,-1.3898671,-2.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-06T21:02:30Z</begin>
+			<end>2008-07-06T22:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-06 22:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-06 22:32:29.999
+Location Long: -89.6209821
+Location Lat: -1.3898632
+Eobs Battery Voltage: 3632
+Eobs Fix Battery Voltage: 3427
+Eobs Horizontal Accuracy Estimate: 2.56
+Eobs Key Bin Checksum: 2030593463
+Eobs Speed Accuracy Estimate: 0.24
+Eobs Start Timestamp: 2008-07-06 22:30:00.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.04
+Heading: 326.37
+Height Above Ellipsoid: 1.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.2378633141
+Utm Northing: 9846216.15792093
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209821,-1.3898632,1.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-06T22:32:29Z</begin>
+			<end>2008-07-06T23:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-07 07:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-07 07:32:29.999
+Location Long: -89.6209676
+Location Lat: -1.3898564
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3400
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3714955812
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-07 07:29:59.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 36.04
+Height Above Ellipsoid: -0.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.85174188972
+Utm Northing: 9846216.912114026
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209676,-1.3898564,-0.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-07T07:32:29Z</begin>
+			<end>2008-07-07T08:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-07 12:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-07 12:02:29.999
+Location Long: -89.6209944
+Location Lat: -1.3898729
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3408
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 1793762990
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-07 12:00:00.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 342.75
+Height Above Ellipsoid: -5.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.8693321108
+Utm Northing: 9846215.083123267
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209944,-1.3898729,-5.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-07T12:02:29Z</begin>
+			<end>2008-07-07T13:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-07 13:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-07 13:32:30.999
+Location Long: -89.6209666
+Location Lat: -1.3898757
+Eobs Battery Voltage: 3627
+Eobs Fix Battery Voltage: 3393
+Eobs Horizontal Accuracy Estimate: 5.12
+Eobs Key Bin Checksum: 2599908603
+Eobs Speed Accuracy Estimate: 0.37
+Eobs Start Timestamp: 2008-07-07 13:30:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 60.29
+Height Above Ellipsoid: 0.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.96547259326
+Utm Northing: 9846214.776748836
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209666,-1.3898757,0.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-07T13:32:30Z</begin>
+			<end>2008-07-07T14:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-07 18:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-07 18:02:30.001
+Location Long: -89.6209643
+Location Lat: -1.3898846
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3403
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 4245471765
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-07 18:00:01.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 264.11
+Height Above Ellipsoid: -1.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.2226930643
+Utm Northing: 9846213.792274127
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209643,-1.3898846,-1.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-07T18:02:30Z</begin>
+			<end>2008-07-07T19:32:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-07 19:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-07 19:32:28.998
+Location Long: -89.6209736
+Location Lat: -1.3898758
+Eobs Battery Voltage: 3637
+Eobs Fix Battery Voltage: 3420
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 4253706950
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-07 19:29:59.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 355.86
+Height Above Ellipsoid: -3.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.18596778583
+Utm Northing: 9846214.76481859
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209736,-1.3898758,-3.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-07T19:32:28Z</begin>
+			<end>2008-07-07T21:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-07 21:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-07 21:02:30.998
+Location Long: -89.6209768
+Location Lat: -1.3898493
+Eobs Battery Voltage: 3635
+Eobs Fix Battery Voltage: 3417
+Eobs Horizontal Accuracy Estimate: 2.3
+Eobs Key Bin Checksum: 2854596275
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-07 21:00:00.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 357.17
+Height Above Ellipsoid: -2.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.8263614297
+Utm Northing: 9846217.696570825
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209768,-1.3898493,-2.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-07T21:02:30Z</begin>
+			<end>2008-07-07T22:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-08 04:32:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-08 04:32:31.001
+Location Long: -89.6210158
+Location Lat: -1.3898918
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3409
+Eobs Horizontal Accuracy Estimate: 5.12
+Eobs Key Bin Checksum: 27782795
+Eobs Speed Accuracy Estimate: 0.73
+Eobs Start Timestamp: 2008-07-08 04:30:01.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 29.49
+Height Above Ellipsoid: 4.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208329.48855897516
+Utm Northing: 9846212.989247087
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210158,-1.3898918,4.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-08T04:32:31Z</begin>
+			<end>2008-07-08T06:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-08 06:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-08 06:02:29.998
+Location Long: -89.6209853
+Location Lat: -1.3898459
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3410
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1080121168
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-08 05:59:59.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 15.07
+Height Above Ellipsoid: -1.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.8793872341
+Utm Northing: 9846218.071719944
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209853,-1.3898459,-1.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-08T06:02:29Z</begin>
+			<end>2008-07-08T07:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-08 07:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-08 07:32:29.999
+Location Long: -89.6209636
+Location Lat: -1.3898513
+Eobs Battery Voltage: 3632
+Eobs Fix Battery Voltage: 3400
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1954784200
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-08 07:30:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 17.04
+Height Above Ellipsoid: -2.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.29655367223
+Utm Northing: 9846217.476908768
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209636,-1.3898513,-2.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-08T07:32:29Z</begin>
+			<end>2008-07-08T09:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-08 09:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-08 09:02:30.000
+Location Long: -89.6209611
+Location Lat: -1.3898652
+Eobs Battery Voltage: 3627
+Eobs Fix Battery Voltage: 3393
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2783840718
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-08 09:00:01.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 34.73
+Height Above Ellipsoid: -3.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.57666031778
+Utm Northing: 9846215.939223338
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209611,-1.3898652,-3.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-08T09:02:30Z</begin>
+			<end>2008-07-08T10:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-08 10:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-08 10:32:29.000
+Location Long: -89.6209703
+Location Lat: -1.3898622
+Eobs Battery Voltage: 3627
+Eobs Fix Battery Voltage: 3408
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1099221799
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-08 10:30:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 332.27
+Height Above Ellipsoid: -5.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.55178357114
+Utm Northing: 9846216.270027058
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209703,-1.3898622,-5.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-08T10:32:29Z</begin>
+			<end>2008-07-08T12:02:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-08 12:02:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-08 12:02:28.998
+Location Long: -89.6209881
+Location Lat: -1.3898493
+Eobs Battery Voltage: 3625
+Eobs Fix Battery Voltage: 3386
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 3604492961
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-08 11:59:59.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 320.47
+Height Above Ellipsoid: -7.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.5679980949
+Utm Northing: 9846217.695173623
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209881,-1.3898493,-7.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-08T12:02:28Z</begin>
+			<end>2008-07-08T13:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-08 13:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-08 13:32:29.999
+Location Long: -89.6210043
+Location Lat: -1.3898466
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3398
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 221913186
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-08 13:30:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 1.97
+Height Above Ellipsoid: -2.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208330.76364105567
+Utm Northing: 9846217.991917696
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210043,-1.3898466,-2.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-08T13:32:29Z</begin>
+			<end>2008-07-08T15:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-08 15:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-08 15:02:30.999
+Location Long: -89.6209823
+Location Lat: -1.3898469
+Eobs Battery Voltage: 3632
+Eobs Fix Battery Voltage: 3391
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 3925798214
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-08 15:00:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 347.34
+Height Above Ellipsoid: 5.0
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.21358885086
+Utm Northing: 9846217.961443791
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209823,-1.3898469,5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-08T15:02:30Z</begin>
+			<end>2008-07-08T18:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-08 18:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-08 18:02:30.999
+Location Long: -89.6209606
+Location Lat: -1.389871
+Eobs Battery Voltage: 3635
+Eobs Fix Battery Voltage: 3393
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 2727686810
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-08 18:00:00.000
+Eobs Status: A
+Eobs Temperature: 30
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 17.04
+Height Above Ellipsoid: -4.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.63305267354
+Utm Northing: 9846215.297532042
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209606,-1.389871,-4.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-08T18:02:30Z</begin>
+			<end>2008-07-08T19:32:32Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-08 19:32:33</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-08 19:32:33.998
+Location Long: -89.6207336
+Location Lat: -1.3890461
+Eobs Battery Voltage: 3609
+Eobs Fix Battery Voltage: 3378
+Eobs Horizontal Accuracy Estimate: 3.33
+Eobs Key Bin Checksum: 4163717343
+Eobs Speed Accuracy Estimate: 1.83
+Eobs Start Timestamp: 2008-07-08 19:30:03.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 10.85
+Heading: 55.71
+Height Above Ellipsoid: -0.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208360.8103709161
+Utm Northing: 9846306.598365918
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6207336,-1.3890461,-0.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-08T19:32:33Z</begin>
+			<end>2008-07-08T20:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-09 06:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-09 06:02:29.000
+Location Long: -89.6209704
+Location Lat: -1.3898556
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3374
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 339872628
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-09 06:00:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 134.35
+Height Above Ellipsoid: -3.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.53983676585
+Utm Northing: 9846217.00028549
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209704,-1.3898556,-3.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-09T06:02:29Z</begin>
+			<end>2008-07-09T09:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-09 09:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-09 09:02:29.000
+Location Long: -89.6209684
+Location Lat: -1.3899106
+Eobs Battery Voltage: 3625
+Eobs Fix Battery Voltage: 3398
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 275150000
+Eobs Speed Accuracy Estimate: 0.23
+Eobs Start Timestamp: 2008-07-09 09:00:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 340.79
+Height Above Ellipsoid: -7.5
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.76931309648
+Utm Northing: 9846210.914942823
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209684,-1.3899106,-7.5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-09T09:02:29Z</begin>
+			<end>2008-07-09T10:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-09 10:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-09 10:32:29.001
+Location Long: -89.620982
+Location Lat: -1.3898732
+Eobs Battery Voltage: 3620
+Eobs Fix Battery Voltage: 3388
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 3199497929
+Eobs Speed Accuracy Estimate: 0.24
+Eobs Start Timestamp: 2008-07-09 10:30:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 17.04
+Height Above Ellipsoid: -3.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.25022783998
+Utm Northing: 9846215.051462382
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.620982,-1.3898732,-3.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-09T10:32:29Z</begin>
+			<end>2008-07-09T12:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-09 12:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-09 12:02:30.001
+Location Long: -89.6209843
+Location Lat: -1.3898509
+Eobs Battery Voltage: 3623
+Eobs Fix Battery Voltage: 3380
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3814487624
+Eobs Speed Accuracy Estimate: 0.3
+Eobs Start Timestamp: 2008-07-09 12:00:00.000
+Eobs Status: A
+Eobs Temperature: 22
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 355.86
+Height Above Ellipsoid: -8.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.99136109615
+Utm Northing: 9846217.518608132
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209843,-1.3898509,-8.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-09T12:02:30Z</begin>
+			<end>2008-07-09T13:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-09 13:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-09 13:32:29.998
+Location Long: -89.6209994
+Location Lat: -1.3898517
+Eobs Battery Voltage: 3613
+Eobs Fix Battery Voltage: 3387
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 2515566844
+Eobs Speed Accuracy Estimate: 0.29
+Eobs Start Timestamp: 2008-07-09 13:29:59.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 349.96
+Height Above Ellipsoid: -6.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.30992960453
+Utm Northing: 9846217.428223392
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209994,-1.3898517,-6.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-09T13:32:29Z</begin>
+			<end>2008-07-09T15:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-09 15:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-09 15:02:30.000
+Location Long: -89.6209941
+Location Lat: -1.3898438
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3376
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2909204905
+Eobs Speed Accuracy Estimate: 0.34
+Eobs Start Timestamp: 2008-07-09 15:00:01.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 40.63
+Height Above Ellipsoid: 4.0
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.89916486345
+Utm Northing: 9846218.302990751
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209941,-1.3898438,4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-09T15:02:30Z</begin>
+			<end>2008-07-09T16:32:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-09 16:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-09 16:32:28.998
+Location Long: -89.62098
+Location Lat: -1.3898565
+Eobs Battery Voltage: 3625
+Eobs Fix Battery Voltage: 3398
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 2864908257
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-09 16:29:59.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 1.31
+Height Above Ellipsoid: -0.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.47089531115
+Utm Northing: 9846216.899516102
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.62098,-1.3898565,-0.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-09T16:32:28Z</begin>
+			<end>2008-07-09T18:02:30Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-09 18:02:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-09 18:02:31.001
+Location Long: -89.613419
+Location Lat: -1.3879266
+Eobs Battery Voltage: 3625
+Eobs Fix Battery Voltage: 3400
+Eobs Horizontal Accuracy Estimate: 10.75
+Eobs Key Bin Checksum: 3641614316
+Eobs Speed Accuracy Estimate: 0.85
+Eobs Start Timestamp: 2008-07-09 18:00:01.000
+Eobs Status: A
+Eobs Temperature: 29
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.11
+Heading: 21.63
+Height Above Ellipsoid: -14.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 209175.22192523262
+Utm Northing: 9846431.369580451
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.613419,-1.3879266,-14.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-09T18:02:31Z</begin>
+			<end>2008-07-09T19:32:27Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-09 19:32:28</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-09 19:32:28.999
+Location Long: -89.6209734
+Location Lat: -1.3898569
+Eobs Battery Voltage: 3613
+Eobs Fix Battery Voltage: 3374
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 2044209657
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-09 19:29:59.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 11.8
+Height Above Ellipsoid: -3.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.20591772185
+Utm Northing: 9846216.856073333
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209734,-1.3898569,-3.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-09T19:32:28Z</begin>
+			<end>2008-07-09T21:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-09 21:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-09 21:02:29.998
+Location Long: -89.6209787
+Location Lat: -1.3898495
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3378
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 2331175685
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-09 21:00:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 4.59
+Height Above Ellipsoid: 2.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.61480278638
+Utm Northing: 9846217.67420648
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209787,-1.3898495,2.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-09T21:02:29Z</begin>
+			<end>2008-07-09T23:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-10 01:32:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-10 01:32:31.001
+Location Long: -89.6209922
+Location Lat: -1.3898625
+Eobs Battery Voltage: 3615
+Eobs Fix Battery Voltage: 3364
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 1070008237
+Eobs Speed Accuracy Estimate: 0.24
+Eobs Start Timestamp: 2008-07-10 01:30:01.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 17.04
+Height Above Ellipsoid: -6.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208332.11304548767
+Utm Northing: 9846216.234125055
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209922,-1.3898625,-6.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-10T01:32:31Z</begin>
+			<end>2008-07-10T03:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-10 03:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-10 03:02:30.001
+Location Long: -89.6209764
+Location Lat: -1.3898688
+Eobs Battery Voltage: 3615
+Eobs Fix Battery Voltage: 3374
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 1598568926
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-10 03:00:00.000
+Eobs Status: A
+Eobs Temperature: 26
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 355.21
+Height Above Ellipsoid: -1.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.87330094917
+Utm Northing: 9846215.539002012
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209764,-1.3898688,-1.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-10T03:02:30Z</begin>
+			<end>2008-07-10T04:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-10 06:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-10 06:02:29.999
+Location Long: -89.6209623
+Location Lat: -1.3898649
+Eobs Battery Voltage: 3613
+Eobs Fix Battery Voltage: 3359
+Eobs Horizontal Accuracy Estimate: 2.3
+Eobs Key Bin Checksum: 301487510
+Eobs Speed Accuracy Estimate: 0.24
+Eobs Start Timestamp: 2008-07-10 05:59:59.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 345.37
+Height Above Ellipsoid: -2.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.44299195992
+Utm Northing: 9846215.972269088
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209623,-1.3898649,-2.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-10T06:02:29Z</begin>
+			<end>2008-07-10T07:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-10 09:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-10 09:02:29.998
+Location Long: -89.6209633
+Location Lat: -1.3898537
+Eobs Battery Voltage: 3613
+Eobs Fix Battery Voltage: 3371
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 3462812700
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-10 09:00:00.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 340.13
+Height Above Ellipsoid: -0.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.33025639935
+Utm Northing: 9846217.211392846
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209633,-1.3898537,-0.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-10T09:02:29Z</begin>
+			<end>2008-07-10T10:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-10 10:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-10 10:32:29.998
+Location Long: -89.6209994
+Location Lat: -1.3898634
+Eobs Battery Voltage: 3608
+Eobs Fix Battery Voltage: 3353
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2447483854
+Eobs Speed Accuracy Estimate: 0.27
+Eobs Start Timestamp: 2008-07-10 10:30:00.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 357.83
+Height Above Ellipsoid: -1.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.31136702705
+Utm Northing: 9846216.133652406
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209994,-1.3898634,-1.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-10T10:32:29Z</begin>
+			<end>2008-07-10T12:02:30Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-10 12:02:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-10 12:02:31.001
+Location Long: -89.6210062
+Location Lat: -1.3898735
+Eobs Battery Voltage: 3593
+Eobs Fix Battery Voltage: 3359
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 313211701
+Eobs Speed Accuracy Estimate: 0.25
+Eobs Start Timestamp: 2008-07-10 12:00:01.000
+Eobs Status: A
+Eobs Temperature: 23
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 340.79
+Height Above Ellipsoid: -6.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208330.55536269298
+Utm Northing: 9846215.015275951
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210062,-1.3898735,-6.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-10T12:02:31Z</begin>
+			<end>2008-07-10T15:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-10 15:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-10 15:02:29.998
+Location Long: -89.6209686
+Location Lat: -1.3898428
+Eobs Battery Voltage: 3613
+Eobs Fix Battery Voltage: 3371
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2701716659
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-10 14:59:59.000
+Eobs Status: A
+Eobs Temperature: 27
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 1.31
+Height Above Ellipsoid: 2.3
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208334.73871148436
+Utm Northing: 9846218.416790806
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209686,-1.3898428,2.3</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-10T15:02:29Z</begin>
+			<end>2008-07-10T16:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-10 16:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-10 16:32:29.999
+Location Long: -89.6209617
+Location Lat: -1.389853
+Eobs Battery Voltage: 3625
+Eobs Fix Battery Voltage: 3378
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3310483981
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-10 16:30:00.000
+Eobs Status: A
+Eobs Temperature: 32
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 344.06
+Height Above Ellipsoid: 5.0
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.5083457377
+Utm Northing: 9846217.289043643
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209617,-1.389853,5</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-10T16:32:29Z</begin>
+			<end>2008-07-10T17:59:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-10 19:32:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-10 19:32:31.000
+Location Long: -89.6210198
+Location Lat: -1.3898875
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3393
+Eobs Horizontal Accuracy Estimate: 2.82
+Eobs Key Bin Checksum: 1269573841
+Eobs Speed Accuracy Estimate: 0.43
+Eobs Start Timestamp: 2008-07-10 19:30:01.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 16.38
+Height Above Ellipsoid: -54.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208329.04259232362
+Utm Northing: 9846213.464534987
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210198,-1.3898875,-54.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-10T19:32:31Z</begin>
+			<end>2008-07-10T21:02:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-10 21:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-10 21:02:29.999
+Location Long: -89.6209952
+Location Lat: -1.3898695
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3403
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 3320629415
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-10 20:59:59.000
+Eobs Status: A
+Eobs Temperature: 30
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 15.07
+Height Above Ellipsoid: 4.6
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.77982672566
+Utm Northing: 9846215.459224463
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209952,-1.3898695,4.6</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-10T21:02:29Z</begin>
+			<end>2008-07-10T22:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-11 00:02:31</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-11 00:02:31.000
+Location Long: -89.6209986
+Location Lat: -1.3898833
+Eobs Battery Voltage: 3609
+Eobs Fix Battery Voltage: 3359
+Eobs Horizontal Accuracy Estimate: 2.05
+Eobs Key Bin Checksum: 892117907
+Eobs Speed Accuracy Estimate: 0.21
+Eobs Start Timestamp: 2008-07-11 00:00:01.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.02
+Heading: 11.14
+Height Above Ellipsoid: 4.0
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208331.40289957367
+Utm Northing: 9846213.931874176
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209986,-1.3898833,4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-11T00:02:31Z</begin>
+			<end>2008-07-11T01:29:59Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-11 03:02:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-11 03:02:29.999
+Location Long: -89.6210228
+Location Lat: -1.3898471
+Eobs Battery Voltage: 3613
+Eobs Fix Battery Voltage: 3375
+Eobs Horizontal Accuracy Estimate: 6.91
+Eobs Key Bin Checksum: 2112996076
+Eobs Speed Accuracy Estimate: 0.38
+Eobs Start Timestamp: 2008-07-11 02:59:59.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.01
+Heading: 18.35
+Height Above Ellipsoid: -7.4
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208328.70355006895
+Utm Northing: 9846217.934306672
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6210228,-1.3898471,-7.4</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-11T03:02:29Z</begin>
+			<end>2008-07-11T06:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-11 06:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-11 06:02:30.999
+Location Long: -89.6209643
+Location Lat: -1.3898556
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3383
+Eobs Horizontal Accuracy Estimate: 1.79
+Eobs Key Bin Checksum: 995260102
+Eobs Speed Accuracy Estimate: 0.22
+Eobs Start Timestamp: 2008-07-11 06:00:00.000
+Eobs Status: A
+Eobs Temperature: 28
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 344.06
+Height Above Ellipsoid: -0.2
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.21913023765
+Utm Northing: 9846217.00103973
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209643,-1.3898556,-0.2</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-11T06:02:30Z</begin>
+			<end>2008-07-11T07:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-11 07:32:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-11 07:32:30.998
+Location Long: -89.62094
+Location Lat: -1.3898137
+Eobs Battery Voltage: 3618
+Eobs Fix Battery Voltage: 3361
+Eobs Horizontal Accuracy Estimate: 4.61
+Eobs Key Bin Checksum: 2766251538
+Eobs Speed Accuracy Estimate: 0.36
+Eobs Start Timestamp: 2008-07-11 07:30:00.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 343.41
+Height Above Ellipsoid: 14.8
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208337.92002063722
+Utm Northing: 9846221.640157282
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.62094,-1.3898137,14.8</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-11T07:32:30Z</begin>
+			<end>2008-07-11T09:02:29Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-11 09:02:30</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-11 09:02:30.000
+Location Long: -89.6209652
+Location Lat: -1.3898854
+Eobs Battery Voltage: 3609
+Eobs Fix Battery Voltage: 3374
+Eobs Horizontal Accuracy Estimate: 1.54
+Eobs Key Bin Checksum: 2155398793
+Eobs Speed Accuracy Estimate: 0.2
+Eobs Start Timestamp: 2008-07-11 09:00:01.000
+Eobs Status: A
+Eobs Temperature: 25
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 355.21
+Height Above Ellipsoid: 0.7
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208335.1225677242
+Utm Northing: 9846213.703645172
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209652,-1.3898854,0.7</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-11T09:02:30Z</begin>
+			<end>2008-07-11T10:32:28Z</end>
+		</TimeSpan>
+	</Placemark>
+	<Placemark>
+<styleUrl>#style-3</styleUrl><Snippet>2008-07-11 10:32:29</Snippet>
+		<description><![CDATA[Timestamp: 2008-07-11 10:32:29.001
+Location Long: -89.6209807
+Location Lat: -1.3898698
+Eobs Battery Voltage: 3608
+Eobs Fix Battery Voltage: 3364
+Eobs Horizontal Accuracy Estimate: 1.28
+Eobs Key Bin Checksum: 1716185865
+Eobs Speed Accuracy Estimate: 0.23
+Eobs Start Timestamp: 2008-07-11 10:30:00.000
+Eobs Status: A
+Eobs Temperature: 24
+Eobs Type Of Fix: 3
+Eobs Used Time To Get Fix: 150
+Ground Speed: 0.0
+Heading: 356.52
+Height Above Ellipsoid: -4.1
+Visible: true
+Sensor Type: gps
+Individual Taxon Canonical Name: Phoebastria irrorata
+Tag ID: 141
+Animal ID: 1103-1103
+Study Name: Galapagos Albatrosses
+Utm Easting: 208333.3945775875
+Utm Northing: 9846215.427823236
+Utm Zone: 16S
+]]></description>
+		<Point>
+			<coordinates>-89.6209807,-1.3898698,-4.1</coordinates>
+		</Point>
+		<TimeSpan>
+			<begin>2008-07-11T10:32:29Z</begin>
+			<end>2008-07-11T10:32:29Z</end>
+		</TimeSpan>
+	</Placemark>
+</Document>
+</kml>

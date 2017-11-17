@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document><Style id="style-17"><LineStyle><color>ffffc700</color><width>1</width></LineStyle><IconStyle><color>ffffc700</color><scale>1</scale><Icon><href>http://maps.google.com/mapfiles/kml/pal4/icon57.png</href></Icon></IconStyle></Style>
+
+	<Placemark>
+<styleUrl>#style-17</styleUrl>
+		<LineString><tessellate>1</tessellate>
+			<coordinates>-89.7403128,-1.3722923,26 -89.7403033,-1.3723089,22.7 -89.7402852,-1.3723633,28.6 -89.7402747,-1.3723664,17.4 -89.7402673,-1.3723735,14.8 -89.7402847,-1.372367,11 -89.7403095,-1.3723596,13.5 -89.7403247,-1.3723566,15.6 -89.7402658,-1.372385,12.7 -89.7402655,-1.3723754,4.2 -89.7402836,-1.3723566,8.1 -89.7402818,-1.372352,8.4 -89.7402341,-1.3723457,8.5 -89.740221,-1.3723945,5.7 -89.7402666,-1.3723703,-3.4 -89.7402537,-1.3723521,11.7 -89.7402826,-1.3723564,14.4 -89.740263,-1.3723535,12 -89.7402727,-1.372372,19.1 -89.7402729,-1.3723667,18.8 -89.7402453,-1.3723624,13.6 -89.7402537,-1.372362,11.7 </coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
