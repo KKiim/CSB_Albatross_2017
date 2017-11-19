@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
-<Document><Style id="style-3"><LineStyle><color>ffff9f00</color><width>1</width></LineStyle><IconStyle><color>ffff9f00</color><scale>1</scale><Icon><href>http://maps.google.com/mapfiles/kml/pal4/icon57.png</href></Icon></IconStyle></Style>
+<Document><Style id="style-3"><LineStyle><color>ff0040ff</color><width>1</width></LineStyle><IconStyle><color>ffff9f00</color><scale>1</scale><Icon><href>http://maps.google.com/mapfiles/kml/pal4/icon57.png</href></Icon></IconStyle></Style>
 
 	<Placemark>
 <styleUrl>#style-3</styleUrl>
