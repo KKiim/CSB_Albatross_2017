@@ -22,9 +22,7 @@ public class Main {
 
 
             while ((line = br.readLine()) != null){
-
                 String[] fields = line.split(",");
-                System.out.println(fields[0]);
                 ps.setInt(1, getInteger(fields[0])); //event id
                 ps.setInt(2, getInteger(fields[20])); //tag_id
                 ps.setString(3, fields[21]);//individual_id
