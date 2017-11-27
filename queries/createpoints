@@ -1,0 +1,28 @@
+-- Table: public.points
+
+-- DROP TABLE public.points;
+
+CREATE TABLE public.points
+(
+    event integer NOT NULL,
+    tag_id integer,
+    individual_id character varying COLLATE pg_catalog."default",
+    ts timestamp without time zone,
+    local_ts timestamp without time zone,
+    lon double precision,
+    lat double precision,
+    groundspeed double precision,
+    heading double precision,
+    height double precision,
+    easting double precision,
+    northing double precision,
+    zone character varying COLLATE pg_catalog."default",
+    CONSTRAINT points_pkey PRIMARY KEY (event)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.points
+    OWNER to postgres;
