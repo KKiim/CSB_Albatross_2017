@@ -20,7 +20,6 @@ public class Main {
             PreparedStatement ps = c.prepareStatement("INSERT INTO points VALUES (?, ?, ?, ?::timestamp without time zone, ?::timestamp without time zone, ?, ?, ?, ?, ?, ?, ?,?) ON CONFLICT DO NOTHING" );
             int count = 0;
 
-
             while ((line = br.readLine()) != null){
                 String[] fields = line.split(",");
                 ps.setInt(1, getInteger(fields[0])); //event id
@@ -38,11 +37,12 @@ public class Main {
                 ps.setString(13, fields[25]); //zone
                 ps.addBatch();
                 if (count == 100){
-                    ps.executeUpdate();
+                    ps.executeBatch();
                     count = 0;
                 }
                 count++;
             }
+            ps.executeBatch();
             ps.close();
             c.close();
         } catch (IOException e) {
