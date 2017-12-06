@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0395c89d-df13-411c-83bb-07f613ca8e8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/alba/Main.java" afterPath="$PROJECT_DIR$/src/com/alba/Main.java" />
     </list>
     <ignored path="CSB_Albatross_2017.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -500,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512549735305</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="push weather data">
+      <created>1512556589717</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1512556589717</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
