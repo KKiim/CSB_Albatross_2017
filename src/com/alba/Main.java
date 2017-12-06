@@ -9,7 +9,37 @@ import java.sql.SQLException;
 public class Main {
 
     public static void main(String[] args) {
-	    insertAlbatrosses(new File("d/alba.csv"));
+	    //insertAlbatrosses(new File("d/alba.csv"));
+        insertLanduse(new File("d/landuse.csv"));
+    }
+
+    private static void insertLanduse(File f){
+        BufferedReader br = null;
+        try {
+            String line;
+            Connection c = getConnection();
+            PreparedStatement ps = c.prepareStatement("INSERT INTO landuse VALUES (?, ?, ?) ON CONFLICT DO NOTHING");
+            int count = 0;
+            br = new BufferedReader(new FileReader(f));
+            while ((line = br.readLine()) != null) {
+                String[] fields = line.split(",");
+                ps.setDouble(1, getDouble(fields[0]));
+                ps.setDouble(2, getDouble(fields[1]));
+                ps.setString(3, fields[2]);
+                ps.addBatch();
+                if (count == 100){
+                    ps.executeBatch();
+                    count = 0;
+                }
+            }
+            ps.executeBatch();
+            ps.close();
+            c.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     private static void insertAlbatrosses(File f){

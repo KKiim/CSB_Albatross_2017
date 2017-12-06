@@ -1,0 +1,25 @@
+-- Table: public.landuse
+
+-- DROP TABLE public.landuse;
+
+CREATE TABLE public.landuse
+(
+  lat double precision,
+  lon double precision,
+  type character varying
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.landuse
+  OWNER TO postgres;
+
+-- Index: public.landuse_index
+
+-- DROP INDEX public.landuse_index;
+
+CREATE INDEX landuse_index
+  ON public.landuse
+  USING btree
+  (lat, lon);
+
