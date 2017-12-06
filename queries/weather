@@ -1,0 +1,22 @@
+-- Table: public.weather
+
+-- DROP TABLE public.weather;
+
+CREATE TABLE public.weather
+(
+  location character varying,
+  ts timestamp without time zone,
+  temperature double precision,
+  dewpoint double precision,
+  humidity integer,
+  airpressure integer,
+  visibility double precision,
+  winddir character varying,
+  windspeed double precision,
+  situation character varying
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.weather
+  OWNER TO postgres;
