@@ -12,13 +12,35 @@
   <style>
       @import url(../Build/Cesium/Widgets/widgets.css);
       html, body, #cesiumContainer {
-          width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+          width: 100%; height: 98%; margin: 0; padding: 0; overflow: hidden;
       }
   </style>
 </head>
 <body>
+  <select id="list1" onchange="setSelectedColor();">
+    <option value="null">< select Color ></option>
+    <option value="blue">Blue</option>
+    <option value="red">Red</option>
+    <option value="black">Black</option>
+  </select>
+  <select id="list2" onchange="setSelectedTrans();">
+    <option value="null">< select Transparency ></option>
+    <option value="0">0%</option>
+    <option value="0.25">25%</option>
+    <option value="0.5">50%</option>
+    <option value="1.0">100%</option>
+  </select>
+  <select id="list3" onchange="setSelectedWidth();">
+    <option value="null">< select LineWidth ></option>
+    <option value="0.5">0.5</option>
+    <option value="1.0">1.0</option>
+    <option value="2.0">2.0</option>
+    <option value="3.0">3.0</option>
+  </select>
   <div id="cesiumContainer"></div>
   <script>
+
+
     var viewer = new Cesium.Viewer('cesiumContainer');
 
     var options = {
@@ -26,9 +48,11 @@
         canvas : viewer.scene.canvas
     };
 
-    var lineColor = Cesium.Color.WHITE;
-    var lineWidth = 2.0;
-    var alpha = 0.4;
+    var firstKMLload = true;
+    var firstStationload = true;
+    var lineColor = Cesium.Color.BLACK;
+    var lineWidth = 0.5;
+    var alpha = 0.5;
 
 
     var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
@@ -37,34 +61,47 @@
         requestVertexNormals : true
     });
 
-    viewer.terrainProvider = cesiumTerrainProviderMeshes;
+    //viewer.terrainProvider = cesiumTerrainProviderMeshes;
 
 
-    // for (var i = 1; i < 28; i++) {
-    //     var kmlPromise = Cesium.KmlDataSource.load('SampleData/albatross/' + i + '/line.kml', options);
-    //     styleKML(kmlPromise, lineColor, lineWidth, alpha);
-    //
-    // }
+
+    //for (var i = 1; i < 28; i++) {
+    //    var kmlPromise = Cesium.KmlDataSource.load('SampleData/albatross/' + i + '/line.kml', options);
+    //    styleKML(kmlPromise, lineColor, lineWidth, alpha);
+    //}
 
 
+
+    var polyLineEntity;
     var kmlPromise = Cesium.KmlDataSource.load('SampleData/albatross/doc.kml', options);
+    var stationPromise = Cesium.KmlDataSource.load('SampleData/albatross/airports.kml', options);
 
-    styleKML(kmlPromise, lineColor, lineWidth, alpha);
-
-
-
-    viewer.dataSources.add(Cesium.KmlDataSource.load('SampleData/albatross/airports.kml', options));
+    //styleKML(kmlPromise, lineColor, lineWidth, alpha);
+    styleStations(stationPromise);
 
 
 
+    //viewer.dataSources.add(Cesium.KmlDataSource.load('SampleData/albatross/airports.kml', options));
 
 
-    function styleKML(kmlPromise, lineColor, lineWidth) {
+    function drawKML (color) {
+        for (var i = 1; i < 28; i++) {
+            var kmlPromise = Cesium.KmlDataSource.load('SampleData/albatross/' + i + '/line.kml', options);
+            styleKML(kmlPromise, color, lineWidth, alpha);
+        }
+    }
+
+
+    function styleKML(kmlPromise, lineColor, lineWidth, alpha) {
         // Add kml entities to scene and style them
         kmlPromise.then(function (dataSource) {
 
             // Add the new data as entities to the viewer
-            viewer.dataSources.add(dataSource);
+            if (firstKMLload){
+                polyLineEntity = viewer.dataSources.add(dataSource);
+                firstKMLload = false;
+            }
+
             // Get the array of entities
             var kmlEntities = dataSource.entities.values;
 
@@ -76,6 +113,82 @@
                 }
             }
         });
+    }
+
+    function styleStations (stationPromise) {
+        //Add Weatherstations to scene and style them
+        stationPromise.then(function (dataSource) {
+
+            if (firstStationload){
+                viewer.dataSources.add(dataSource);
+                firstStationload = false;
+            }
+
+            var stationEntities = dataSource.entities.values;
+
+            for (var i = 0; i < stationEntities.length; i++) {
+                var entity = stationEntities[i];
+                if (Cesium.defined(entity.billboard)) {
+                    entity.billboard.image = 'SampleData/W_wind.png';
+                    // winddirection(degree) + 270 is the offset
+                    entity.billboard.rotation = Cesium.Math.RADIANS_PER_DEGREE * ((i-1)*45 + 270);
+
+                }
+            }
+        })
+    }
+
+    function setSelectedColor()
+    {
+        var selectedValue = document.getElementById("list1").value;
+        if (selectedValue == "blue") {
+            styleKML(kmlPromise,Cesium.Color.BLUE,lineWidth,alpha);
+            lineColor = Cesium.Color.BLUE;
+        }
+        if (selectedValue == "red") {
+            styleKML(kmlPromise,Cesium.Color.RED,lineWidth,alpha);
+            lineColor = Cesium.Color.RED;
+        }
+        if (selectedValue == "black") {
+            styleKML(kmlPromise,Cesium.Color.BLACK,lineWidth,alpha);
+            lineColor = Cesium.Color.BLACK;
+        }
+
+    }
+
+    function setSelectedTrans()
+    {
+        var selectedTrans = document.getElementById("list2").value;
+        if (selectedTrans == "0") {
+            styleKML(kmlPromise, lineColor, lineWidth, 0);
+            alpha = 0;
+        } else if (selectedTrans == "0.25") {
+            styleKML(kmlPromise, lineColor, lineWidth, 0.25);
+            alpha = 0.25;
+        } else if (selectedTrans == "0.5") {
+            styleKML(kmlPromise, lineColor, lineWidth, 0.5);
+            alpha = 0.5;
+        } else {
+            styleKML(kmlPromise, lineColor, lineWidth, 1.0);
+            alpha = 1.0;
+        }
+    }
+
+    function setSelectedWidth()
+    {
+        var selectedWidth = document.getElementById("list3").value;
+
+        if (selectedWidth == "0.5") {
+            lineWidth = 0.5;
+        } else if (selectedWidth == "1.0") {
+            lineWidth = 1.0;
+        } else if (selectedWidth == "2.0") {
+            lineWidth = 2.0;
+        } else {
+            lineWidth = 3.0;
+        }
+
+        styleKML(kmlPromise, lineColor, lineWidth, alpha);
     }
 
 
