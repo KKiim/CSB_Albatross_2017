@@ -1,0 +1,152 @@
+.modal-open {
+    padding-right: 0px !important;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:6px !important;
+    padding-bottom:0 !important;
+    height: 30px;
+}
+.navbar {min-height:30px !important;}
+
+.nav-tabs > li > a
+{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.btn.btn-primary{
+    background-color: black;
+    border-color: black;
+    margin-bottom: 2%;
+}
+
+.btn.btn-primary.active{
+    background-color: #1B688D;
+    border-color: black;
+}
+
+.btn.btn-primary:hover {
+    border-color: #1B688D;
+}
+
+.btn.btn-primary.active:hover {
+    background-color: #1B688D;
+}
+
+.btn.btn-primary:focus {
+    border-color: white;
+}
+
+.fade-scale {
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+.fade-scale.in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.input-xs {
+    height: 22px;
+    padding: 2px 5px;
+    font-size: 12px;
+    line-height: 1.5; /* If Placeholder of the input is moved up, rem/modify this. */
+    border-radius: 3px;
+}
+
+tr.selected{
+    background-color: rgba(11, 41, 55, 1.0) !important;
+}
+
+body {
+    background: #2B353E;
+    margin: 0;
+    padding: 0;
+}
+
+#widthselection, #transselection {
+    width: 100px;
+    height: 17px;
+    position: relative;
+    background: #10171D;
+
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+
+    -webkit-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(255, 255, 255, 0.13);
+    -moz-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(255, 255, 255, 0.13);
+    box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(255, 255, 255, 0.13);
+}
+
+#widthselection .bar , #transselection .bar {
+    width: 108px;
+    height: 5px;
+    background: #333;
+    position: relative;
+    top: -4px;
+    left: 4px;
+
+    background: #1d2e38;
+    background: -moz-linear-gradient(left, #1d2e38 0%, #2b4254 50%, #2b4254 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1d2e38), color-stop(50%,#2b4254), color-stop(100%,#2b4254));
+    background: -webkit-linear-gradient(left, #1d2e38 0%,#2b4254 50%,#2b4254 100%);
+    background: -o-linear-gradient(left, #1d2e38 0%,#2b4254 50%,#2b4254 100%);
+    background: -ms-linear-gradient(left, #1d2e38 0%,#2b4254 50%,#2b4254 100%);
+    background: linear-gradient(left, #1d2e38 0%,#2b4254 50%,#2b4254 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d2e38', endColorstr='#2b4254',GradientType=1 );
+
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}
+
+#widthselection .highlight, #transselection .highlight {
+    height: 2px;
+    position: absolute;
+    width: 108px;
+    top: 6px;
+    left: 6px;
+
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+
+    background: rgba(255, 255, 255, 0.25);
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    background-color: black;
+    height: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    top: 0px;
+    z-index: 1;
+    width: 11px;
+    height: 11px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.6);
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6), color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(100%,#d5ebfb));
+}
+
+input[type="range"]:hover ~ #rangevalue,input[type="range"]:active ~ #rangevalue {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    top: -75px;
+}
+
