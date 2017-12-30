@@ -23,7 +23,7 @@
 </head>
 <body>
   <div style="position:absolute; top:0px; z-index:1000" >
-    <button id="btn_viewsettings" class="btn btn-primary btn-s">View Settings</button>
+    <button id="btn_viewsettings" class="cesium-button cesium-button-toolbar" style="width:30px; height:30px;padding:0px"><img src ="./img/white-settings-24.png"/></button>
     <div id="drawer" style="width:30px;background:white;padding-left:4px"></div>
   </div>
   <div id="cesiumContainer"></div>
@@ -69,6 +69,7 @@
             <label for="transselection" style="float:left">Line Transparency:</label>
             <input  style="float:left" type="range" min="0" max="100" value="70" class="slider" id="transselection" name="transselection">
             </div>
+            <div id="tiletype"></div>
 
 
         </div>

@@ -5,6 +5,7 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'misc/helper', 'misc/DrawHelpe
             animation : false,
             timeline : false
         });
+
         var scene = widget.scene;
         var drawer = new DrawHelper(widget);
         var birds = new Birds('#birds', widget);

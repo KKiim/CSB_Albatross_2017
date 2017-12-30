@@ -33,7 +33,12 @@ var GuiInit = function(birds){
         $('#widthselection').slider();
 
         $('#colorselection,#transselection,#widthselection').on('change', _styleUpdate);
-
+        $('.cesium-navigationHelpButton-wrapper').css('display','none');
+        $('.cesium-home-button').css('display', 'none');
+        $('.cesium-baseLayerPicker-selected').parent().detach().appendTo('#tiletype');
+        $('.cesium-baseLayerPicker-dropDown').detach().appendTo('#tiletype');
+        $('#btn_viewsettings').detach().appendTo('.cesium-viewer-toolbar');
+        $('.cesium-viewer-bottom').css('display', 'none');
     }
 
     function _styleUpdate(){
