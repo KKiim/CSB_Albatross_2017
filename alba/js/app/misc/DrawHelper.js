@@ -1668,6 +1668,7 @@ var DrawHelper = (function() {
                 toolbar.appendChild(div);
                 div.onclick = callback;
                 var span = document.createElement('SPAN');
+                span.style.cssFloat= 'left'
                 div.appendChild(span);
                 var image = document.createElement('IMG');
                 image.src = url;
@@ -1682,14 +1683,6 @@ var DrawHelper = (function() {
                 drawHelper.startDrawingPolygon({
                     callback: function(positions) {
                         _self.executeListeners({name: 'polygonCreated', positions: positions});
-                    }
-                });
-            })
-
-            addIcon('extent', options.extentIcon, 'Click to start drawing an Extent', function() {
-                drawHelper.startDrawingExtent({
-                    callback: function(extent) {
-                        _self.executeListeners({name: 'extentCreated', extent: extent});
                     }
                 });
             })
