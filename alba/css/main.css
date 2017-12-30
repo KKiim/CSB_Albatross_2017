@@ -7,3 +7,13 @@ label {
     text-align: left;
     padding-left:10px;
 }​
+
+ #drawbar {
+     position: absolute;
+     top: 0px;
+     left: 0;
+     display: inline;
+     margin: 10px;
+     padding: 0px;
+     background: white;
+ }
