@@ -14,7 +14,7 @@ var DrawHelper = (function() {
     var ellipsoid = Cesium.Ellipsoid.WGS84;
 
     // constructor
-    function _(cesiumWidget) {
+    function _(cesiumWidget, polyconfirm) {
         this._scene = cesiumWidget.scene;
         this._tooltip = createTooltip(cesiumWidget.container);
         this._surfaces = [];
@@ -22,7 +22,7 @@ var DrawHelper = (function() {
         this.initialiseHandlers();
 
         this.enhancePrimitives();
-
+        this.polyconfirm = polyconfirm;
     }
 
     _.prototype.initialiseHandlers = function() {
@@ -35,7 +35,9 @@ var DrawHelper = (function() {
             var pickedObject = scene.pick(position);
             if(pickedObject && pickedObject.primitive && pickedObject.primitive[name]) {
                 pickedObject.primitive[name](position);
+
             }
+
         }
         handler.setInputAction(
             function (movement) {
@@ -723,6 +725,7 @@ var DrawHelper = (function() {
             }
             if(callbacks.onDoubleClick) {
                 setListener(billboard, 'leftDoubleClick', function(position) {
+                    console.log("test");
                     callbacks.onDoubleClick(getIndex());
                 });
             }
@@ -937,6 +940,8 @@ var DrawHelper = (function() {
                             var index = positions.length - 1;
                             options.callback(positions);
                         }
+                       _self.polyconfirm({name: 'onConfirmed', positions:positions});
+
                     }
                 }
             }
@@ -1228,6 +1233,7 @@ var DrawHelper = (function() {
                             }
                         },
                         onDoubleClick: function(index) {
+                            console.log("bla");
                             if(_self.positions.length < 4) {
                                 return;
                             }
@@ -1372,6 +1378,8 @@ var DrawHelper = (function() {
             enhanceWithListeners(polygon);
 
             polygon.setEditMode(false);
+
+
 
         }
 
@@ -1526,6 +1534,8 @@ var DrawHelper = (function() {
                         this._markers.remove();
                         this._markers = null;
                         this._globeClickhandler.destroy();
+                        ellipse.executeListeners({name: 'onConfirmed', center: ellipse.getCenter(), semiMajorAxis: ellipse.getSemiMajorAxis(), semiMinorAxis: ellipse.getSemiMinorAxis(), rotation: 0});
+
                     }
                     this._editMode = false;
                 }
@@ -1616,8 +1626,10 @@ var DrawHelper = (function() {
                         this._markers.remove();
                         this._markers = null;
                         this._globeClickhandler.destroy();
+                        circle.executeListeners({name: 'onConfirmed', center: circle.getCenter(), radius: circle.getRadius()});
                     }
                     this._editMode = false;
+
                 }
             }
 
