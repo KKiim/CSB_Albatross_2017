@@ -1,6 +1,9 @@
 define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'misc/helper', 'misc/DrawHelper', 'gui/init',   "datatables.net", "wrapper/birds", "wrapper/stations"], function($) {
     $(function() {
-
+        $.post('/r/filter/spatial', { field1: "hello", field2 : "hello2"},
+            function(returnedData){
+                console.log(returnedData);
+            });
         var widget = new Cesium.Viewer('cesiumContainer', {
             animation : false,
             timeline : false
