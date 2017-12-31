@@ -150,3 +150,89 @@ input[type="range"]:hover ~ #rangevalue,input[type="range"]:active ~ #rangevalue
     top: -75px;
 }
 
+.panel-heading {
+    padding-top: 5px;
+    padding-bottom:5px;
+}
+.ui-dialog-content {
+    padding:20px;
+    padding-top:5px;
+}
+.ui-dialog-title {
+    padding-left:20px;
+}
+.ui-dialog-titlebar-close{
+    float:right;
+    width:10px;
+    height:20px;
+}
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:6px !important;
+    padding-bottom:0 !important;
+    height: 35px;
+    cursor:pointer;
+}
+.navbar {min-height:35px !important;}
+
+.nav-tabs > li > a
+{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.btn.btn-primary{
+    background-color: black;
+    border-color: black;
+    margin-bottom: 2%;
+}
+
+.btn.btn-primary.active{
+    background-color: #1B688D;
+    border-color: black;
+}
+
+.btn.btn-primary:hover {
+    border-color: white;
+}
+
+.btn.btn-primary.active:hover {
+    background-color: #1B688D;
+}
+
+.btn.btn-primary:focus {
+    border-color: white;
+}
+
+.accordion {
+    margin-bottom: 20px;
+}
+.accordion-group {
+    margin-bottom: 2px;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.accordion-heading {
+    border-bottom: 0;
+}
+.accordion-heading .accordion-toggle {
+    display: block;
+    padding: 1px 15px;
+    background:black;
+    color:white;
+}
+.accordion-toggle {
+    cursor: pointer;
+}
+.accordion-inner {
+    padding: 9px 15px;
+    border-top: 1px solid #e5e5e5;
+    background:white;
+}
+button:hover{
+    color:deepskyblue !important;
+}
+a:hover{
+    color:deepskyblue !important;
+}

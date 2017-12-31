@@ -6,6 +6,10 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'misc/helper', 'misc/DrawWrapp
             animation : false,
             timeline : false
         });
+        var terrainProvider = new Cesium.CesiumTerrainProvider({
+            url : '//assets.agi.com/stk-terrain/world'
+        });
+        widget.terrainProvider = terrainProvider;
 
         new DrawWrapper(widget);
         var birds = new Birds('#birds', widget);

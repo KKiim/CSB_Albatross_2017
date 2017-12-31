@@ -17,3 +17,22 @@ label {
      padding: 0px;
      background: white;
  }
+
+#leftpanel{
+    position:absolute;
+    left:0px;
+    top:0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity:0.2;
+    width: 200px;
+    z-Index:1000;
+}
+
+#spatialInner{
+    height:300px;
+}
+.cesium-viewer-toolbar{
+    opacity:0.3;
+}
+
+

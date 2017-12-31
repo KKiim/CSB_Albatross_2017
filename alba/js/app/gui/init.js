@@ -38,7 +38,27 @@ var GuiInit = function(birds){
         $('.cesium-baseLayerPicker-selected').parent().detach().appendTo('#tiletype');
         $('.cesium-baseLayerPicker-dropDown').detach().appendTo('#tiletype');
         $('#btn_viewsettings').detach().appendTo('.cesium-viewer-toolbar');
+        $('#btn_viewsettings').css('display', 'inline');
         $('.cesium-viewer-bottom').css('display', 'none');
+
+        $('#leftpanel').on('mouseenter', function(){
+            $(this).css('opacity', 1);
+        }).on('mousemove', function(){
+            $(this).css('opacity', 1);
+        }).on('mouseleave', function(){
+            $(this).css('opacity', 0.2);
+        });
+        $('.cesium-viewer-toolbar').on('mouseenter', function(){
+            $(this).css('opacity', 1);
+        }).on('mousemove', function(){
+            $(this).css('opacity', 1);
+        }).on('mouseleave', function(){
+            $(this).css('opacity', 0.2);
+        });
+        $('input[type=checkbox]').on('click', function(e){
+            e.stopPropagation();
+        });
+
     }
 
     function _styleUpdate(){
