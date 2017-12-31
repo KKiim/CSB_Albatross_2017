@@ -59,6 +59,8 @@ var GuiInit = function(birds){
             e.stopPropagation();
         });
 
+        var c = new Clock('#clock', function(){console.log("bla")});
+
     }
 
     function _styleUpdate(){

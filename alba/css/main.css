@@ -29,10 +29,37 @@ label {
 }
 
 #spatialInner{
-    height:300px;
+    height:200px;
 }
 .cesium-viewer-toolbar{
     opacity:0.3;
 }
+
+/* begin clock css*/
+
+.cticks {
+    fill: white;
+}
+
+.clabels {
+    fill: white;
+    font-size: 0.9em;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#ghostItemLate,
+#ghostItemEarly {
+    cursor: move;
+}
+
+#centerbox text {
+    font-size: 12px;
+    text-anchor: middle;
+}
+
+
 
 
