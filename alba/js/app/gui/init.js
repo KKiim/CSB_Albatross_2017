@@ -58,8 +58,27 @@ var GuiInit = function(birds){
         $('input[type=checkbox]').on('click', function(e){
             e.stopPropagation();
         });
-
         var c = new Clock('#clock', function(){console.log("bla")});
+            $('#drawoverview').DataTable({
+                paging: false,
+                info: false, //no 'displaying x/100 items'
+                scrollY: "140px",
+                order: [[ 1, "desc" ]],
+                responsive: true,
+                columnDefs: [
+                    {
+                        "targets": [ 3 ],
+                        "visible": false,
+                        "searchable": false
+                    }]
+            });
+            $('#drawoverview tbody').on('click', 'tr', function(){ //blue highlighting of table rows
+                $(this).toggleClass('selectedrow');
+                var tbl = $('#dboverview').DataTable();
+                var d = tbl.row( this).data();
+            });
+
+
 
     }
 

@@ -226,9 +226,9 @@ input[type="range"]:hover ~ #rangevalue,input[type="range"]:active ~ #rangevalue
     cursor: pointer;
 }
 .accordion-inner {
-    padding: 9px 15px;
+    padding: 2px 2px;
     border-top: 1px solid #e5e5e5;
-    background:white;
+    background:black;
 }
 button:hover{
     color:deepskyblue !important;

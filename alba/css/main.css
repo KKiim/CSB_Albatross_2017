@@ -34,7 +34,9 @@ label {
 .cesium-viewer-toolbar{
     opacity:0.3;
 }
-
+.selectedrow {
+    background: rgba(153, 221, 255, 1.0);
+}
 /* begin clock css*/
 
 .cticks {
