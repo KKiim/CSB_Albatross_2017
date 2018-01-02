@@ -940,10 +940,9 @@ var DrawHelper = (function() {
                             var index = positions.length - 1;
                             options.callback(positions);
                         }
-                       _self.polyconfirm({name: 'onConfirmed', positions:positions});
-
                     }
                 }
+               // _self.polyconfirm({name: 'onConfirmed', positions:positions});
             }
         }, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
 
@@ -1190,6 +1189,7 @@ var DrawHelper = (function() {
         }
 
         function setEditMode(editMode) {
+
             // if no change
             if(this._editMode == editMode) {
                 return;
@@ -1299,6 +1299,7 @@ var DrawHelper = (function() {
                     this._globeClickhandler = new Cesium.ScreenSpaceEventHandler(scene.canvas);
                     this._globeClickhandler.setInputAction(
                         function (movement) {
+
                             var pickedObject = scene.pick(movement.position);
                             if(!(pickedObject && pickedObject.primitive)) {
                                 _self.setEditMode(false);
@@ -1318,6 +1319,7 @@ var DrawHelper = (function() {
                     this._editMarkers = null;
                     this._globeClickhandler.destroy();
                 }
+                drawHelper.polyconfirm({name: 'onConfirmed', positions:this.positions});
                 this._editMode = false;
             }
 
