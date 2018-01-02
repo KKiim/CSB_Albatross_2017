@@ -22,6 +22,8 @@ var DrawHelper = (function() {
         this.initialiseHandlers();
 
         this.enhancePrimitives();
+        this.circleid = 0;
+        this.polyid = 0;
         this.polyconfirm = polyconfirm;
     }
 
@@ -1319,7 +1321,11 @@ var DrawHelper = (function() {
                     this._editMarkers = null;
                     this._globeClickhandler.destroy();
                 }
-                drawHelper.polyconfirm({name: 'onConfirmed', positions:this.positions});
+                if (!(this.hasOwnProperty('polyid') && this.polyid)){
+                    drawHelper.polyid++;
+                    this.polyid = drawHelper.polyid;
+                }
+                drawHelper.polyconfirm({name: 'onConfirmed', positions:this.positions, id:this.polyid, type:'polygon'});
                 this._editMode = false;
             }
 
@@ -1536,7 +1542,6 @@ var DrawHelper = (function() {
                         this._markers.remove();
                         this._markers = null;
                         this._globeClickhandler.destroy();
-                        ellipse.executeListeners({name: 'onConfirmed', center: ellipse.getCenter(), semiMajorAxis: ellipse.getSemiMajorAxis(), semiMinorAxis: ellipse.getSemiMinorAxis(), rotation: 0});
 
                     }
                     this._editMode = false;
@@ -1628,7 +1633,11 @@ var DrawHelper = (function() {
                         this._markers.remove();
                         this._markers = null;
                         this._globeClickhandler.destroy();
-                        circle.executeListeners({name: 'onConfirmed', center: circle.getCenter(), radius: circle.getRadius()});
+                        if (!(circle.hasOwnProperty('circleid') && circle.circleid)){
+                            drawHelper.circleid++;
+                            circle.circleid = drawHelper.circleid;
+                        }
+                        circle.executeListeners({name: 'onConfirmed', center: circle.getCenter(), radius: circle.getRadius(), id:circle.circleid, type:'circle'});
                     }
                     this._editMode = false;
 
