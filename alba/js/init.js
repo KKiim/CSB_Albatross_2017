@@ -8,6 +8,7 @@ requirejs.config({
         "bootstrap": "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min",
         "jquery-ui": "//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui",
         "datatables.net": "//cdn.datatables.net/1.10.12/js/jquery.dataTables.min",
+        "datatables.net.select":"//cdn.datatables.net/select/1.2.4/js/dataTables.select.min"
     },
     "shim": {
         "jquery-ui" : ["jquery", "bootstrap"], // why bootstrap? c.f. https://stackoverflow.com/questions/17367736/jquery-ui-dialog-missing-close-icon

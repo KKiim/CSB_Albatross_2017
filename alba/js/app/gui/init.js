@@ -65,12 +65,15 @@ var GuiInit = function(birds){
                 scrollY: "140px",
                 order: [[ 1, "desc" ]],
                 responsive: true,
-                columnDefs: [
-                    {
-                        "targets": [ 3 ],
-                        "visible": false,
-                        "searchable": false
-                    }]
+                select: {
+                    style:    'os',
+                    selector: 'td:first-child'
+                },
+                columnDefs: [{
+                    orderable: false,
+                    className: 'select-checkbox',
+                    targets:   0
+                }]
             });
             $('#drawoverview tbody').on('click', 'tr', function(){ //blue highlighting of table rows
                 $(this).toggleClass('selectedrow');

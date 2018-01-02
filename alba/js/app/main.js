@@ -1,4 +1,4 @@
-define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'misc/helper', 'misc/clock', 'misc/DrawWrapper','misc/DrawHelper', 'gui/init',   "datatables.net", "wrapper/birds", "wrapper/stations"], function($) {
+define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'misc/helper', 'misc/clock', 'misc/DrawWrapper','misc/DrawHelper', 'gui/init',   "datatables.net", "datatables.net.select","wrapper/birds", "wrapper/stations"], function($) {
     $(function() {
         $.post('/r/filter/spatial', { field1: "hello", field2 : "hello2"},
             function(d){ console.log(d) });

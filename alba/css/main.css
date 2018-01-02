@@ -61,6 +61,12 @@ label {
     font-size: 12px;
     text-anchor: middle;
 }
+#drawoverview{
+    color:black;
+}
+.selected{
+    color:white;
+}
 
 
 
