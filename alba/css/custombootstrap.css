@@ -245,3 +245,9 @@ table.dataTable tbody th, table.dataTable tbody td{
 #drawoverview_filter{
     display:none;
 }
+table.dataTable tbody td.select-checkbox:before, table.dataTable tbody th.select-checkbox:before{
+    margin-top: -10px !important;
+}
+table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selected th.select-checkbox:after{
+    margin-top: -15px !important;
+}

@@ -34,8 +34,15 @@ label {
 .cesium-viewer-toolbar{
     opacity:0.3;
 }
-.selectedrow {
-    background: rgba(153, 221, 255, 1.0);
+tr.selected {
+    background-color: white !important;
+}
+.highlightedrow {
+    background-color: rgba(153, 221, 255, 1.0) !important;
+}
+
+tr.selected.highlightedrow {
+    background-color: rgba(153, 221, 255, 1.0) !important;
 }
 /* begin clock css*/
 
@@ -64,12 +71,8 @@ label {
 #drawoverview{
     color:black;
 }
-.selected{
-    color:white;
-}
 
-.ye {
-    background:red;
-}
+
+
 
 

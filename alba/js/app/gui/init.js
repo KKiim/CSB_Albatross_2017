@@ -1,4 +1,4 @@
-var GuiInit = function(birds){
+var GuiInit = function(birds, dwrapper){
     var public = this;
 
     function constructor(){
@@ -66,36 +66,43 @@ var GuiInit = function(birds){
         });
         var c = new Clock('#clock', function(){console.log("bla")});
         $('tbody').on('click','td.select-checkbox', function(){
-            console.log("run database query");
-        })
+            var tbl = $('#drawoverview').DataTable();
+            var d = tbl.row( $(this).parent()).data();
+            dwrapper.setVisibility(d, !$(this).parent().hasClass('selected'))
+        });
         $('#drawoverview').DataTable({
+                rowCallback: function ( row, data ) {
+                    if (data[5]) $(row).addClass('selected');
+                },
                 paging: false,
                 info: false, //no 'displaying x/100 items'
                 scrollY: "140px",
                 order: [[ 4, "desc" ]],
-                responsive: true,
                 language: {
                     emptyTable: "Please draw some geometries."
                 },
                 select: {
-                    style:    'os',
+                    style:    'multi',
                     selector: 'td:first-child'
                 },
                 columnDefs: [{
                     orderable: false,
                     className: 'select-checkbox',
-                    targets:   0,
-                    width: '30px'
-                },
+                    targets:   0},
                     {
                         visible: false,
                         targets:   4
+                    },
+                    {
+                        visible: false,
+                        targets:   5
                     }]
+
             });
+
             $('#drawoverview tbody').on('click', 'tr', function(){ //blue highlighting of table rows
-                $(this).toggleClass('selectedrow');
-                var tbl = $('#dboverview').DataTable();
-                var d = tbl.row( this).data();
+                $('#drawoverview tbody > tr' ).not($(this)).removeClass('highlightedrow');
+                $(this).toggleClass('highlightedrow');
             });
     }
 

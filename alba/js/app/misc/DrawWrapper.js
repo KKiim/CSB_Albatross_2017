@@ -6,6 +6,7 @@ var DrawWrapper = function(widget){
         var scene = widget.scene;
         var drawer = new DrawHelper(widget, function(event){
             event.ts = new Date();
+            event.visible = true;
             geomcache.polygon[event.id] = event;
             _updateDataTable();
         });
@@ -20,10 +21,6 @@ var DrawWrapper = function(widget){
             });
             scene.primitives.add(polygon);
             polygon.setEditable();
-            polygon.addListener('onConfirmed', function(event) {
-                console.log("test");
-
-            });
         });
         toolbar.addListener('circleCreated', function(event) {
             var circle = new DrawHelper.CirclePrimitive({
@@ -35,6 +32,7 @@ var DrawWrapper = function(widget){
             circle.setEditable();
             circle.addListener('onConfirmed', function(event) {
                 event.ts = new Date();
+                event.visible = true;
                 geomcache.circle[event.id] = event;
                 _updateDataTable();
             });
@@ -50,12 +48,18 @@ var DrawWrapper = function(widget){
         }
         var tbl = $('#drawoverview').DataTable();
         tbl.clear();
-        d.forEach(function (o) {
-            tbl.row.add([null,  o.type+o.id,o.ts.getHours()+ ":" + o.ts.getMinutes(), 0, o.ts.getTime()]);
+        d.forEach(function (event) {
+            tbl.row.add([null,  event.type+event.id,event.ts.getHours()+ ":" + event.ts.getMinutes(), 0, event.ts.getTime(), event.o.show]);
         });
-
         tbl.draw();
     }
+
+    public.setVisibility = function(d, bool){
+        var type = (d[1][0] == 'c') ? 'circle' : 'polygon';
+        var event = geomcache[type][parseInt(d[1].substring(1))];
+        event.o.show = bool;
+    }
+
 
     constructor();
     return public;
