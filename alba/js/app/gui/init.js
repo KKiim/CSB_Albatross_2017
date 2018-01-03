@@ -58,13 +58,25 @@ var GuiInit = function(birds){
         $('input[type=checkbox]').on('click', function(e){
             e.stopPropagation();
         });
+
+        $('#searchGeom').on('input', function(){ //filter data table, when you type:
+            var dt = $('#drawoverview').dataTable();
+            var query = $(this).val();
+            dt.fnFilter(query); //custom search on datatable
+        });
         var c = new Clock('#clock', function(){console.log("bla")});
-            $('#drawoverview').DataTable({
+        $('tbody').on('click','td.select-checkbox', function(){
+            console.log("run database query");
+        })
+        $('#drawoverview').DataTable({
                 paging: false,
                 info: false, //no 'displaying x/100 items'
                 scrollY: "140px",
-                order: [[ 1, "desc" ]],
+                order: [[ 4, "desc" ]],
                 responsive: true,
+                language: {
+                    emptyTable: "Please draw some geometries."
+                },
                 select: {
                     style:    'os',
                     selector: 'td:first-child'
@@ -72,17 +84,19 @@ var GuiInit = function(birds){
                 columnDefs: [{
                     orderable: false,
                     className: 'select-checkbox',
-                    targets:   0
-                }]
+                    targets:   0,
+                    width: '30px'
+                },
+                    {
+                        visible: false,
+                        targets:   4
+                    }]
             });
             $('#drawoverview tbody').on('click', 'tr', function(){ //blue highlighting of table rows
                 $(this).toggleClass('selectedrow');
                 var tbl = $('#dboverview').DataTable();
                 var d = tbl.row( this).data();
             });
-
-
-
     }
 
     function _styleUpdate(){

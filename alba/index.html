@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <title>Albatross Visualization</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css">
-  <link rel="stylesheet" href="css/custombootstrap.css">
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="//cdn.datatables.net/select/1.2.4/css/select.dataTables.min.css">
+  <link rel="stylesheet" href="css/custombootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+
 
   <script
           src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -36,23 +37,21 @@
     </div>
     <div id="areaHeader" class="accordion-body collapse">
       <div class="accordion-inner" id="spatialInner" >
-        <div id="drawer" style="width:60px;height:30px; float:left; background:rgba(40,40,40,0.7);padding-left:4px"></div>
-        <br>
+        <div id="drawer" style="width:60px;height:30px; float:left; background:rgba(40,40,40,0.7);padding-left:4px;margin-top:5px;"></div>
+        <hr style="border:solid #ffffff 1px;background:white; height:1px;top:30px;margin:40px 5px;margin-left:0px;margin-right:0px">
+        <input class="form-control-sm" type="text" placeholder="Search geometries" id="searchGeom">
         <div style="width:200px; overflow:auto;position:absolute;left:2px;padding-top:10px">
           <table id="drawoverview" cellspacing="0" width="300px" style="text-align:center;float:left">
             <thead>
             <tr>
-              <th></th>
+              <th>Active</th>
               <th align="center">ID</th>
               <th align="center">Ts</th>
               <th align="center">Alt</th>
+              <th></th>
             </tr>
             </thead>
             <tbody>
-            <td></td>
-            <td>1</td>
-            <td>2</td>
-            <td>3-4</td>
             </tbody>
           </table>
         </div>

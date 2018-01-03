@@ -1,10 +1,13 @@
 var DrawWrapper = function(widget){
     var public = this;
+    var geomcache= {circle:{}, polygon:{}};
 
     function constructor(){
         var scene = widget.scene;
-        var drawer = new DrawHelper(widget, function(d){
-            console.log(d);
+        var drawer = new DrawHelper(widget, function(event){
+            event.ts = new Date();
+            geomcache.polygon[event.id] = event;
+            _updateDataTable();
         });
         var toolbar = drawer.addToolbar(document.getElementById("drawer"), {
             buttons: ['polygon', 'circle']
@@ -18,7 +21,8 @@ var DrawWrapper = function(widget){
             scene.primitives.add(polygon);
             polygon.setEditable();
             polygon.addListener('onConfirmed', function(event) {
-                console.log("bla");
+                console.log("test");
+
             });
         });
         toolbar.addListener('circleCreated', function(event) {
@@ -30,9 +34,27 @@ var DrawWrapper = function(widget){
             scene.primitives.add(circle);
             circle.setEditable();
             circle.addListener('onConfirmed', function(event) {
-                console.log(event);
+                event.ts = new Date();
+                geomcache.circle[event.id] = event;
+                _updateDataTable();
             });
         });
+    }
+
+    function _updateDataTable(){
+        var d = [];
+        for (var k in geomcache){
+            for (var k2 in geomcache[k]){
+                d.push(geomcache[k][k2]);
+            }
+        }
+        var tbl = $('#drawoverview').DataTable();
+        tbl.clear();
+        d.forEach(function (o) {
+            tbl.row.add([null,  o.type+o.id,o.ts.getHours()+ ":" + o.ts.getMinutes(), 0, o.ts.getTime()]);
+        });
+
+        tbl.draw();
     }
 
     constructor();

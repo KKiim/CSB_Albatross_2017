@@ -234,5 +234,14 @@ button:hover{
     color:deepskyblue !important;
 }
 a:hover{
-    color:deepskyblue !important;
+    color:white;
+}
+table.dataTable thead th, table.dataTable thead td{
+    padding:0px;
+}
+table.dataTable tbody th, table.dataTable tbody td{
+    padding:0px;
+}
+#drawoverview_filter{
+    display:none;
 }
