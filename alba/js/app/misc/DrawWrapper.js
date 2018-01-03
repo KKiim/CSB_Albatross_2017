@@ -6,7 +6,6 @@ var DrawWrapper = function(widget){
         var scene = widget.scene;
         var drawer = new DrawHelper(widget, function(event){
             event.ts = new Date();
-            event.visible = true;
             geomcache.polygon[event.id] = event;
             _updateDataTable();
         });
@@ -32,7 +31,6 @@ var DrawWrapper = function(widget){
             circle.setEditable();
             circle.addListener('onConfirmed', function(event) {
                 event.ts = new Date();
-                event.visible = true;
                 geomcache.circle[event.id] = event;
                 _updateDataTable();
             });
@@ -58,7 +56,31 @@ var DrawWrapper = function(widget){
         var type = (d[1][0] == 'c') ? 'circle' : 'polygon';
         var event = geomcache[type][parseInt(d[1].substring(1))];
         event.o.show = bool;
-    }
+    };
+
+    public.getVisibles = function(){
+        var res = [];
+        for (var k in geomcache) {
+            for (var k2 in geomcache[k]) {
+                var that = geomcache[k][k2];
+                if (that.o.show){
+                    if (that.type == 'c'){
+                        var tmp = {id:that.id, type:'c'};
+                        var cartesian = new Cesium.Cartesian3(that.center.x, that.center.y, that.center.z);
+                        var carto = Cesium.Ellipsoid.WGS84.cartesianToCartographic(cartesian);
+                        tmp.longitude = Cesium.Math.toDegrees(carto.longitude);
+                        tmp.latitude = Cesium.Math.toDegrees(carto.latitude);
+                        tmp.radius = geomcache[k][k2].radius;
+                        res.push(tmp);
+                    }
+                };
+            }
+        }
+
+        return res;
+        };
+
+
 
 
     constructor();

@@ -1325,7 +1325,7 @@ var DrawHelper = (function() {
                     drawHelper.polyid++;
                     this.polyid = drawHelper.polyid;
                 }
-                drawHelper.polyconfirm({name: 'onConfirmed', positions:this.positions, id:this.polyid, type:'p'});
+                drawHelper.polyconfirm({name: 'onConfirmed', positions:this.positions, id:this.polyid, type:'p', o:this});
                 this._editMode = false;
             }
 
@@ -1637,7 +1637,7 @@ var DrawHelper = (function() {
                             drawHelper.circleid++;
                             circle.circleid = drawHelper.circleid;
                         }
-                        circle.executeListeners({name: 'onConfirmed', center: circle.getCenter(), radius: circle.getRadius(), id:circle.circleid, type:'c'});
+                        circle.executeListeners({name: 'onConfirmed', center: circle.getCenter(), radius: circle.getRadius(), id:circle.circleid, type:'c', o:circle});
                     }
                     this._editMode = false;
 

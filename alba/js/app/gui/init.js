@@ -6,7 +6,7 @@ var GuiInit = function(birds, dwrapper){
     }
 
     function _init(){
-        for (var i=0; i<28; i++)        $('#birdselection').append('<option value="bird'+i+'">Albatross '+i+'</option>');
+        for (var i=0; i<28; i++) $('#birdselection').append('<option value="bird'+i+'">Albatross '+i+'</option>');
         $('.modal').on('shown.bs.modal', function() {
             $(".modal-header").css("padding",'2px');
             $(".modal-header").css("margin",'5px');
@@ -67,8 +67,16 @@ var GuiInit = function(birds, dwrapper){
         var c = new Clock('#clock', function(){console.log("bla")});
         $('tbody').on('click','td.select-checkbox', function(){
             var tbl = $('#drawoverview').DataTable();
-            var d = tbl.row( $(this).parent()).data();
-            dwrapper.setVisibility(d, !$(this).parent().hasClass('selected'))
+            var d = tbl.row($(this).parent()).data();
+            dwrapper.setVisibility(d, !$(this).parent().hasClass('selected'));
+            var visibles = dwrapper.getVisibles();
+            if (visibles.length > 0){
+                $.post('/r/filter/spatial', {visibles:visibles},
+                    function(d){ console.log(d) });
+            }
+
+
+
         });
         $('#drawoverview').DataTable({
                 rowCallback: function ( row, data ) {
