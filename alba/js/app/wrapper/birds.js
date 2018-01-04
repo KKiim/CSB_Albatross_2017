@@ -1,11 +1,13 @@
 var Birds = function(container, widget){
     var public = this;
     var promise_lookup = [];
+    var filter_lookup = [];
 
     function _constructor(){
         for (var i = 0; i < 28; i++) {
             var d = new Cesium.KmlDataSource();
             promise_lookup.push(d.load('d/albatross/' + (i+1) + '/line.kml'));
+            filter_lookup.push({id: i, weather:true, spatial:true }); //bird i shown because of weather and spatial filter
         }
         public.styleAll();
         $(container).data('public', public);
