@@ -72,6 +72,14 @@ var DrawWrapper = function(widget){
                         tmp.latitude = Cesium.Math.toDegrees(carto.latitude);
                         tmp.radius = geomcache[k][k2].radius;
                         res.push(tmp);
+                    } else if (that.type == 'p'){
+                        var tmp = {id:that.id, type:'p', positions: []};
+                        that.positions.forEach(function(pos){
+                            var cartesian = new Cesium.Cartesian3(pos.x, pos.y, pos.z);
+                            var carto = Cesium.Ellipsoid.WGS84.cartesianToCartographic(cartesian);
+                            tmp.positions.push({longitude: Cesium.Math.toDegrees(carto.longitude), latitude:Cesium.Math.toDegrees(carto.latitude)});
+                        });
+                        res.push(tmp);
                     }
                 };
             }
