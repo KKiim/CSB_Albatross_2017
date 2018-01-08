@@ -1,4 +1,4 @@
-define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'misc/helper', 'misc/clock', 'misc/DrawWrapper','misc/DrawHelper', 'gui/init',   "datatables.net", "datatables.net.select","wrapper/birds", "wrapper/stations"], function($) {
+define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'misc/helper', 'misc/clock', 'misc/DrawWrapper','misc/areachart','misc/DrawHelper', 'gui/init',   "datatables.net", "datatables.net.select","wrapper/birds", "wrapper/stations"], function($) {
     $(function() {
         var widget = new Cesium.Viewer('cesiumContainer', {
             animation : false,
@@ -22,5 +22,6 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'misc/helper', 'misc/clock', '
         var stations = new Stations('#stations', widget2);
         new GuiInit(birds, dwrapper);
 
+        new AreaChart('#areachart');
     });
 });
