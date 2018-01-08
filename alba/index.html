@@ -68,7 +68,41 @@
     </div>
     <div id="weatherHeader" class="accordion-body collapse">
       <div class="accordion-inner">
-        Weather filter
+
+
+        <div style="display:block">
+          <label for="stationselection" style="float:left">Airport:</label>
+          <select id="stationselection" class="form-control" style="width:150px; height:30px;padding:0px;margin-bottom:20px;">
+            <option value="0" selected>San Cristobal</option>
+            <option value="1">Eloy Alfaro</option>
+            <option value="2">Catitan Montes</option>
+            <option value="3">Jose Alebardo</option>
+            <option value="4">Pedro Canga</option>
+          </select>
+        </div>
+
+
+        <div style="display:block">
+          <label for="unitselection" style="float:left">Unit:</label>
+          <select id="unitselection" class="form-control" style="width:150px; height:30px;padding:0px;margin-bottom:20px;">
+            <option value="Temperature" selected>Temperature</option>
+            <option value="Humidity">Humidity</option>
+            <option value="Wind Speed">Wind Speed</option>
+            <option value="Wind Direction">Wind Direction</option>
+            <option value="Pressure">Pressure</option>
+          </select>
+        </div>
+
+        <div style="display:block; width:150px;height:40px">
+          <label for="minValue" style="float:left">min. Value:</label>
+          <input style="float:left" type="range" min="1" max="30" value="1" id="minValue" name="minValue">
+        </div>
+
+        <div style="display:block; width:150px;height:40px">
+          <label for="maxValue" style="float:left">max. Value:</label>
+          <input style="float:left" type="range" min="1" max="30" value="1" id="maxValue" name="maxValue">
+        </div>
+
       </div>
     </div>
   </div>
