@@ -33,14 +33,25 @@ var GuiInit = function(birds, dwrapper){
         $('#widthselection').slider();
 
         $('#colorselection,#transselection,#widthselection').on('change', _styleUpdate);
+        $('#secondView .cesium-viewer-toolbar').css('display', 'none');
         $('.cesium-navigationHelpButton-wrapper').css('display','none');
         $('.cesium-home-button').css('display', 'none');
         $('.cesium-baseLayerPicker-selected').parent().detach().appendTo('#tiletype');
         $('.cesium-baseLayerPicker-dropDown').detach().appendTo('#tiletype');
+
+
         $('#btn_viewsettings').detach().appendTo('.cesium-viewer-toolbar');
         $('#btn_viewsettings').css('display', 'inline');
+
+         $('#btn_dualview').detach().appendTo('.cesium-viewer-toolbar');
+        $('#btn_dualview').css('display', 'inline');
         $('.cesium-viewer-bottom').css('display', 'none');
 
+        $('#cesiumContainer .cesium-viewer-toolbar').detach().appendTo('#buttonbar-right')
+
+        $('#cesiumContainer .cesium-viewer-fullscreenContainer').detach().appendTo('#full')
+        $('#cesiumContainer').css('height', $(document).height());
+        $('#secondView').css('height', $(document).height());
         $('#leftpanel').on('mouseenter', function(){
             $(this).css('opacity', 1);
         }).on('mousemove', function(){
@@ -55,6 +66,14 @@ var GuiInit = function(birds, dwrapper){
         }).on('mouseleave', function(){
             $(this).css('opacity', 0.2);
         });
+        $('#btn_dualview').on('click', function(){
+            $('#secondView').toggle();
+
+            $('#cesiumContainer').css('width', function(){
+                if ($('#secondView').css('display') == 'none') return '100%';
+                return '50%';
+            });
+        })
         $('input[type=checkbox]').on('click', function(e){
             e.stopPropagation();
         });

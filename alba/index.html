@@ -91,10 +91,20 @@
   </div>
 </div>
 </div>
-  <div style="position:absolute; top:0px; z-index:1000" >
+  <div>
+    <button id="btn_dualview" class="cesium-button cesium-button-toolbar" style="width:30px; height:30px;padding:0px;display:none;">|</button>
     <button id="btn_viewsettings" class="cesium-button cesium-button-toolbar" style="width:30px; height:30px;padding:0px;display:none;"><img src ="./img/white-settings-24.png"/></button>
   </div>
-  <div id="cesiumContainer"></div>
+  <div id="buttonbar-right" style="position:absolute; top:0px; z-index:1000;right:0px;float:right" >
+
+  </div>
+  <div id="full" style="position:absolute;bottom:0;  z-index:1000;right:0px;width:40px; height:40px;"></div>
+
+  <div style="width:100%;">
+    <div id="cesiumContainer"></div>
+    <div id="secondView" style="display:none;"></div>
+  </div>
+
   <div class="modal fade-scale" tabindex="-1" role="dialog" id="settingsDialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
