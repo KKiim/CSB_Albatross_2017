@@ -68,10 +68,10 @@ var GuiInit = function(birds, dwrapper){
         });
         $('#btn_dualview').on('click', function(){
             $('#secondView').toggle();
-
+            $('#sep').toggle();
             $('#cesiumContainer').css('width', function(){
                 if ($('#secondView').css('display') == 'none') return '100%';
-                return '50%';
+                return 'calc(50% - 2px)';
             });
         })
         $('input[type=checkbox]').on('click', function(e){
