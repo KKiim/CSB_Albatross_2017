@@ -91,7 +91,9 @@ var GuiInit = function(birds, dwrapper){
             var visibles = dwrapper.getVisibles();
             if (visibles.length > 0){
                 $.post('/r/filter/spatial', {visibles:visibles},
-                    function(d){ console.log(d)});
+                    function(d){
+                        if (d.data.length > 0) birds.updateAreaFilter(d.data[0].includedbirds);
+                    });
             }
 
 

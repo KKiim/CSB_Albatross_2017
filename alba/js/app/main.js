@@ -18,8 +18,8 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'misc/helper', 'misc/clock', '
         var birds = new Birds('#birds', widget);
         var stations = new Stations('#stations', widget);
 
-        var birds = new Birds('#birds', widget2);
-        var stations = new Stations('#stations', widget2);
+       // var birds = new Birds('#birds', widget2);
+        //var stations = new Stations('#stations', widget2);
         new GuiInit(birds, dwrapper);
 
         new AreaChart('#areachart');

@@ -8,6 +8,8 @@ var DrawWrapper = function(widget){
             event.ts = new Date();
             geomcache.polygon[event.id] = event;
             _updateDataTable();
+            $('#areaFilterState').prop('checked', true);
+
         });
         var toolbar = drawer.addToolbar(document.getElementById("drawer"), {
             buttons: ['polygon', 'circle']
@@ -33,6 +35,7 @@ var DrawWrapper = function(widget){
                 event.ts = new Date();
                 geomcache.circle[event.id] = event;
                 _updateDataTable();
+                $('#areaFilterState').prop('checked', true);
             });
         });
     }

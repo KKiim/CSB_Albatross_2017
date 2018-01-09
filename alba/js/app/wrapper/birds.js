@@ -32,6 +32,29 @@ var Birds = function(container, widget){
             });
     };
 
+    public.updateAreaFilter = function(includedbirds){
+        if (!includedbirds) includedbirds = [];
+        filter_lookup.forEach(function(f){
+                f.spatial = (includedbirds.indexOf(f.id) > -1);
+        });
+        _finalizeFilterUpdate();
+    };
+
+    function _finalizeFilterUpdate() {
+        promise_lookup.forEach(function (p,i) {
+            p.then(function (ds) {
+                ds.entities.values.forEach(function (e) {
+                    if (Cesium.defined(e.polyline)) {
+                        var a = $('#areaFilterState').prop('checked') ? filter_lookup[i].spatial : true;
+                        e.polyline.show =  a  ;
+                    }
+                });
+            });
+        });
+    }
+
+
+
     _constructor();
     return public;
 };
