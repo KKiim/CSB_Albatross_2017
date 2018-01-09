@@ -38,6 +38,7 @@ var DrawWrapper = function(birds, widget){
                 geomcache.circle[event.id] = event;
                 _updateDataTable();
                 $('#areaFilterState').prop('checked', true);
+                $('#areaFilterState').removeAttr("disabled");
                 var visibles = public.getVisibles();
                 if (visibles.length > 0) birds.requestAreaFilter(visibles);
             });

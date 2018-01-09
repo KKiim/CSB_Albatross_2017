@@ -74,9 +74,11 @@ var GuiInit = function(birds, dwrapper){
                 return 'calc(50% - 2px)';
             });
         })
+        /*
         $('input[type=checkbox]').on('click', function(e){
+            console.log("bla");
             e.stopPropagation();
-        });
+        });*/
 
         $('#searchGeom').on('input', function(){ //filter data table, when you type:
             var dt = $('#drawoverview').dataTable();
@@ -94,14 +96,17 @@ var GuiInit = function(birds, dwrapper){
                 $('#areaFilterState').attr('disabled', false);
                 birds.requestAreaFilter(visibles);
             } else {
-                birds.updateAreaFilter([]);
                 $('#areaFilterState').prop('checked', false);
                 $('#areaFilterState').attr('disabled', true);
+                birds.finalizeFilterUpdate();
             }
         });
         $('#drawoverview').DataTable({
                 rowCallback: function ( row, data ) {
-                    if (data[5]) $(row).addClass('selected');
+                    if (data[5]){
+                        console.log("test");
+                        $(row).addClass('selected');
+                    }
                 },
                 paging: false,
                 info: false, //no 'displaying x/100 items'
@@ -129,9 +134,9 @@ var GuiInit = function(birds, dwrapper){
 
             });
 
-            $('#drawoverview tbody').on('click', 'tr', function(){ //blue highlighting of table rows
-                $('#drawoverview tbody > tr' ).not($(this)).removeClass('highlightedrow');
-                $(this).toggleClass('highlightedrow');
+            $('#drawoverview tbody').on('click', 'td:not(.select-checkbox)', function(){ //blue highlighting of table rows
+                $('#drawoverview tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
+                $(this).parent().toggleClass('highlightedrow');
             });
     }
 

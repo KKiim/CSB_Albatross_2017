@@ -40,14 +40,17 @@ var Birds = function(container, widget){
     };
 
     public.updateAreaFilter = function(includedbirds){
-        if (!includedbirds) includedbirds = [];
-        filter_lookup.forEach(function(f){
+        if (!includedbirds){
+            includedbirds = [];
+            filter_lookup.forEach(function(f){
                 f.spatial = (includedbirds.indexOf(f.id) > -1);
-        });
-        _finalizeFilterUpdate();
+            });
+        }
+
+        public.finalizeFilterUpdate();
     };
 
-    function _finalizeFilterUpdate() {
+    public.finalizeFilterUpdate = function() {
         promise_lookup.forEach(function (p,i) {
             p.then(function (ds) {
                 ds.entities.values.forEach(function (e) {
