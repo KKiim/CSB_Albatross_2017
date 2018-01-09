@@ -32,6 +32,13 @@ var Birds = function(container, widget){
             });
     };
 
+    public.requestAreaFilter = function(visiblegeoms){
+        $.post('/r/filter/spatial', {visibles:visiblegeoms},
+            function(d){
+                if (d.data.length > 0) public.updateAreaFilter(d.data[0].includedbirds);
+            });
+    };
+
     public.updateAreaFilter = function(includedbirds){
         if (!includedbirds) includedbirds = [];
         filter_lookup.forEach(function(f){

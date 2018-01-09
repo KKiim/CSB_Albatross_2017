@@ -14,8 +14,9 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'misc/helper', 'misc/clock', '
         });
         //widget.terrainProvider = terrainProvider;
 
-        var dwrapper = new DrawWrapper(widget);
         var birds = new Birds('#birds', widget);
+        var dwrapper = new DrawWrapper(birds, widget);
+
         var stations = new Stations('#stations', widget);
 
        // var birds = new Birds('#birds', widget2);

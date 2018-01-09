@@ -1,4 +1,4 @@
-var DrawWrapper = function(widget){
+var DrawWrapper = function(birds, widget){
     var public = this;
     var geomcache= {circle:{}, polygon:{}};
 
@@ -9,6 +9,8 @@ var DrawWrapper = function(widget){
             geomcache.polygon[event.id] = event;
             _updateDataTable();
             $('#areaFilterState').prop('checked', true);
+            var visibles = dwrapper.getVisibles();
+            if (visibles.length > 0) birds.requestAreaFilter(visibles);
 
         });
         var toolbar = drawer.addToolbar(document.getElementById("drawer"), {
@@ -36,6 +38,8 @@ var DrawWrapper = function(widget){
                 geomcache.circle[event.id] = event;
                 _updateDataTable();
                 $('#areaFilterState').prop('checked', true);
+                var visibles = public.getVisibles();
+                if (visibles.length > 0) birds.requestAreaFilter(visibles);
             });
         });
     }

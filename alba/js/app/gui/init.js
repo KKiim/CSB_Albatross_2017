@@ -90,14 +90,14 @@ var GuiInit = function(birds, dwrapper){
             dwrapper.setVisibility(d, !$(this).parent().hasClass('selected'));
             var visibles = dwrapper.getVisibles();
             if (visibles.length > 0){
-                $.post('/r/filter/spatial', {visibles:visibles},
-                    function(d){
-                        if (d.data.length > 0) birds.updateAreaFilter(d.data[0].includedbirds);
-                    });
+                $('#areaFilterState').prop('checked', true);
+                $('#areaFilterState').attr('disabled', false);
+                birds.requestAreaFilter(visibles);
+            } else {
+                birds.updateAreaFilter([]);
+                $('#areaFilterState').prop('checked', false);
+                $('#areaFilterState').attr('disabled', true);
             }
-
-
-
         });
         $('#drawoverview').DataTable({
                 rowCallback: function ( row, data ) {

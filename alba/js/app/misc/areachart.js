@@ -20,7 +20,6 @@ var AreaChart = function(container){
         _maxcount = 11;
         _data = [];
         for(var i= 0; i<1000; i++) {_data.push({key:i, count: Math.random()*10});}
-        console.log(_data);
     }
 
     function initGraphics(){
