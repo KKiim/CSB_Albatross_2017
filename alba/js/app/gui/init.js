@@ -74,11 +74,11 @@ var GuiInit = function(birds, dwrapper){
                 return 'calc(50% - 2px)';
             });
         })
-        /*
+
         $('input[type=checkbox]').on('click', function(e){
             console.log("bla");
             e.stopPropagation();
-        });*/
+        });
 
         $('#searchGeom').on('input', function(){ //filter data table, when you type:
             var dt = $('#drawoverview').dataTable();
@@ -104,13 +104,12 @@ var GuiInit = function(birds, dwrapper){
         $('#drawoverview').DataTable({
                 rowCallback: function ( row, data ) {
                     if (data[5]){
-                        console.log("test");
                         $(row).addClass('selected');
                     }
                 },
                 paging: false,
                 info: false, //no 'displaying x/100 items'
-                scrollY: "140px",
+                scrollY: "100px",
                 order: [[ 4, "desc" ]],
                 language: {
                     emptyTable: "Please draw some geometries."
@@ -138,6 +137,26 @@ var GuiInit = function(birds, dwrapper){
                 $('#drawoverview tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
                 $(this).parent().toggleClass('highlightedrow');
             });
+            $('#altselector').resizable({handles:'e, w', maxWidth:200, stop: _onAltChange});
+            $('#altselector').draggable({containment:'parent', stop: _onAltChange});
+
+        $('#tempselector, #humselector, #windselector, #winddirselector, #pressureselector').resizable({handles:'e, w', maxWidth:150});
+        $('#tempselector, #humselector, #windselector, #winddirselector, #pressureselector').draggable({containment:'parent'});
+    }
+
+    function _onAltChange(){
+        var tbl = $('#drawoverview').DataTable();
+        var d = tbl.row($('.highlightedrow')).data();
+        if (d){
+            var minalt = 0;
+            var maxalt = 1000;
+            var selmin = (maxalt-minalt)* $('#altselector').offset().left/$('#altwrapper').width();
+            selmin = Math.round(selmin * 100) / 100
+            var selmax = (maxalt-minalt)* ($('#altselector').offset().left+$('#altselector').width()) /$('#altwrapper').width();
+            selmax = Math.round(selmax * 100) / 100
+            dwrapper.setHeights(d, selmin+"-"+selmax);
+        }
+
     }
 
     function _styleUpdate(){

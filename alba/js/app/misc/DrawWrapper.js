@@ -6,10 +6,11 @@ var DrawWrapper = function(birds, widget){
         var scene = widget.scene;
         var drawer = new DrawHelper(widget, function(event){
             event.ts = new Date();
+            event.heights = '0-1000';
             geomcache.polygon[event.id] = event;
             _updateDataTable();
             $('#areaFilterState').prop('checked', true);
-            var visibles = dwrapper.getVisibles();
+            var visibles = public.getVisibles();
             if (visibles.length > 0) birds.requestAreaFilter(visibles);
 
         });
@@ -35,6 +36,7 @@ var DrawWrapper = function(birds, widget){
             circle.setEditable();
             circle.addListener('onConfirmed', function(event) {
                 event.ts = new Date();
+                event.heights = '0-1000';
                 geomcache.circle[event.id] = event;
                 _updateDataTable();
                 $('#areaFilterState').prop('checked', true);
@@ -55,7 +57,7 @@ var DrawWrapper = function(birds, widget){
         var tbl = $('#drawoverview').DataTable();
         tbl.clear();
         d.forEach(function (event) {
-            tbl.row.add([null,  event.type+event.id,event.ts.getHours()+ ":" + event.ts.getMinutes(), 0, event.ts.getTime(), event.o.show]);
+            tbl.row.add([null,  event.type+event.id,event.ts.getHours()+ ":" + event.ts.getMinutes(), event.heights, event.ts.getTime(), event.o.show]);
         });
         tbl.draw();
     }
@@ -65,6 +67,15 @@ var DrawWrapper = function(birds, widget){
         var event = geomcache[type][parseInt(d[1].substring(1))];
         event.o.show = bool;
     };
+    public.setHeights = function(d, val){
+        var type = (d[1][0] == 'c') ? 'circle' : 'polygon';
+        var event = geomcache[type][parseInt(d[1].substring(1))];
+        event.heights = val;
+        _updateDataTable();
+        $('#areaFilterState').prop('checked', true);
+        var visibles = public.getVisibles();
+        if (visibles.length > 0) birds.requestAreaFilter(visibles);
+    }
 
     public.getVisibles = function(){
         var res = [];
@@ -78,7 +89,8 @@ var DrawWrapper = function(birds, widget){
                         var carto = Cesium.Ellipsoid.WGS84.cartesianToCartographic(cartesian);
                         tmp.longitude = Cesium.Math.toDegrees(carto.longitude);
                         tmp.latitude = Cesium.Math.toDegrees(carto.latitude);
-                        tmp.radius = geomcache[k][k2].radius;
+                        tmp.radius = that.radius;
+                        tmp.alts = that.heights.split("-");
                         res.push(tmp);
                     } else if (that.type == 'p'){
                         var tmp = {id:that.id, type:'p', positions: []};
@@ -87,6 +99,7 @@ var DrawWrapper = function(birds, widget){
                             var carto = Cesium.Ellipsoid.WGS84.cartesianToCartographic(cartesian);
                             tmp.positions.push({longitude: Cesium.Math.toDegrees(carto.longitude), latitude:Cesium.Math.toDegrees(carto.latitude)});
                         });
+                        tmp.alts = that.heights.split("-");
                         res.push(tmp);
                     }
                 };

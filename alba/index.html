@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <title>Albatross Visualization</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css">
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="//cdn.datatables.net/select/1.2.4/css/select.dataTables.min.css">
@@ -38,7 +39,7 @@
     <div id="areaHeader" class="accordion-body collapse">
       <div class="accordion-inner" id="spatialInner" >
         <div id="drawer" style="width:60px;height:30px; float:left; background:rgba(40,40,40,0.7);padding-left:4px;margin-top:5px;"></div>
-        <hr style="border:solid #ffffff 1px;background:white; height:1px;top:30px;margin:40px 5px;margin-left:0px;margin-right:0px">
+        <hr style="border:solid grey 1px;background:grey; height:1px;top:30px;margin-top:40px !important; margin-bottom: 10px !important;margin-left:0px;margin-right:0px">
         <input class="form-control-sm" type="text" placeholder="Search geometries" id="searchGeom">
         <div style="width:200px; overflow:auto;position:absolute;left:2px;padding-top:10px">
           <table id="drawoverview" cellspacing="0" width="300px" style="text-align:center;float:left">
@@ -55,6 +56,11 @@
             </tbody>
           </table>
         </div>
+        <hr style="border:black;background:black; height:0px;top:90px;margin-top:70px !important;margin-left:0px;margin-right:0px">
+        Selected Alt:
+        <div id="altwrapper" style="width:150px; height:10px; background:white; margin-left:30px;">
+          <div id="altselector" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -68,39 +74,25 @@
     </div>
     <div id="weatherHeader" class="accordion-body collapse">
       <div class="accordion-inner">
-
-
-        <div style="display:block">
-          <label for="stationselection" style="float:left">Airport:</label>
-          <select id="stationselection" class="form-control" style="width:150px; height:30px;padding:0px;margin-bottom:20px;">
-            <option value="0" selected>San Cristobal</option>
-            <option value="1">Eloy Alfaro</option>
-            <option value="2">Catitan Montes</option>
-            <option value="3">Jose Alebardo</option>
-            <option value="4">Pedro Canga</option>
-          </select>
+        <label>Temp. (16-31)</label>
+        <div id="tempwrapper" style="width:150px; height:10px; background:white;margin-left:30px">
+          <div id="tempselector" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
         </div>
-
-
-        <div style="display:block">
-          <label for="unitselection" style="float:left">Unit:</label>
-          <select id="unitselection" class="form-control" style="width:150px; height:30px;padding:0px;margin-bottom:20px;">
-            <option value="Temperature" selected>Temperature</option>
-            <option value="Humidity">Humidity</option>
-            <option value="Wind Speed">Wind Speed</option>
-            <option value="Wind Direction">Wind Direction</option>
-            <option value="Pressure">Pressure</option>
-          </select>
+        <label>Humidity (6-100)</label>
+        <div id="humwrapper" style="width:150px; height:10px; background:white;margin-left:30px">
+          <div id="humselector" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
         </div>
-
-        <div style="display:block; width:150px;height:40px">
-          <label for="minValue" style="float:left">min. Value:</label>
-          <input style="float:left" type="range" min="1" max="30" value="1" id="minValue" name="minValue">
+        <label>Wind Speed (1.9-150)</label>
+        <div id="windwrapper" style="width:150px; height:10px; background:white;margin-left:30px">
+          <div id="windselector" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
         </div>
-
-        <div style="display:block; width:150px;height:40px">
-          <label for="maxValue" style="float:left">max. Value:</label>
-          <input style="float:left" type="range" min="1" max="30" value="1" id="maxValue" name="maxValue">
+        <label>Wind Dir (0-360)</label>
+        <div id="winddirwrapper" style="width:150px; height:10px; background:white;margin-left:30px">
+          <div id="winddirselector" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+        </div>
+        <label>Pressure (1006-1092)</label>
+        <div id="pressurewrapper" style="width:150px; height:10px; background:white;margin-left:30px">
+          <div id="pressureselector" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
         </div>
 
       </div>

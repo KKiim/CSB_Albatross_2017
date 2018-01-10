@@ -251,3 +251,7 @@ table.dataTable tbody td.select-checkbox:before, table.dataTable tbody th.select
 table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selected th.select-checkbox:after{
     margin-top: -15px !important;
 }
+.dataTables_scrollBody{
+    height:50px !important;
+}
+
