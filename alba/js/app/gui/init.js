@@ -23,6 +23,11 @@ var GuiInit = function(birds, dwrapper){
                 'min-width': '10px'
             });
         });
+
+        $('.accordion-toggle').on('click', function(){
+            $(this).toggleClass('accordion-highlighted');
+        });
+
         $("#settingsDialog").draggable({
             handle: ".modal-header"
         });
@@ -88,7 +93,6 @@ var GuiInit = function(birds, dwrapper){
         });
         var c = new Clock('#clock', function(){console.log("bla")});
         $('tbody').on('click','input.geomcheck', function(){
-
             var tbl = $('#drawoverview').DataTable();
             var d = tbl.row($(this).parent().parent()).data();
             dwrapper.setVisibility(d, $(this).prop('checked'));
@@ -118,6 +122,7 @@ var GuiInit = function(birds, dwrapper){
                 },
                 columnDefs: [{
                     orderable: false,
+                    width:'20px',
                     render: function ( data, type, row ) {
                         if (type === 'display') {
                             var addendum = ((data && data[5]) || !data) ? 'checked' : '';

@@ -216,12 +216,6 @@ input[type="range"]:hover ~ #rangevalue,input[type="range"]:active ~ #rangevalue
 .accordion-heading {
     border-bottom: 0;
 }
-.accordion-heading .accordion-toggle {
-    display: block;
-    padding: 1px 15px;
-    background:black;
-    color:white;
-}
 .accordion-toggle {
     cursor: pointer;
 }
@@ -255,3 +249,14 @@ table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selecte
     height:50px !important;
 }
 
+/* change color of collapsed class */
+.collapsed { background: black; }
+.accordion-heading .accordion-toggle {
+    display: block;
+    padding: 1px 15px;
+    color:white;
+    background: black;
+}
+.accordion-highlighted {
+    background: steelblue !important;
+}
