@@ -52,20 +52,22 @@ var GuiInit = function(birds, dwrapper){
         $('#cesiumContainer .cesium-viewer-fullscreenContainer').detach().appendTo('#full')
         $('#cesiumContainer').css('height', $(document).height());
         $('#secondView').css('height', $(document).height());
-        $('#leftpanel').on('mouseenter', function(){
+       $('#leftpanel').on('mouseenter', function(){
             $(this).css('opacity', 1);
         }).on('mousemove', function(){
             $(this).css('opacity', 1);
-        }).on('mouseleave', function(){
-            $(this).css('opacity', 0.2);
         });
+        $('#cesiumContainer').on('mouseenter', function(){
+            $('#leftpanel').css('opacity', 0.2);
+            $('.cesium-viewer-toolbar').css('opacity', 0.2);
+        });
+
         $('.cesium-viewer-toolbar').on('mouseenter', function(){
             $(this).css('opacity', 1);
         }).on('mousemove', function(){
             $(this).css('opacity', 1);
-        }).on('mouseleave', function(){
-            $(this).css('opacity', 0.2);
         });
+
         $('#btn_dualview').on('click', function(){
             $('#secondView').toggle();
             $('#sep').toggle();
@@ -73,10 +75,9 @@ var GuiInit = function(birds, dwrapper){
                 if ($('#secondView').css('display') == 'none') return '100%';
                 return 'calc(50% - 2px)';
             });
-        })
+        });
 
         $('input[type=checkbox]').on('click', function(e){
-            console.log("bla");
             e.stopPropagation();
         });
 
@@ -86,10 +87,11 @@ var GuiInit = function(birds, dwrapper){
             dt.fnFilter(query); //custom search on datatable
         });
         var c = new Clock('#clock', function(){console.log("bla")});
-        $('tbody').on('click','td.select-checkbox', function(){
+        $('tbody').on('click','input.geomcheck', function(){
+
             var tbl = $('#drawoverview').DataTable();
-            var d = tbl.row($(this).parent()).data();
-            dwrapper.setVisibility(d, !$(this).parent().hasClass('selected'));
+            var d = tbl.row($(this).parent().parent()).data();
+            dwrapper.setVisibility(d, $(this).prop('checked'));
             var visibles = dwrapper.getVisibles();
             if (visibles.length > 0){
                 $('#areaFilterState').prop('checked', true);
@@ -100,13 +102,9 @@ var GuiInit = function(birds, dwrapper){
                 $('#areaFilterState').attr('disabled', true);
                 birds.finalizeFilterUpdate();
             }
+            $('#leftpanel').css('opacity', 1);
         });
         $('#drawoverview').DataTable({
-                rowCallback: function ( row, data ) {
-                    if (data[5]){
-                        $(row).addClass('selected');
-                    }
-                },
                 paging: false,
                 info: false, //no 'displaying x/100 items'
                 scrollY: "100px",
@@ -120,7 +118,13 @@ var GuiInit = function(birds, dwrapper){
                 },
                 columnDefs: [{
                     orderable: false,
-                    className: 'select-checkbox',
+                    render: function ( data, type, row ) {
+                        if (type === 'display') {
+                            var addendum = ((data && data[5]) || !data) ? 'checked' : '';
+                            return '<input type="checkbox" '+addendum +' class="geomcheck">';
+                        }
+                        return data;
+                    },
                     targets:   0},
                     {
                         visible: false,
