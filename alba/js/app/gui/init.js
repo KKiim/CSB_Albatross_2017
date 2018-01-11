@@ -144,7 +144,14 @@ var GuiInit = function(birds, dwrapper){
 
             $('#drawoverview tbody').on('click', 'td:not(.select-checkbox)', function(){ //blue highlighting of table rows
                 $('#drawoverview tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
+                var tbl = $('#drawoverview').DataTable();
+                var d = tbl.row($(this).parent()).data();
                 $(this).parent().toggleClass('highlightedrow');
+                if ($('.highlightedrow').length > 0){
+                    $('#altcontainer').show();
+                } else {
+                    $('#altcontainer').hide();
+                }
             });
             $('#altselector').resizable({handles:'e, w', maxWidth:200, stop: _onAltChange});
             $('#altselector').draggable({containment:'parent', stop: _onAltChange});

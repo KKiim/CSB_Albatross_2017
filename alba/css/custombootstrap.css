@@ -258,5 +258,5 @@ table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selecte
     background: black;
 }
 .accordion-highlighted {
-    background: steelblue !important;
+    background: darkblue !important;
 }
