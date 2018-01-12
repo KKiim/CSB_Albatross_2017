@@ -153,8 +153,8 @@ var GuiInit = function(birds, dwrapper){
                     $('#altcontainer').hide();
                 }
             });
-            $('#altselector').resizable({handles:'e, w', maxWidth:200, stop: _onAltChange});
-            $('#altselector').draggable({containment:'parent', stop: _onAltChange});
+            $('#altselector').resizable({handles:'e, w', resize:_onAltChange, maxWidth:200, stop: _onAltStop});
+            $('#altselector').draggable({containment:'parent', drag: _onAltChange, stop: _onAltStop});
 
         $('#tempselector, #humselector, #windselector, #winddirselector, #pressureselector').resizable({handles:'e, w', maxWidth:150});
         $('#tempselector, #humselector, #windselector, #winddirselector, #pressureselector').draggable({containment:'parent'});
@@ -172,8 +172,13 @@ var GuiInit = function(birds, dwrapper){
             selmax = Math.round(selmax * 100) / 100
             dwrapper.setHeights(d, selmin+"-"+selmax);
         }
-
     }
+
+    function _onAltStop(){
+        $('#areaFilterState').prop('checked', true);
+        var visibles = dwrapper.getVisibles();
+        if (visibles.length > 0) birds.requestAreaFilter(visibles);
+    };
 
     function _styleUpdate(){
         var val = $('#birdselection').val();

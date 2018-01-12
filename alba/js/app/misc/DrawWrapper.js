@@ -71,11 +71,10 @@ var DrawWrapper = function(birds, widget){
         var type = (d[1][0] == 'c') ? 'circle' : 'polygon';
         var event = geomcache[type][parseInt(d[1].substring(1))];
         event.heights = val;
-        _updateDataTable();
-        $('#areaFilterState').prop('checked', true);
-        var visibles = public.getVisibles();
-        if (visibles.length > 0) birds.requestAreaFilter(visibles);
-    }
+        d[3] = val;
+        var tbl = $('#drawoverview').DataTable();
+        tbl.row($('.highlightedrow')).data(d).draw();
+    };
 
     public.getVisibles = function(){
         var res = [];
