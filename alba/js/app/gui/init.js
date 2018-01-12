@@ -153,23 +153,22 @@ var GuiInit = function(birds, dwrapper){
                     $('#altcontainer').hide();
                 }
             });
-            $('#altselector').resizable({handles:'e, w', resize:_onAltChange, maxWidth:200, stop: _onAltStop});
+            $('#altselector').resizable({containment:'parent', handles:'e, w', resize:_onAltChange, maxWidth:200, stop: _onAltStop});
             $('#altselector').draggable({containment:'parent', drag: _onAltChange, stop: _onAltStop});
-
-        $('#tempselector, #humselector, #windselector, #winddirselector, #pressureselector').resizable({handles:'e, w', maxWidth:150});
-        $('#tempselector, #humselector, #windselector, #winddirselector, #pressureselector').draggable({containment:'parent'});
     }
 
     function _onAltChange(){
         var tbl = $('#drawoverview').DataTable();
         var d = tbl.row($('.highlightedrow')).data();
         if (d){
-            var minalt = 0;
-            var maxalt = 1000;
-            var selmin = (maxalt-minalt)* $('#altselector').offset().left/$('#altwrapper').width();
-            selmin = Math.round(selmin * 100) / 100
-            var selmax = (maxalt-minalt)* ($('#altselector').offset().left+$('#altselector').width()) /$('#altwrapper').width();
-            selmax = Math.round(selmax * 100) / 100
+            var min = 0;
+            var max = 1000;
+            var l = $('#altselector').offset().left- $('#altselector').parent().offset().left;
+            var w = $('#altselector').parent().width();
+            var selmin = min + (max-min)* l/w;
+            selmin = Math.round(selmin * 100) / 100;
+            var selmax = min + (max-min)* (l+$('#altselector').width()) /w;
+            selmax = Math.round(selmax * 100) / 100;
             dwrapper.setHeights(d, selmin+"-"+selmax);
         }
     }

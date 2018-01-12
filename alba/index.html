@@ -76,25 +76,26 @@
     </div>
     <div id="weatherHeader" class="accordion-body collapse">
       <div class="accordion-inner">
-        <label>Temp. (16-31)</label>
+
+        <label>Temp. (<span id="temprange">16-31</span>)</label>
         <div id="tempwrapper" style="width:150px; height:10px; background:white;margin-left:30px">
-          <div id="tempselector" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+          <div id="tempselector" min="16" max="31" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
         </div>
-        <label>Humidity (6-100)</label>
+        <label>Humidity (<span id="humrange">6-100</span>)</label>
         <div id="humwrapper" style="width:150px; height:10px; background:white;margin-left:30px">
-          <div id="humselector" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+          <div id="humselector" min="6" max="100" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
         </div>
-        <label>Wind Speed (1.9-150)</label>
+        <label>Wind Speed (<span id="windrange">1-150</span>)</label>
         <div id="windwrapper" style="width:150px; height:10px; background:white;margin-left:30px">
-          <div id="windselector" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+          <div id="windselector" min="1" max="150" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
         </div>
-        <label>Wind Dir (0-360)</label>
+        <label>Wind Dir (<span id="winddirrange">0-360</span>)</label>
         <div id="winddirwrapper" style="width:150px; height:10px; background:white;margin-left:30px">
-          <div id="winddirselector" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+          <div id="winddirselector" min="0" max="360" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
         </div>
-        <label>Pressure (1006-1092)</label>
+        <label>Pressure (<span id="pressurerange">1006-1092</span>)</label>
         <div id="pressurewrapper" style="width:150px; height:10px; background:white;margin-left:30px">
-          <div id="pressureselector" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+          <div id="pressureselector" min="1006" max= "1092" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
         </div>
 
       </div>

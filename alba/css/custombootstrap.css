@@ -260,3 +260,6 @@ table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selecte
 .accordion-highlighted {
     background: darkblue !important;
 }
+.accordion-inner > label {
+    width:230px !important;
+}
