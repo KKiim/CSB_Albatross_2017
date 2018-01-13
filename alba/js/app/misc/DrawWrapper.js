@@ -6,7 +6,7 @@ var DrawWrapper = function(birds, widget){
         var scene = widget.scene;
         var drawer = new DrawHelper(widget, function(event){
             event.ts = new Date();
-            event.heights = '0-1000';
+            event.heights = '0-170';
             geomcache.polygon[event.id] = event;
             _updateDataTable();
             $('#areaFilterState').prop('checked', true);
@@ -36,7 +36,7 @@ var DrawWrapper = function(birds, widget){
             circle.setEditable();
             circle.addListener('onConfirmed', function(event) {
                 event.ts = new Date();
-                event.heights = '0-160';
+                event.heights = '0-170';
                 geomcache.circle[event.id] = event;
                 _updateDataTable();
                 $('#areaFilterState').prop('checked', true);

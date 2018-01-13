@@ -1,5 +1,6 @@
 var GuiInit = function(birds, dwrapper){
     var public = this;
+    var left_lookup = {};
 
     function constructor(){
         _init();
@@ -148,8 +149,14 @@ var GuiInit = function(birds, dwrapper){
                 var d = tbl.row($(this).parent()).data();
                 $(this).parent().toggleClass('highlightedrow');
                 if ($('.highlightedrow').length > 0){
-                    $('#altcontainer').show();
+                    var selmin = parseInt(d[3].split('-')[0]);
+                    var selmax = parseInt(d[3].split('-')[1]);
+                    var w = ((selmax-selmin)/170) * $('#altwrapper').width();
+                    var l = left_lookup.hasOwnProperty(d[1])? left_lookup[d[1]] : 0;
+                    $('#altselector').width(w);
+                    $('#altselector').css('left', l );
                     dwrapper.highlightBounds(d);
+                    $('#altcontainer').show();
                 } else {
                     dwrapper.unhighlightBounds();
                     $('#altcontainer').hide();
@@ -162,16 +169,18 @@ var GuiInit = function(birds, dwrapper){
     function _onAltChange(){
         var tbl = $('#drawoverview').DataTable();
         var d = tbl.row($('.highlightedrow')).data();
+
         if (d){
             var min = 0;
             var max = 170;
-            var l = $('#altselector').offset().left- $('#altselector').parent().offset().left;
+            var l = parseInt($('#altselector').css('left').replace("px", ""));
             var w = $('#altselector').parent().width();
             var selmin = min + (max-min)* l/w;
             selmin = Math.round(selmin * 100) / 100;
             var selmax = min + (max-min)* (l+$('#altselector').width()) /w;
             selmax = Math.round(selmax * 100) / 100;
             dwrapper.setHeights(d, selmin+"-"+selmax);
+            left_lookup[d[1]] = l;
         }
     }
 
