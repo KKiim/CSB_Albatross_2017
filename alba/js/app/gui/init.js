@@ -162,7 +162,7 @@ var GuiInit = function(birds, dwrapper){
         var d = tbl.row($('.highlightedrow')).data();
         if (d){
             var min = 0;
-            var max = 1000;
+            var max = 170;
             var l = $('#altselector').offset().left- $('#altselector').parent().offset().left;
             var w = $('#altselector').parent().width();
             var selmin = min + (max-min)* l/w;

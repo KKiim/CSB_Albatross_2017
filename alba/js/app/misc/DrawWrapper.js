@@ -36,7 +36,7 @@ var DrawWrapper = function(birds, widget){
             circle.setEditable();
             circle.addListener('onConfirmed', function(event) {
                 event.ts = new Date();
-                event.heights = '0-1000';
+                event.heights = '0-160';
                 geomcache.circle[event.id] = event;
                 _updateDataTable();
                 $('#areaFilterState').prop('checked', true);

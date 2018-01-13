@@ -35,26 +35,30 @@ var Birds = function(container, widget){
     public.requestAreaFilter = function(visiblegeoms){
         $.post('/r/filter/spatial', {visibles:visiblegeoms},
             function(d){
-                if (d.data.length > 0) public.updateAreaFilter(d.data[0].includedbirds);
+                if (d.data.length > 0){
+                    public.updateAreaFilter(d.data[0].includedbirds);
+                }
             });
     };
 
     public.updateAreaFilter = function(includedbirds){
-        if (!includedbirds){
-            includedbirds = [];
-            filter_lookup.forEach(function(f){
-                f.spatial = (includedbirds.indexOf(f.id) > -1);
-            });
-        }
+        if (!includedbirds) includedbirds = [];
+
+        filter_lookup.forEach(function(f){
+            f.spatial = (includedbirds.indexOf(f.id) > -1);
+        });
+
 
         public.finalizeFilterUpdate();
     };
 
     public.finalizeFilterUpdate = function() {
+        console.log(filter_lookup);
         promise_lookup.forEach(function (p,i) {
             p.then(function (ds) {
                 ds.entities.values.forEach(function (e) {
                     if (Cesium.defined(e.polyline)) {
+                        console.log($('#areaFilterState').prop('checked'));
                         var a = $('#areaFilterState').prop('checked') ? filter_lookup[i].spatial : true;
                         e.polyline.show =  a  ;
                     }
