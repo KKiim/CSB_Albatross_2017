@@ -149,7 +149,9 @@ var GuiInit = function(birds, dwrapper){
                 $(this).parent().toggleClass('highlightedrow');
                 if ($('.highlightedrow').length > 0){
                     $('#altcontainer').show();
+                    dwrapper.highlightBounds(d);
                 } else {
+                    dwrapper.unhighlightBounds();
                     $('#altcontainer').hide();
                 }
             });

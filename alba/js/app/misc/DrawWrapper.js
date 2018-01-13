@@ -21,7 +21,7 @@ var DrawWrapper = function(birds, widget){
         toolbar.addListener('polygonCreated', function(event) {
             var polygon = new DrawHelper.PolygonPrimitive({
                 positions: event.positions,
-                material : Cesium.Material.fromType('Checkerboard')
+                material : Cesium.Material.fromType(Cesium.Material.RimLightingType)
             });
             scene.primitives.add(polygon);
             polygon.setEditable();
@@ -41,8 +41,18 @@ var DrawWrapper = function(birds, widget){
                 _updateDataTable();
                 $('#areaFilterState').prop('checked', true);
                 $('#areaFilterState').removeAttr("disabled");
+                $('#altcontainer').hide();
                 var visibles = public.getVisibles();
                 if (visibles.length > 0) birds.requestAreaFilter(visibles);
+            });
+            circle.addListener('onEditStart', function(event){
+                $('#drawoverview tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
+                var tbl = $('#drawoverview').DataTable();
+                var indexes = tbl.rows().eq(0).filter(function (rowid) {
+                    return tbl.cell( rowid, 1 ).data() === event.id;
+                } );
+                tbl.rows(indexes).nodes().to$().addClass('highlightedrow');
+                $('#altcontainer').show();
             });
         });
     }
@@ -74,6 +84,21 @@ var DrawWrapper = function(birds, widget){
         d[3] = val;
         var tbl = $('#drawoverview').DataTable();
         tbl.row($('.highlightedrow')).data(d).draw();
+    };
+
+    public.highlightBounds = function(d){
+        public.unhighlightBounds();
+        var type = (d[1][0] == 'c') ? 'circle' : 'polygon';
+        var event = geomcache[type][parseInt(d[1].substring(1))];
+        event.o.setStrokeStyle(Cesium.Color.fromCssColorString('white'), 4);
+    };
+
+    public.unhighlightBounds = function(){
+        for (var k1 in geomcache){
+            for (var k2 in geomcache[k1]){
+                geomcache[k1][k2].o.setStrokeStyle(Cesium.Color.fromCssColorString('red'), 0);
+            }
+        }
     };
 
     public.getVisibles = function(){

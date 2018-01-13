@@ -944,7 +944,6 @@ var DrawHelper = (function() {
                         }
                     }
                 }
-               // _self.polyconfirm({name: 'onConfirmed', positions:positions});
             }
         }, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
 
@@ -1301,7 +1300,7 @@ var DrawHelper = (function() {
                     this._globeClickhandler = new Cesium.ScreenSpaceEventHandler(scene.canvas);
                     this._globeClickhandler.setInputAction(
                         function (movement) {
-
+console.log(1303);
                             var pickedObject = scene.pick(movement.position);
                             if(!(pickedObject && pickedObject.primitive)) {
                                 _self.setEditMode(false);
@@ -1441,6 +1440,7 @@ var DrawHelper = (function() {
                         this._globeClickhandler.setInputAction(
                             function (movement) {
                                 var pickedObject = scene.pick(movement.position);
+                                console.log(1443);
                                 // disable edit if pickedobject is different or not an object
                                 if(!(pickedObject && !pickedObject.isDestroyed() && pickedObject.primitive)) {
                                     extent.setEditMode(false);
@@ -1527,6 +1527,7 @@ var DrawHelper = (function() {
                         this._globeClickhandler = new Cesium.ScreenSpaceEventHandler(scene.canvas);
                         this._globeClickhandler.setInputAction(
                             function (movement) {
+                                console.log(1530);
                                 var pickedObject = scene.pick(movement.position);
                                 if(!(pickedObject && pickedObject.primitive)) {
                                     _self.setEditMode(false);
@@ -1586,6 +1587,7 @@ var DrawHelper = (function() {
                 drawHelper.disableAllHighlights();
                 // display markers
                 if(editMode) {
+                    if (circle.hasOwnProperty('circleid')) circle.executeListeners({name:"onEditStart", id:'c'+circle.circleid});
                     // make sure all other shapes are not in edit mode before starting the editing of this shape
                     drawHelper.setEdited(this);
                     var _self = this;

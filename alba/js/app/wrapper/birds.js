@@ -53,12 +53,10 @@ var Birds = function(container, widget){
     };
 
     public.finalizeFilterUpdate = function() {
-        console.log(filter_lookup);
         promise_lookup.forEach(function (p,i) {
             p.then(function (ds) {
                 ds.entities.values.forEach(function (e) {
                     if (Cesium.defined(e.polyline)) {
-                        console.log($('#areaFilterState').prop('checked'));
                         var a = $('#areaFilterState').prop('checked') ? filter_lookup[i].spatial : true;
                         e.polyline.show =  a  ;
                     }
