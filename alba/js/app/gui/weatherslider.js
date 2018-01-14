@@ -26,7 +26,7 @@ var Weatherslider = function(birds){
 
     }
 
-    function _onStop(ignoreDisable){
+    function _onStop(){
             $('#weatherFilterState').prop('checked', true);
             $('#weatherFilterState').removeAttr('disabled');
 
