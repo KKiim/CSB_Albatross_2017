@@ -99,6 +99,20 @@ var GuiInit = function(birds, dwrapper){
                 $('.highlightedrow').removeClass('highlightedrow');
             }
         });
+
+        $('#weatherFilterState').on('click', function(){
+            var conditions = {};
+            if ($(this).prop('checked')){
+                ['temp', 'hum', 'wind', 'winddir', 'pressure'].forEach(function(f){
+                    var tmp = $('#'+f+'range').html().split('-');
+                    conditions[f] = [parseFloat(tmp[0]), parseFloat(tmp[1])];
+                });
+                birds.requestWeatherFilter(conditions);
+            } else {
+                birds.finalizeFilterUpdate();
+            }
+        });
+
         $('#searchGeom').on('input', function(){ //filter data table, when you type:
             var dt = $('#drawoverview').dataTable();
             var query = $(this).val();

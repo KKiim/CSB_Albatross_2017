@@ -1,11 +1,11 @@
 /**
  * Created by Phil on 12.01.2018.
  */
-var Weatherslider = function(){
+var Weatherslider = function(birds){
 
     function _constructor(){
         var sel = '#tempselector, #humselector, #windselector, #winddirselector, #pressureselector';
-        $(sel).resizable({containment:'parent', handles:'e, w', maxWidth:150, resize: _onUpdate, drag: _onStop});
+        $(sel).resizable({containment:'parent', handles:'e, w', maxWidth:150, resize: _onUpdate, stop: _onStop});
         $(sel).draggable({containment:'parent', drag: _onUpdate, stop: _onStop});
     };
 
@@ -22,10 +22,18 @@ var Weatherslider = function(){
         selmax = Math.round(selmax * 100) / 100;
         var label = '#' + $(this).attr('id').replace('selector', '') + 'range';
         $(label).html(selmin + '-' + selmax );
+
     }
 
     function _onStop(){
-
+        $('#weatherFilterState').prop('checked', true);
+        $('#weatherFilterState').removeAttr('disabled');
+        var conditions = {};
+        ['temp', 'hum', 'wind', 'winddir', 'pressure'].forEach(function(f){
+            var tmp = $('#'+f+'range').html().split('-');
+            conditions[f] = [parseFloat(tmp[0]), parseFloat(tmp[1])];
+        });
+        birds.requestWeatherFilter(conditions);
     }
 
 

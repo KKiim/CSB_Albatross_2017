@@ -41,14 +41,28 @@ var Birds = function(container, widget){
             });
     };
 
+    public.requestWeatherFilter = function(conditions){
+        $.post('/r/filter/weather', {conditions:conditions},
+            function(d){
+                if (d.data.length > 0){
+                    public.updateWeatherFilter(d.data[0].includedbirds);
+                }
+            });
+    };
+
     public.updateAreaFilter = function(includedbirds){
         if (!includedbirds) includedbirds = [];
-
         filter_lookup.forEach(function(f){
             f.spatial = (includedbirds.indexOf(f.id) > -1);
         });
+        public.finalizeFilterUpdate();
+    };
 
-
+    public.updateWeatherFilter = function(includedbirds){
+        if (!includedbirds) includedbirds = [];
+        filter_lookup.forEach(function(f){
+            f.weather = (includedbirds.indexOf(f.id) > -1);
+        });
         public.finalizeFilterUpdate();
     };
 
@@ -58,12 +72,13 @@ var Birds = function(container, widget){
                 ds.entities.values.forEach(function (e) {
                     if (Cesium.defined(e.polyline)) {
                         var a = $('#areaFilterState').prop('checked') ? filter_lookup[i].spatial : true;
-                        e.polyline.show =  a  ;
+                        var b = $('#weatherFilterState').prop('checked') ? filter_lookup[i].weather : true;
+                        e.polyline.show =  a && b  ;
                     }
                 });
             });
         });
-    }
+    };
 
 
 
