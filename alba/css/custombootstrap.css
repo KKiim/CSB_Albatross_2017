@@ -69,7 +69,7 @@ body {
     padding: 0;
 }
 
-#widthselection, #transselection {
+#widthselection, #transselection, #ratioslider {
     width: 100px;
     height: 17px;
     position: relative;
@@ -84,7 +84,7 @@ body {
     box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(255, 255, 255, 0.13);
 }
 
-#widthselection .bar , #transselection .bar {
+#widthselection .bar , #transselection .bar, #ratioslider .bar {
     width: 108px;
     height: 5px;
     background: #333;
@@ -106,7 +106,7 @@ body {
     border-radius: 40px;
 }
 
-#widthselection .highlight, #transselection .highlight {
+#widthselection .highlight, #transselection .highlight, #ratioslider .highlight {
     height: 2px;
     position: absolute;
     width: 108px;
@@ -260,6 +260,6 @@ table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selecte
 .accordion-highlighted {
     background: darkblue !important;
 }
-.accordion-inner > label {
+#weatherinner > label {
     width:230px !important;
 }

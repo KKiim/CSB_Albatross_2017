@@ -7,6 +7,7 @@ var Weatherslider = function(birds){
         var sel = '#tempselector, #humselector, #windselector, #winddirselector, #pressureselector';
         $(sel).resizable({containment:'parent', handles:'e, w', maxWidth:150, resize: _onUpdate, stop: _onStop});
         $(sel).draggable({containment:'parent', drag: _onUpdate, stop: _onStop});
+        $('#ratioslider').on('change', _onStop);
     };
 
 
@@ -25,14 +26,18 @@ var Weatherslider = function(birds){
 
     }
 
-    function _onStop(){
-        $('#weatherFilterState').prop('checked', true);
-        $('#weatherFilterState').removeAttr('disabled');
+    function _onStop(ignoreDisable){
+            $('#weatherFilterState').prop('checked', true);
+            $('#weatherFilterState').removeAttr('disabled');
+
+
         var conditions = {};
         ['temp', 'hum', 'wind', 'winddir', 'pressure'].forEach(function(f){
             var tmp = $('#'+f+'range').html().split('-');
             conditions[f] = [parseFloat(tmp[0]), parseFloat(tmp[1])];
         });
+        conditions.ratio = parseFloat($('#ratioslider').val())/100.0;
+        $('#pointratio').html(conditions.ratio);
         birds.requestWeatherFilter(conditions);
     }
 

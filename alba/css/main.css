@@ -42,6 +42,9 @@ label {
 #spatialInner{
     height:210px;
 }
+#weatherinner{
+    height:220px;
+}
 .cesium-viewer-toolbar{
     opacity:0.3;
     width:120px;
@@ -52,6 +55,9 @@ label {
 
 #secondView .cesium-viewer-fullscreenContainer{
     display:none !important;
+}
+#ratioslider {
+    margin-left:35px;
 }
 
 .cesium-viewer-fullscreenContainer{
