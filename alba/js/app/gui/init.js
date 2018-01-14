@@ -87,11 +87,25 @@ var GuiInit = function(birds, dwrapper){
             e.stopPropagation();
         });
 
+        $('#areaFilterState').on('click', function(){
+            if ($(this).prop('checked')){
+                dwrapper.showAllChecked();
+                var visibles = dwrapper.getVisibles();
+                if (visibles.length > 0) birds.requestAreaFilter(visibles);
+            } else {
+                dwrapper.hideAll();
+                birds.finalizeFilterUpdate();
+                $('#altcontainer').hide();
+                $('.highlightedrow').removeClass('highlightedrow');
+            }
+        });
         $('#searchGeom').on('input', function(){ //filter data table, when you type:
             var dt = $('#drawoverview').dataTable();
             var query = $(this).val();
             dt.fnFilter(query); //custom search on datatable
         });
+
+
         var c = new Clock('#clock', function(){console.log("bla")});
         $('tbody').on('click','input.geomcheck', function(){
             var tbl = $('#drawoverview').DataTable();
@@ -126,7 +140,7 @@ var GuiInit = function(birds, dwrapper){
                     width:'20px',
                     render: function ( data, type, row ) {
                         if (type === 'display') {
-                            var addendum = ((data && data[5]) || !data) ? 'checked' : '';
+                            var addendum = (data)  ? 'checked' : '';
                             return '<input type="checkbox" '+addendum +' class="geomcheck">';
                         }
                         return data;
@@ -135,10 +149,6 @@ var GuiInit = function(birds, dwrapper){
                     {
                         visible: false,
                         targets:   4
-                    },
-                    {
-                        visible: false,
-                        targets:   5
                     }]
 
             });
@@ -164,6 +174,15 @@ var GuiInit = function(birds, dwrapper){
             });
             $('#altselector').resizable({containment:'parent', handles:'e, w', resize:_onAltChange, maxWidth:200, stop: _onAltStop});
             $('#altselector').draggable({containment:'parent', drag: _onAltChange, stop: _onAltStop});
+
+
+            $(document).keyup(function(event){
+                if (event.which === 68){
+                    var tbl = $('#drawoverview').DataTable();
+                    var d = tbl.row($('.highlightedrow')).data();
+                    console.log("remove geometry now")
+                }
+            });
     }
 
     function _onAltChange(){

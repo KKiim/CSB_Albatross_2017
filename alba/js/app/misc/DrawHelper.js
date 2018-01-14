@@ -25,6 +25,7 @@ var DrawHelper = (function() {
         this.circleid = 0;
         this.polyid = 0;
         this.polyconfirm = polyconfirm;
+
     }
 
     _.prototype.initialiseHandlers = function() {
@@ -105,6 +106,11 @@ var DrawHelper = (function() {
             _self._tooltip.setVisible(false);
         });
         setListener(surface, 'leftClick', function(position) {
+            if (surface.hasOwnProperty('circleid')){
+                surface.executeListeners({name:'startedEdit' , id: 'c'+surface.circleid});
+            } else if (surface.hasOwnProperty('polyid')) {
+                surface.executeListeners({name: 'startedEdit', id: 'p'+surface.polyid});
+            }
             surface.setEditMode(true);
         });
     }

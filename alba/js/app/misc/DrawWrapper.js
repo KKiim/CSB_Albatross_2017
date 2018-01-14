@@ -7,16 +7,27 @@ var DrawWrapper = function(birds, widget){
         var drawer = new DrawHelper(widget, function(event){
             event.ts = new Date();
             event.heights = '0-170';
+            event.checked = true;
             geomcache.polygon[event.id] = event;
             _updateDataTable();
             $('#areaFilterState').prop('checked', true);
             var visibles = public.getVisibles();
             if (visibles.length > 0) birds.requestAreaFilter(visibles);
-
         });
         var toolbar = drawer.addToolbar(document.getElementById("drawer"), {
             buttons: ['polygon', 'circle']
         });
+
+        function _onStartedEdit(event){
+            $('#drawoverview tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
+            var tbl = $('#drawoverview').DataTable();
+            console.log(event.id);
+            var indexes = tbl.rows().eq(0).filter(function (rowid) {
+                return tbl.cell( rowid, 1 ).data() === event.id;
+            } );
+            tbl.rows(indexes).nodes().to$().addClass('highlightedrow');
+            $('#altcontainer').show();
+        }
 
         toolbar.addListener('polygonCreated', function(event) {
             var polygon = new DrawHelper.PolygonPrimitive({
@@ -25,6 +36,8 @@ var DrawWrapper = function(birds, widget){
             });
             scene.primitives.add(polygon);
             polygon.setEditable();
+            polygon.addListener('startedEdit', _onStartedEdit);
+
         });
         toolbar.addListener('circleCreated', function(event) {
             var circle = new DrawHelper.CirclePrimitive({
@@ -37,6 +50,7 @@ var DrawWrapper = function(birds, widget){
             circle.addListener('onConfirmed', function(event) {
                 event.ts = new Date();
                 event.heights = '0-170';
+                event.checked = true;
                 geomcache.circle[event.id] = event;
                 _updateDataTable();
                 $('#areaFilterState').prop('checked', true);
@@ -45,15 +59,8 @@ var DrawWrapper = function(birds, widget){
                 var visibles = public.getVisibles();
                 if (visibles.length > 0) birds.requestAreaFilter(visibles);
             });
-            circle.addListener('onEditStart', function(event){
-                $('#drawoverview tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
-                var tbl = $('#drawoverview').DataTable();
-                var indexes = tbl.rows().eq(0).filter(function (rowid) {
-                    return tbl.cell( rowid, 1 ).data() === event.id;
-                } );
-                tbl.rows(indexes).nodes().to$().addClass('highlightedrow');
-                $('#altcontainer').show();
-            });
+            circle.addListener('startedEdit', _onStartedEdit);
+
         });
     }
 
@@ -67,7 +74,7 @@ var DrawWrapper = function(birds, widget){
         var tbl = $('#drawoverview').DataTable();
         tbl.clear();
         d.forEach(function (event) {
-            tbl.row.add([null,  event.type+event.id,event.ts.getHours()+ ":" + event.ts.getMinutes(), event.heights, event.ts.getTime(), event.o.show]);
+            tbl.row.add([event.checked,  event.type+event.id,event.ts.getHours()+ ":" + event.ts.getMinutes(), event.heights, event.ts.getTime()]);
         });
         tbl.draw();
     }
@@ -75,6 +82,7 @@ var DrawWrapper = function(birds, widget){
     public.setVisibility = function(d, bool){
         var type = (d[1][0] == 'c') ? 'circle' : 'polygon';
         var event = geomcache[type][parseInt(d[1].substring(1))];
+        event.checked = bool;
         event.o.show = bool;
     };
     public.setHeights = function(d, val){
@@ -101,12 +109,35 @@ var DrawWrapper = function(birds, widget){
         }
     };
 
+    public.hideAll = function(){
+        for (var k in geomcache) {
+            for (var k2 in geomcache[k]) {
+                geomcache[k][k2].o.show = false;
+            }
+        }
+    }
+
+    public.showAllChecked = function(){
+        for (var k in geomcache) {
+            for (var k2 in geomcache[k]) {
+                if (geomcache[k][k2].checked) geomcache[k][k2].o.show = true;
+            }
+        }
+    };
+
+    public.remove = function(d){
+        var type = (d[1][0] == 'c') ? 'circle' : 'polygon';
+        var event = geomcache[type][parseInt(d[1].substring(1))];
+        console.log(widget.entities);
+        widget.entities.remove(event.o);
+    }
+
     public.getVisibles = function(){
         var res = [];
         for (var k in geomcache) {
             for (var k2 in geomcache[k]) {
                 var that = geomcache[k][k2];
-                if (that.o.show){
+                if (that.checked){
                     if (that.type == 'c'){
                         var tmp = {id:that.id, type:'c'};
                         var cartesian = new Cesium.Cartesian3(that.center.x, that.center.y, that.center.z);
