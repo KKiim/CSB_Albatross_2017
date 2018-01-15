@@ -2,6 +2,7 @@ var Birds = function(container, widget){
     var public = this;
     var promise_lookup = [];
     var filter_lookup = [];
+    var entityID = [];
 
     function _constructor(){
         for (var i = 0; i < 28; i++) {
@@ -27,10 +28,20 @@ var Birds = function(container, widget){
                      if (Cesium.defined(e.polyline)) {
                          e.polyline.material = lineColor.withAlpha($('#transselection').val()/100);
                          e.polyline.width = $('#widthselection').val();
+
+                         entityID[i] = e.id;
+                         e.name = 'Albatross '+ i.toString();
+
                      }
                  });
             });
     };
+
+    public.getIdByEntityId = function(eID){
+        for (var id = 0;id < entityID.length; id++)
+            if (eID == entityID[id]) return id;
+    };
+
 
     public.requestAreaFilter = function(visiblegeoms){
         $.post('/r/filter/spatial', {visibles:visiblegeoms},

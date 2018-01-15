@@ -21,7 +21,7 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'gui/weatherslider', 'misc/hel
 
        // var birds = new Birds('#birds', widget2);
         //var stations = new Stations('#stations', widget2);
-        new GuiInit(birds, dwrapper);
+        new GuiInit(birds, dwrapper, widget);
         new Weatherslider(birds);
         new AreaChart('#areachart');
     });

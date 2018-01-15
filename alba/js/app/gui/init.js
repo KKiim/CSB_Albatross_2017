@@ -1,4 +1,4 @@
-var GuiInit = function(birds, dwrapper){
+var GuiInit = function(birds, dwrapper, widget){
     var public = this;
     var left_lookup = {};
 
@@ -232,6 +232,22 @@ var GuiInit = function(birds, dwrapper){
         }
         birds.styleSingle(sel);
     }
+
+    function _setSelectElement(birdID)
+    {
+        var selectedBird = document.getElementById('birdselection');
+        console.log("Selected: bird" + birdID);
+        selectedBird.value = 'bird' + birdID;
+    }
+
+    widget.screenSpaceEventHandler.setInputAction(function onLeftClick(movement) {
+        var pickedFeature = widget.scene.pick(movement.position);
+        if (Cesium.defined(pickedFeature)){
+            var id = birds.getIdByEntityId(pickedFeature.id.id);
+            _setSelectElement(id)
+        }
+    }, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
+
     constructor();
     return public;
 };
