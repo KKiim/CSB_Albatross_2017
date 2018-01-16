@@ -246,7 +246,7 @@ var GuiInit = function(birds, dwrapper, widget){
             var id = birds.getIdByEntityId(pickedFeature.id.id);
             _setSelectElement(id)
         }
-    }, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
+    }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
     constructor();
     return public;
