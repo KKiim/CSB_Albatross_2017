@@ -1,28 +1,29 @@
 var AreaChart = function(container){
     var public = this;
     var _maxcount;
-    var areacountvis;
     var _data;
-    var x;
     var y;
-    var gcount;
-
-    var areacount;
+    var g;
 
 
     function _constructor(){
-        generateData();
-        initGraphics();
+        _initGraphics();
+        public.update();
         $(container).data('public', public);
     }
 
-    function generateData(){
+    function _requestData(cb){
         _maxcount = 11;
         _data = [];
-        for(var i= 0; i<1000; i++) {_data.push({key:i, count: Math.random()*10});}
+        var q = $('#contextselection').val();
+
+
+        $.post('/r/context/' + q, {}, function(res){
+            if (res.data) cb(res.data);
+        });
     }
 
-    function initGraphics(){
+    function _initGraphics(){
         var svg = d3.select(container).append('svg').attr('width', '100%').attr('height', '100%');
         /*svg.on('mousemove', function(){
             var x =  d3.mouse(this)[0];
@@ -35,33 +36,30 @@ var AreaChart = function(container){
 
 
         svg.append('rect').attr('fill', 'black').attr('width', '100%').attr('height',30);
-        gcount = svg.append('g');
-        x = d3.scaleLinear().domain([0,1000]).range([0,$(container).width()]);
-        y = d3.scaleLog().base(10).domain([0.01,_maxcount]).range([30,1]);
-        areacount = d3.area()
-            .x(function(d) { return x(d.key); })
-            .y1(function(d) { return 30-y(d.count); }).y0(y(0.01));
-
-        areacountvis = gcount.append("path")
-            .datum(_data)
-            .attr("fill", "steelblue")
-            .attr("d", areacount);
+        g = svg.append('g').attr('transform', 'translate(0,30)');
     }
 
     public.update = function(){
-        generateData();
-        y = d3.scaleLog().base(10).domain([0.01,_maxcount]).range([60,1]);
-        areacount = d3.area()
-            .x(function(d) { return x(d.key); })
-            .y1(function(d) { return y(d.count); }).y0(y(0.01));
+        _requestData(function(data){
+            var stepsize = parseFloat($('#contextselection option:selected').attr('steps'));
+            var min = parseFloat($('#contextselection option:selected').attr('min'));
+            var max = parseFloat($('#contextselection option:selected').attr('max'));
+            var l = (max-min)/stepsize;
+            var maxval = d3.max(data, function(d) { return +d.v;} );
+            y = d3.scaleLog().base(10).domain([0.01,maxval]).range([30,1]);
 
-
-        areacountvis.datum(_data)
-            .transition()
-            .duration(750)
-            .attr("fill", "steelblue")
-            .attr("d", areacount);
-
+            var join = g.selectAll('rect').data(data);
+            join.exit().remove();
+            join.enter().append('rect').attr('fill', 'steelblue');
+            var w = $(container).width()/l;
+            g.selectAll('rect').attr('x', function(d){
+                return d.k/stepsize*w;
+            }).attr('y', function(d){
+                return -y(d.v);
+            }).attr('height', function(d){
+                return y(d.v)
+            }).attr('width', w);
+        });
     };
 
 

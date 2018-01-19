@@ -104,23 +104,6 @@
       </div>
     </div>
   </div>
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" href="#daytimeHeader">
-        <span class="acc-Check"><input type="checkbox" id="hourFilterState" class="filterState" autocomplete="off" disabled></span>
-        Daytime Pointer
-      </a>
-    </div>
-    <div id="daytimeHeader" class="accordion-body collapse">
-      <div class="accordion-inner">
-        <div id="tempMicro" style="padding-left:0px;padding-right:0px;">
-          <div id="clock"></div>
-          <button id="clockPrev"></button>
-          <button id="clockNext"></button>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 </div>
   <div>
@@ -153,10 +136,10 @@
           <div style="display:block">
             <label for="contextselection" style="float:left">Context:</label>
             <select id="contextselection" class="selectpicker" style="height:30px;padding:0px;width:150px">
-              <option value="speedalt">Speed-Altitude</option>
-              <option value="altspeed">Altitude-Speed</option>
-              <option value="speedcount">Speed Count</option>
-              <option value="altcount">Altitude Count</option>
+              <option value="speedalt" steps="0.5" min="0" max="25.5">Speed-Altitude</option>
+              <option value="altspeed" step="15" min="0" max="180">Altitude-Speed</option>
+              <option value="speedcount" steps="0.5" min="0" max="25.5">Speed Count</option>
+              <option value="altcount" step="15" min="0" max="180">Altitude Count</option>
             </select>
           </div>
           <hr>

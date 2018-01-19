@@ -121,7 +121,7 @@ var GuiInit = function(birds, dwrapper, widget){
         });
 
 
-        var c = new Clock('#clock', function(){console.log("bla")});
+
         $('tbody').on('click','input.geomcheck', function(){
             var tbl = $('#drawoverview').DataTable();
             var d = tbl.row($(this).parent().parent()).data();
