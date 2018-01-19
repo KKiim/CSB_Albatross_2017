@@ -23,12 +23,13 @@ var GuiInit = function(birds, dwrapper, widget){
                 'width': '40px',
                 'min-width': '10px'
             });
+            $('.modal-backdrop').removeClass("modal-backdrop");
         });
 
         $('.accordion-toggle').on('click', function(){
             $(this).toggleClass('accordion-highlighted');
         });
-
+        $('#settingsDialog').modal({backdrop: 'static', keyboard: false, show:false});
         $("#settingsDialog").draggable({
             handle: ".modal-header"
         });

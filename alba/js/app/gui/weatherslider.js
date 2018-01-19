@@ -23,7 +23,6 @@ var Weatherslider = function(birds){
         selmax = Math.round(selmax * 100) / 100;
         var label = '#' + $(this).attr('id').replace('selector', '') + 'range';
         $(label).html(selmin + '-' + selmax );
-
     }
 
     function _onStop(){

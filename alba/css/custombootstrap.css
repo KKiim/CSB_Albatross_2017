@@ -263,3 +263,7 @@ table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selecte
 #weatherinner > label {
     width:230px !important;
 }
+body.modal-open { overflow: auto; }
+.modal.in { pointer-events: none; }
+.modal-content { pointer-events:all; }
+.modal-backdrop { display: none; }
