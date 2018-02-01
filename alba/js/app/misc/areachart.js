@@ -1,6 +1,5 @@
 var AreaChart = function(container){
     var public = this;
-    var _maxcount;
     var _data;
     var y;
     var g;
@@ -13,7 +12,6 @@ var AreaChart = function(container){
     }
 
     function _requestData(cb){
-        _maxcount = 11;
         _data = [];
         var q = $('#contextselection').val();
 
@@ -25,18 +23,10 @@ var AreaChart = function(container){
 
     function _initGraphics(){
         var svg = d3.select(container).append('svg').attr('width', '100%').attr('height', '100%');
-        /*svg.on('mousemove', function(){
-            var x =  d3.mouse(this)[0];
-            var index = Math.round(xlon.invert(x))
-            var d = _datalon[(index+180)/binstep];
-            markerlon.attr('transform', 'translate('+x +',' + (ylon(d.count)-5)+')');
-            tiplon.attr('transform', 'translate('+x +',10)').text(Math.round(d.count));
-            markerlon.style('display','block');
-        });*/
 
 
-        svg.append('rect').attr('fill', 'black').attr('width', '100%').attr('height',30);
-        g = svg.append('g').attr('transform', 'translate(0,30)');
+        svg.append('rect').attr('fill', 'black').attr('width', '100%').attr('height',120);
+        g = svg.append('g').attr('transform', 'translate(20,108)');
     }
 
     public.update = function(){
@@ -46,15 +36,17 @@ var AreaChart = function(container){
             var max = parseFloat($('#contextselection option:selected').attr('max'));
             var l = (max-min)/stepsize;
             var maxval = d3.max(data, function(d) { return +d.v;} );
-            y = d3.scaleLog().base(10).domain([0.01,maxval]).range([30,1]);
+            y = d3.scaleLinear().domain([0,maxval]).range([108,1]);
+
 
             var join = g.selectAll('rect').data(data);
             join.exit().remove();
             join.enter().append('rect').attr('fill', 'steelblue');
-            var w = $(container).width()/l;
+            var w = ($(container).width()-10-17.5)/l;
             g.selectAll('rect').attr('x', function(d){
                 return d.k/stepsize*w;
             }).attr('y', function(d){
+
                 return -y(d.v);
             }).attr('height', function(d){
                 return y(d.v)
