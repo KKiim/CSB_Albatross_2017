@@ -247,6 +247,11 @@ var GuiInit = function(birds, dwrapper, widget){
             var id = birds.getIdByEntityId(pickedFeature.id.id);
             _setSelectElement(id)
         }
+    }, Cesium.ScreenSpaceEventType.RIGHT_CLICK);
+
+
+    widget.screenSpaceEventHandler.setInputAction(function onLeftClick(movement) {
+        console.log("Leftclick at: " + movement.position);
     }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
     constructor();
