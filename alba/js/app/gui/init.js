@@ -107,6 +107,10 @@ var GuiInit = function(birds, dwrapper, widget){
             e.stopPropagation();
         });
 
+        $('#contextselection').on('change', function(){
+           $('#areachart').data('public').update();
+        });
+
         $('#areaFilterState').on('click', function(){
             if ($(this).prop('checked')){
                 dwrapper.showAllChecked();

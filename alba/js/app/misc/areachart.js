@@ -15,7 +15,6 @@ var AreaChart = function(container){
         _data = [];
         var q = $('#contextselection').val();
 
-
         $.post('/r/context/' + q, {}, function(res){
             if (res.data) cb(res.data);
         });
@@ -35,8 +34,14 @@ var AreaChart = function(container){
             var min = parseFloat($('#contextselection option:selected').attr('min'));
             var max = parseFloat($('#contextselection option:selected').attr('max'));
             var l = (max-min)/stepsize;
+
             var maxval = d3.max(data, function(d) { return +d.v;} );
-            y = d3.scaleLinear().domain([0,maxval]).range([108,1]);
+            if (['speedcount', 'altcount'].indexOf($('#contextselection').val()) > -1){
+                y = d3.scaleLog().base(10).domain([0.01,maxval]).range([1,108]);
+            } else {
+                y = d3.scaleLinear().domain([0,maxval]).range([1,108]);
+            }
+
 
 
             var join = g.selectAll('rect').data(data);
@@ -44,13 +49,16 @@ var AreaChart = function(container){
             join.enter().append('rect').attr('fill', 'steelblue');
             var w = ($(container).width()-10-17.5)/l;
             g.selectAll('rect').attr('x', function(d){
-                return d.k/stepsize*w;
+                return (d.k/stepsize)*w;
             }).attr('y', function(d){
 
                 return -y(d.v);
             }).attr('height', function(d){
                 return y(d.v)
-            }).attr('width', w);
+            }).attr('width', w)
+                .on('mouseover', function(d){
+                    console.log(d);
+                })
         });
     };
 
