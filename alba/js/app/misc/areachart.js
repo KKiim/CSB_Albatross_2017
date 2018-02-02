@@ -4,7 +4,8 @@ var AreaChart = function(container){
     var y;
     var g;
     var xlabels;
-    var ylabels; 
+    var ylabels;
+    var transition;
 
 
     function _constructor(){
@@ -30,6 +31,7 @@ var AreaChart = function(container){
         g = svg.append('g').attr('transform', 'translate(20,108)');
         xlabels = svg.append('g').attr('transform', 'translate(20,117)');
         ylabels = svg.append('g').attr('transform', 'translate(10,110)');
+        transition = d3.transition().duration(750).ease(d3.easeLinear);
     }
 
     public.update = function(){
@@ -52,7 +54,7 @@ var AreaChart = function(container){
             join.exit().remove();
             join.enter().append('rect').attr('fill', 'steelblue');
             var w = ($(container).width() - 10 - 17.5) / l;
-            g.selectAll('rect').attr('x', function (d) {
+            g.selectAll('rect').transition(transition).attr('x', function (d) {
                 return (d.k / stepsize) * w;
             }).attr('y', function (d) {
 
