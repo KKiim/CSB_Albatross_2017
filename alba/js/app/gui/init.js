@@ -1,12 +1,9 @@
-var GuiInit = function(birds, dwrapper, widget){
+var GuiInit = function(birds, dwrapper, widget, addendum){
     var public = this;
     var left_lookup = {};
 
-    function constructor(){
-        _init();
-    }
 
-    function _init(){
+    public.initBasis= function(){
         for (var i=0; i<28; i++) $('#birdselection').append('<option value="bird'+i+'">Albatross '+i+'</option>');
         $('.modal').on('shown.bs.modal', function() {
             $(".modal-header").css("padding",'2px');
@@ -69,7 +66,7 @@ var GuiInit = function(birds, dwrapper, widget){
         }).on('mousemove', function(){
             $(this).css('opacity', 1);
         });
-        $('#cesiumContainer').on('mouseenter', function(){
+        $('#cesiumContainer, #secondView').on('mouseenter', function(){
             $('#leftpanel').css('opacity', 0.2);
             $('.cesium-viewer-toolbar').css('opacity', 0.2);
         });
@@ -118,57 +115,18 @@ var GuiInit = function(birds, dwrapper, widget){
            $('#areachart').data('public').update();
         });
 
-        $('#areaFilterState').on('click', function(){
-            if ($(this).prop('checked')){
-                dwrapper.showAllChecked();
-                var visibles = dwrapper.getVisibles();
-                if (visibles.length > 0) birds.requestAreaFilter(visibles);
-            } else {
-                dwrapper.hideAll();
-                birds.finalizeFilterUpdate();
-                $('#altcontainer').hide();
-                $('.highlightedrow').removeClass('highlightedrow');
-            }
-        });
 
-        $('#weatherFilterState').on('click', function(){
-            var conditions = {};
-            if ($(this).prop('checked')){
-                ['temp', 'hum', 'wind', 'winddir', 'pressure'].forEach(function(f){
-                    var tmp = $('#'+f+'range').html().split('-');
-                    conditions[f] = [parseFloat(tmp[0]), parseFloat(tmp[1])];
-                });
-                birds.requestWeatherFilter(conditions);
-            } else {
-                birds.finalizeFilterUpdate();
-            }
-        });
 
-        $('#searchGeom').on('input', function(){ //filter data table, when you type:
+
+
+        $('#searchGeom, #searchGeomdual').on('input', function(){ //filter data table, when you type:
             var dt = $('#drawoverview').dataTable();
             var query = $(this).val();
             dt.fnFilter(query); //custom search on datatable
         });
 
 
-
-        $('tbody').on('click','input.geomcheck', function(){
-            var tbl = $('#drawoverview').DataTable();
-            var d = tbl.row($(this).parent().parent()).data();
-            dwrapper.setVisibility(d, $(this).prop('checked'));
-            var visibles = dwrapper.getVisibles();
-            if (visibles.length > 0){
-                $('#areaFilterState').prop('checked', true);
-                $('#areaFilterState').attr('disabled', false);
-                birds.requestAreaFilter(visibles);
-            } else {
-                $('#areaFilterState').prop('checked', false);
-                $('#areaFilterState').attr('disabled', true);
-                birds.finalizeFilterUpdate();
-            }
-            $('#leftpanel').css('opacity', 1);
-        });
-        $('#drawoverview').DataTable({
+        $('#drawoverview, #drawoverviewdual').DataTable({
                 paging: false,
                 info: false, //no 'displaying x/100 items'
                 scrollY: "100px",
@@ -185,8 +143,8 @@ var GuiInit = function(birds, dwrapper, widget){
                     width:'20px',
                     render: function ( data, type, row ) {
                         if (type === 'display') {
-                            var addendum = (data)  ? 'checked' : '';
-                            return '<input type="checkbox" '+addendum +' class="geomcheck">';
+                            var addendumchecked = (data)  ? 'checked' : '';
+                            return '<input type="checkbox" '+addendumchecked +' class="geomcheck">';
                         }
                         return data;
                     },
@@ -198,36 +156,74 @@ var GuiInit = function(birds, dwrapper, widget){
 
             });
 
-            $('#drawoverview tbody').on('click', 'td:not(.select-checkbox)', function(){ //blue highlighting of table rows
-                $('#drawoverview tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
-                var tbl = $('#drawoverview').DataTable();
-                var d = tbl.row($(this).parent()).data();
-                $(this).parent().toggleClass('highlightedrow');
-                if ($('.highlightedrow').length > 0){
-                    var selmin = parseInt(d[3].split('-')[0]);
-                    var selmax = parseInt(d[3].split('-')[1]);
-                    var w = ((selmax-selmin)/170) * $('#altwrapper').width();
-                    var l = left_lookup.hasOwnProperty(d[1])? left_lookup[d[1]] : 0;
-                    $('#altselector').width(w);
-                    $('#altselector').css('left', l );
-                    dwrapper.highlightBounds(d);
-                    $('#altcontainer').show();
-                } else {
-                    dwrapper.unhighlightBounds();
-                    $('#altcontainer').hide();
-                }
-            });
-            $('#altselector').resizable({containment:'parent', handles:'e, w', resize:_onAltChange, maxWidth:200, stop: _onAltStop});
-            $('#altselector').draggable({containment:'parent', drag: _onAltChange, stop: _onAltStop});
 
+    }
 
-            $(document).keyup(function(event){
-                if (event.which === 68){
-                    var tbl = $('#drawoverview').DataTable();
-                    var d = tbl.row($('.highlightedrow')).data();
-                    console.log("remove geometry now")
-                }
-            });
+    public.initListeners = function(){
+        $('#drawoverview'+addendum+' tbody').on('click','input.geomcheck', function(){
+            var tbl = $('#drawoverview'+addendum).DataTable();
+            var d = tbl.row($(this).parent().parent()).data();
+            dwrapper.setVisibility(d, $(this).prop('checked'));
+            var visibles = dwrapper.getVisibles();
+            if (visibles.length > 0){
+                $('#areaFilterState'+addendum).prop('checked', true);
+                $('#areaFilterState'+addendum).attr('disabled', false);
+                birds.requestAreaFilter(visibles);
+            } else {
+                $('#areaFilterState'+addendum).prop('checked', false);
+                $('#areaFilterState'+addendum).attr('disabled', true);
+                birds.finalizeFilterUpdate();
+            }
+            $('#leftpanel').css('opacity', 1);
+        });
+
+        $('#areaFilterState'+addendum).on('click', function(){
+            if ($(this).prop('checked')){
+                dwrapper.showAllChecked();
+                var visibles = dwrapper.getVisibles();
+                if (visibles.length > 0) birds.requestAreaFilter(visibles);
+            } else {
+                dwrapper.hideAll();
+                birds.finalizeFilterUpdate();
+                $('#altcontainer'+addendum).hide();
+                $('.highlightedrow').removeClass('highlightedrow');
+            }
+        });
+
+        $('#weatherFilterState'+addendum).on('click', function(){
+            var conditions = {};
+            if ($(this).prop('checked')){
+                ['temp', 'hum', 'wind', 'winddir', 'pressure'].forEach(function(f){
+                    var tmp = $('#'+f+'range'+addendum).html().split('-');
+                    conditions[f] = [parseFloat(tmp[0]), parseFloat(tmp[1])];
+                });
+                birds.requestWeatherFilter(conditions);
+            } else {
+                birds.finalizeFilterUpdate();
+            }
+        });
+
+        $('#drawoverview'+addendum+' tbody').on('click', 'td:not(.select-checkbox)', function(){ //blue highlighting of table rows
+            $('#drawoverview'+addendum+' tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
+            var tbl = $('#drawoverview').DataTable();
+            var d = tbl.row($(this).parent()).data();
+            $(this).parent().toggleClass('highlightedrow');
+            if ($('.highlightedrow').length > 0){
+                var selmin = parseInt(d[3].split('-')[0]);
+                var selmax = parseInt(d[3].split('-')[1]);
+                var w = ((selmax-selmin)/170) * $('#altwrapper').width();
+                var l = left_lookup.hasOwnProperty(d[1])? left_lookup[d[1]] : 0;
+                $('#altselector'+addendum).width(w);
+                $('#altselector'+addendum).css('left', l );
+                dwrapper.highlightBounds(d);
+                $('#altcontainer'+addendum).show();
+            } else {
+                dwrapper.unhighlightBounds();
+                $('#altcontainer'+addendum).hide();
+            }
+        });
+        $('#altselector'+addendum).resizable({containment:'parent', handles:'e, w', resize:_onAltChange, maxWidth:200, stop: _onAltStop});
+        $('#altselector'+addendum).draggable({containment:'parent', drag: _onAltChange, stop: _onAltStop});
     }
 
     function _onAltChange(){
@@ -271,6 +267,7 @@ var GuiInit = function(birds, dwrapper, widget){
         selectedBird.value = 'bird' + birdID;
     }
 
+
     widget.screenSpaceEventHandler.setInputAction(function onLeftClick(movement) {
         var pickedFeature = widget.scene.pick(movement.position);
         if (Cesium.defined(pickedFeature)){
@@ -279,16 +276,16 @@ var GuiInit = function(birds, dwrapper, widget){
         }
     }, Cesium.ScreenSpaceEventType.RIGHT_CLICK);
 
-
+/*
     widget.screenSpaceEventHandler.setInputAction(function onLeftClick(movement) {
         console.log("Leftclick at: " + movement.position);
         var pickedFeature = widget.scene.pick(movement.position);
+        if (!pickedFeature || !pickedFeature.id || !pickedFeature.id.id) return;
         if (Cesium.defined(pickedFeature) && Cesium.defined(birds.getIdByEntityId(pickedFeature.id.id))) {
             $('#detailsDialog').modal('show');
             $('#detailChart').data('public').updateVis(birds.getIdByEntityId(pickedFeature.id.id));
         }
-    }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+    }, Cesium.ScreenSpaceEventType.LEFT_CLICK);*/
 
-    constructor();
     return public;
 };

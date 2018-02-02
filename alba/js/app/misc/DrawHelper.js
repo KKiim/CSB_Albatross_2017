@@ -1637,6 +1637,7 @@ console.log(1303);
                     }
                     this._editMode = true;
                 } else {
+                    console.log("confirmed");
                     if(this._markers != null) {
                         this._markers.remove();
                         this._markers = null;

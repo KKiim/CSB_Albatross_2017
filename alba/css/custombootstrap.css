@@ -69,7 +69,7 @@ body {
     padding: 0;
 }
 
-#widthselection, #transselection, #ratioslider {
+#widthselection, #transselection, #ratioslider, #ratiosliderdual {
     width: 100px;
     height: 17px;
     position: relative;
@@ -84,7 +84,7 @@ body {
     box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(255, 255, 255, 0.13);
 }
 
-#widthselection .bar , #transselection .bar, #ratioslider .bar {
+#widthselection .bar , #transselection .bar, #ratioslider .bar, #ratiosliderdual .bar {
     width: 108px;
     height: 5px;
     background: #333;
@@ -239,6 +239,9 @@ table.dataTable tbody th, table.dataTable tbody td{
 #drawoverview_filter{
     display:none;
 }
+#drawoverview_filterdual{
+    display:none;
+}
 table.dataTable tbody td.select-checkbox:before, table.dataTable tbody th.select-checkbox:before{
     margin-top: -10px !important;
 }
@@ -261,6 +264,10 @@ table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selecte
     background: darkblue !important;
 }
 #weatherinner > label {
+    width:230px !important;
+}
+
+#weatherinnerdual > label {
     width:230px !important;
 }
 body.modal-open { overflow: auto; }

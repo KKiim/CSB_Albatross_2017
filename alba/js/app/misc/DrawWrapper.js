@@ -1,32 +1,34 @@
-var DrawWrapper = function(birds, widget){
+var DrawWrapper = function(birds, widget, addendum){
     var public = this;
     var geomcache= {circle:{}, polygon:{}};
 
     function constructor(){
         var scene = widget.scene;
+
         var drawer = new DrawHelper(widget, function(event){
             event.ts = new Date();
             event.heights = '0-170';
             event.checked = true;
             geomcache.polygon[event.id] = event;
             _updateDataTable();
-            $('#areaFilterState').prop('checked', true);
+            $('#areaFilterState'+addendum).prop('checked', true);
             var visibles = public.getVisibles();
             if (visibles.length > 0) birds.requestAreaFilter(visibles);
         });
-        var toolbar = drawer.addToolbar(document.getElementById("drawer"), {
+        if (addendum.length > 0) return;
+        var toolbar = drawer.addToolbar(document.getElementById("drawer"+addendum), {
             buttons: ['polygon', 'circle']
         });
 
         function _onStartedEdit(event){
-            $('#drawoverview tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
-            var tbl = $('#drawoverview').DataTable();
+            $('#drawoverview'+addendum+' tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
+            var tbl = $('#drawoverview'+addendum).DataTable();
             console.log(event.id);
             var indexes = tbl.rows().eq(0).filter(function (rowid) {
                 return tbl.cell( rowid, 1 ).data() === event.id;
             } );
             tbl.rows(indexes).nodes().to$().addClass('highlightedrow');
-            $('#altcontainer').show();
+            $('#altcontainer'+addendum).show();
         }
 
         toolbar.addListener('polygonCreated', function(event) {
@@ -38,6 +40,7 @@ var DrawWrapper = function(birds, widget){
             polygon.setEditable();
             polygon.addListener('startedEdit', _onStartedEdit);
 
+
         });
         toolbar.addListener('circleCreated', function(event) {
             var circle = new DrawHelper.CirclePrimitive({
@@ -48,20 +51,26 @@ var DrawWrapper = function(birds, widget){
             scene.primitives.add(circle);
             circle.setEditable();
             circle.addListener('onConfirmed', function(event) {
+                console.log("onconfirmed");
                 event.ts = new Date();
                 event.heights = '0-170';
                 event.checked = true;
                 geomcache.circle[event.id] = event;
                 _updateDataTable();
-                $('#areaFilterState').prop('checked', true);
-                $('#areaFilterState').removeAttr("disabled");
-                $('#altcontainer').hide();
+                $('#areaFilterState'+addendum).prop('checked', true);
+                $('#areaFilterState'+addendum).removeAttr("disabled");
+                $('#altcontainer'+addendum).hide();
                 var visibles = public.getVisibles();
                 if (visibles.length > 0) birds.requestAreaFilter(visibles);
             });
             circle.addListener('startedEdit', _onStartedEdit);
 
         });
+    }
+
+    function _getAddendum(){
+        if ($('#btn_dualviewsel').text()=== 'L' && $('#btn_dualview').text()=== 'Mono' ) return 'dual';
+        return '';
     }
 
     function _updateDataTable(){
@@ -71,7 +80,7 @@ var DrawWrapper = function(birds, widget){
                 d.push(geomcache[k][k2]);
             }
         }
-        var tbl = $('#drawoverview').DataTable();
+        var tbl = $('#drawoverview'+addendum).DataTable();
         tbl.clear();
         d.forEach(function (event) {
             tbl.row.add([event.checked,  event.type+event.id,event.ts.getHours()+ ":" + event.ts.getMinutes(), event.heights, event.ts.getTime()]);
@@ -90,7 +99,7 @@ var DrawWrapper = function(birds, widget){
         var event = geomcache[type][parseInt(d[1].substring(1))];
         event.heights = val;
         d[3] = val;
-        var tbl = $('#drawoverview').DataTable();
+        var tbl = $('#drawoverview'+addendum).DataTable();
         tbl.row($('.highlightedrow')).data(d).draw();
     };
 
@@ -169,4 +178,4 @@ var DrawWrapper = function(birds, widget){
 
     constructor();
     return public;
-}
+};

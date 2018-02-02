@@ -19,7 +19,7 @@ label {
     padding-left:10px;
 }​
 
- #drawbar {
+ #drawbar, #drawbardual {
      position: absolute;
      top: 0px;
      left: 0;
@@ -39,10 +39,10 @@ label {
     z-Index:1000;
 }
 
-#spatialInner{
+#spatialInner, #spatialInnerdual{
     height:210px;
 }
-#weatherinner{
+#weatherinner, #weatherinnerdual{
     height:220px;
 }
 .cesium-viewer-toolbar{
@@ -56,7 +56,7 @@ label {
 #secondView .cesium-viewer-fullscreenContainer{
     display:none !important;
 }
-#ratioslider {
+#ratioslider, #ratiosliderdual {
     margin-left:35px;
 }
 
@@ -73,31 +73,13 @@ tr.selected {
 tr.selected.highlightedrow {
     background-color: steelblue !important;
 }
-/* begin clock css*/
 
-.cticks {
-    fill: white;
-}
-
-.clabels {
-    fill: white;
-    font-size: 0.9em;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-}
-
-#ghostItemLate,
-#ghostItemEarly {
-    cursor: move;
-}
 
 #centerbox text {
     font-size: 12px;
     text-anchor: middle;
 }
-#drawoverview{
+#drawoverview, #drawoverviewdual{
     color:black;
 }
 
