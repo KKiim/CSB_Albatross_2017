@@ -52,6 +52,8 @@ var GuiInit = function(birds, dwrapper, widget){
 
          $('#btn_dualview').detach().appendTo('.cesium-viewer-toolbar');
         $('#btn_dualview').css('display', 'inline');
+        $('#btn_dualviewsel').detach().appendTo('.cesium-viewer-toolbar');
+
         $('.cesium-viewer-bottom').css('display', 'none');
 
         $('#cesiumContainer .cesium-viewer-toolbar').detach().appendTo('#buttonbar-right')
@@ -59,7 +61,9 @@ var GuiInit = function(birds, dwrapper, widget){
         $('#cesiumContainer .cesium-viewer-fullscreenContainer').detach().appendTo('#full')
         $('#cesiumContainer').css('height', $(document).height());
         $('#secondView').css('height', $(document).height());
-       $('#leftpanel').on('mouseenter', function(){
+
+
+        $('#leftpanel').on('mouseenter', function(){
             $(this).css('opacity', 1);
         }).on('mousemove', function(){
             $(this).css('opacity', 1);
@@ -76,12 +80,27 @@ var GuiInit = function(birds, dwrapper, widget){
         });
 
         $('#btn_dualview').on('click', function(){
+            if ($(this).text() === 'Mono'){
+                $(this).text('Dual');
+                $('#btn_dualviewsel').hide();
+            } else if ($(this).text() === 'Dual'){
+                $(this).text('Mono');
+                $('#btn_dualviewsel').show();
+            }
             $('#secondView').toggle();
             $('#sep').toggle();
             $('#cesiumContainer').css('width', function(){
                 if ($('#secondView').css('display') == 'none') return '100%';
                 return 'calc(50% - 2px)';
             });
+        });
+
+        $('#btn_dualviewsel').on('click', function(){
+            if ($(this).text() === 'L'){
+                $(this).text('R');
+            } else if ($(this).text() === 'R'){
+                $(this).text('L');
+            }
         });
 
         $('input[type=checkbox]').on('click', function(e){
