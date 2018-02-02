@@ -18,6 +18,7 @@
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
           crossorigin="anonymous"></script>
   <script src="../../Build/Cesium/Cesium.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script data-main="js/init.js" type="text/javascript" src="js/libs/external/require.js"></script>
   <style>
       @import url(../../Build/Cesium/Widgets/widgets.css);
@@ -181,6 +182,28 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade-scale" tabindex="-1" role="dialog" id="detailsDialog" data-backdrop="false">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-title" style="font-size:15px">View Settings.
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </p>
+
+        </div>
+        <div class="modal-body" style="height:300px;width:800px">
+          <div style="padding:7px">
+            <div id="detailChart"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id="birds"></div>
   <div id="stations"></div>
 </body>

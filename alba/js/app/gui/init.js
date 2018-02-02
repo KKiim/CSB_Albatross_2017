@@ -29,10 +29,11 @@ var GuiInit = function(birds, dwrapper, widget){
         $('.accordion-toggle').on('click', function(){
             $(this).toggleClass('accordion-highlighted');
         });
-        $('#settingsDialog').modal({backdrop: 'static', keyboard: false, show:false});
-        $("#settingsDialog").draggable({
+        $('#settingsDialog, #detailsDialog').modal({backdrop: 'static', keyboard: false, show:false});
+        $("#settingsDialog, #detailsDialog").draggable({
             handle: ".modal-header"
         });
+
 
         $("#btn_viewsettings").on('click', function(){
             $('#settingsDialog').modal('show');
@@ -275,6 +276,11 @@ var GuiInit = function(birds, dwrapper, widget){
 
     widget.screenSpaceEventHandler.setInputAction(function onLeftClick(movement) {
         console.log("Leftclick at: " + movement.position);
+        var pickedFeature = widget.scene.pick(movement.position);
+        if (Cesium.defined(pickedFeature) && Cesium.defined(birds.getIdByEntityId(pickedFeature.id.id))) {
+            $('#detailsDialog').modal('show');
+            $('#detailChart').data('public').updateVis(birds.getIdByEntityId(pickedFeature.id.id));
+        }
     }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
     constructor();
