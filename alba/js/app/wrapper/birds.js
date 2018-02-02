@@ -3,12 +3,14 @@ var Birds = function(container, widget){
     var promise_lookup = [];
     var filter_lookup = [];
     var entityID = [];
+    var visbirds = [];
 
     function _constructor(){
         for (var i = 0; i < 28; i++) {
             var d = new Cesium.KmlDataSource();
             promise_lookup.push(d.load('d/albatross/' + (i+1) + '/line.kml'));
             filter_lookup.push({id: i, weather:true, spatial:true }); //bird i shown because of weather and spatial filter
+            visbirds.push(i);
         }
         public.styleAll();
         $(container).data('public', public);
@@ -48,6 +50,13 @@ var Birds = function(container, widget){
             function(d){
                 if (d.data.length > 0){
                     public.updateAreaFilter(d.data[0].includedbirds);
+                    visbirds = [];
+                    for (var i= 0; i<28; i++){
+                        var a = $('#areaFilterState').prop('checked') ? filter_lookup[i].spatial : true;
+                        var b = $('#weatherFilterState').prop('checked') ? filter_lookup[i].weather : true;
+                        if (a && b) visbirds.push(i);
+                    }
+                    $('#areachart').data('public').update(visbirds);
                 }
             });
     };
@@ -57,6 +66,13 @@ var Birds = function(container, widget){
             function(d){
                 if (d.data.length > 0){
                     public.updateWeatherFilter(d.data[0].includedbirds);
+                     visbirds = [];
+                    for (var i= 0; i<28; i++){
+                        var a = $('#areaFilterState').prop('checked') ? filter_lookup[i].spatial : true;
+                        var b = $('#weatherFilterState').prop('checked') ? filter_lookup[i].weather : true;
+                        if (a && b) visbirds.push(i);
+                    }
+                    $('#areachart').data('public').update(visbirds);
                 }
             });
     };
@@ -90,6 +106,10 @@ var Birds = function(container, widget){
             });
         });
     };
+
+    public.getVisibleBirds = function(){
+        return visbirds;
+    }
 
 
 

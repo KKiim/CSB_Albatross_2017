@@ -112,7 +112,8 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
         });
 
         $('#contextselection').on('change', function(){
-           $('#areachart').data('public').update();
+            var visbirds = $('#birds'+addendum).data('public').getVisibleBirds();
+           $('#areachart').data('public').update(visbirds);
         });
 
 

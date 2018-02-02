@@ -36,7 +36,7 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'gui/weatherslider', 'misc/hel
 
 
         gui2.initListeners();
-        console.log($('#drawer').data());
+
         new Weatherslider(birds);
         new AreaChart('#areachart');
         new DetailView('#detailChart');

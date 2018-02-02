@@ -10,15 +10,17 @@ var AreaChart = function(container){
 
     function _constructor(){
         _initGraphics();
-        public.update();
+        var visbirds = [];
+        for (var i=0; i<28; i++) visbirds.push(i);
+
+        public.update(visbirds);
         $(container).data('public', public);
     }
 
-    function _requestData(cb){
+    function _requestData(visbirds, cb){
         _data = [];
         var q = $('#contextselection').val();
-
-        $.post('/r/context/' + q, {}, function(res){
+        $.post('/r/context/' + q, {visibleBirds:visbirds}, function(res){
             if (res.data) cb(res.data);
         });
     }
@@ -34,8 +36,8 @@ var AreaChart = function(container){
         transition = d3.transition().duration(750).ease(d3.easeLinear);
     }
 
-    public.update = function(){
-        _requestData(function(data) {
+    public.update = function(visbirds){
+        _requestData(visbirds, function(data) {
             var stepsize = parseFloat($('#contextselection option:selected').attr('steps'));
             var min = parseFloat($('#contextselection option:selected').attr('min'));
             var max = parseFloat($('#contextselection option:selected').attr('max'));
@@ -56,15 +58,15 @@ var AreaChart = function(container){
                 console.log(d);
             });
             var w = ($(container).width() - 10 - 17.5) / l;
-            g.selectAll('rect').transition(transition).attr('x', function (d) {
+            g.selectAll('rect').attr('x', function (d) {
                 return (d.k / stepsize) * w;
-            }).attr('y', function (d) {
+            }).attr('width', w);
+
+            g.selectAll('rect').transition(transition).attr('height', function (d) {
+                return Math.max(0,y(d.v))}).attr('y', function (d) {
 
                 return -y(d.v);
-            }).attr('height', function (d) {
-                return Math.max(0,y(d.v))
-            }).attr('width', w)
-
+            })
 
             var tx = xlabels.selectAll('text').data([$('#contextselection option:selected').attr('xlabel'), max / 2, max]);
             tx.exit().remove();

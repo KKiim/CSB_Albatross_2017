@@ -23,7 +23,6 @@ var DrawWrapper = function(birds, widget, addendum){
         function _onStartedEdit(event){
             $('#drawoverview'+addendum+' tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
             var tbl = $('#drawoverview'+addendum).DataTable();
-            console.log(event.id);
             var indexes = tbl.rows().eq(0).filter(function (rowid) {
                 return tbl.cell( rowid, 1 ).data() === event.id;
             } );
@@ -51,7 +50,6 @@ var DrawWrapper = function(birds, widget, addendum){
             scene.primitives.add(circle);
             circle.setEditable();
             circle.addListener('onConfirmed', function(event) {
-                console.log("onconfirmed");
                 event.ts = new Date();
                 event.heights = '0-170';
                 event.checked = true;
@@ -137,7 +135,6 @@ var DrawWrapper = function(birds, widget, addendum){
     public.remove = function(d){
         var type = (d[1][0] == 'c') ? 'circle' : 'polygon';
         var event = geomcache[type][parseInt(d[1].substring(1))];
-        console.log(widget.entities);
         widget.entities.remove(event.o);
     }
 
