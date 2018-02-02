@@ -106,7 +106,86 @@
     </div>
   </div>
 </div>
+  <div class="accordion" style="display:none" id="accordiondual">
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" href="#areaHeaderdual">
+          <input type="checkbox" id="areaFilterStatedual" class="filterState" autocomplete="off" disabled>
+          Area Filter (Right)
+        </a>
+      </div>
+      <div id="areaHeaderdual" class="accordion-body collapse">
+        <div class="accordion-inner" id="spatialInnerdual" >
+          <div id="drawerdual" style="width:60px;height:30px; float:left; background:rgba(40,40,40,0.7);padding-left:4px;margin-top:5px;"></div>
+          <hr style="border:solid grey 1px;background:grey; height:1px;top:30px;margin-top:40px !important; margin-bottom: 10px !important;margin-left:0px;margin-right:0px">
+          <input class="form-control-sm" type="text" placeholder="Search geometries" id="searchGeomdual">
+          <div style="width:200px; overflow:auto;position:absolute;left:2px;padding-top:10px">
+            <table id="drawoverviewdual" cellspacing="0" width="300px" style="text-align:center;float:left">
+              <thead>
+              <tr>
+                <th></th>
+                <th align="center">ID</th>
+                <th align="center">Ts</th>
+                <th align="center">Alt</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <hr style="border:black;background:black; height:0px;top:90px;margin-top:70px !important;margin-left:0px;margin-right:0px">
+          <div id="altcontainerdual" style="display:none">
+            Selected Alt:
+            <div id="altwrapperdual" style="width:150px; height:10px; background:white; margin-left:30px;">
+              <div id="altselectordual" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" href="#weatherHeaderdual">
+          <span class="acc-Check"><input type="checkbox" id="weatherFilterStatedual" class="filterState" autocomplete="off" disabled></span>
+          Weather Filter (Right)
+        </a>
+      </div>
+      <div id="weatherHeaderdual" class="accordion-body collapse">
+        <div class="accordion-inner">
+          <div id="weatherinnerdual">
+
+            <label>Temp. (<span id="temprangedual">16-31</span>)</label>
+            <div id="tempwrapperdual" style="width:150px; height:10px; background:white;margin-left:30px">
+              <div id="tempselectordual" min="16" max="31" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+            </div>
+            <label>Humidity (<span id="humrangedual">16-100</span>)</label>
+            <div id="humwrapperdual" style="width:150px; height:10px; background:white;margin-left:30px">
+              <div id="humselectordual" min="16" max="100" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+            </div>
+            <label>Wind Speed (<span id="windrangedual">1-150</span>)</label>
+            <div id="windwrapperdual" style="width:150px; height:10px; background:white;margin-left:30px">
+              <div id="windselectordual" min="1" max="150" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+            </div>
+            <label>Wind Dir (<span id="winddirrangedual">0-360</span>)</label>
+            <div id="winddirwrapperdual" style="width:150px; height:10px; background:white;margin-left:30px">
+              <div id="winddirselectordual" min="0" max="360" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+            </div>
+            <label>Pressure (<span id="pressurerangedual">1006-1092</span>)</label>
+            <div id="pressurewrapperdual" style="width:150px; height:10px; background:white;margin-left:30px">
+              <div id="pressureselectordual" min="1006" max= "1092" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
+            </div>
+            <label>Point Ratio (<span id="pointratiodual">0.3</span>)</label>
+            <input  style="float:left" type="range" min="10" max="100" value="30" class="slider" id="ratiosliderdual" name="ratioslider">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
+
   <div>
     <button id="btn_dualview" class="cesium-button cesium-button-toolbar" style="width:40px; height:30px;padding:0px;display:none;">Dual</button>
     <button id="btn_viewsettings" class="cesium-button cesium-button-toolbar" style="width:30px; height:30px;padding:0px;display:none;"><img src ="./img/white-settings-24.png"/></button>

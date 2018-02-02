@@ -52,7 +52,9 @@ var AreaChart = function(container){
 
             var join = g.selectAll('rect').data(data);
             join.exit().remove();
-            join.enter().append('rect').attr('fill', 'steelblue');
+            join.enter().append('rect').attr('fill', 'steelblue').on('mouseover', function (d) {
+                console.log(d);
+            });
             var w = ($(container).width() - 10 - 17.5) / l;
             g.selectAll('rect').transition(transition).attr('x', function (d) {
                 return (d.k / stepsize) * w;
@@ -60,11 +62,9 @@ var AreaChart = function(container){
 
                 return -y(d.v);
             }).attr('height', function (d) {
-                return y(d.v)
+                return Math.max(0,y(d.v))
             }).attr('width', w)
-                .on('mouseover', function (d) {
-                    console.log(d);
-                });
+
 
             var tx = xlabels.selectAll('text').data([$('#contextselection option:selected').attr('xlabel'), max / 2, max]);
             tx.exit().remove();

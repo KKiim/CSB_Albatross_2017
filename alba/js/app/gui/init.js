@@ -82,9 +82,15 @@ var GuiInit = function(birds, dwrapper, widget){
 
         $('#btn_dualview').on('click', function(){
             if ($(this).text() === 'Mono'){
+                //move to mono
+                $('#accordiondual').hide();
+                $('#accordion').show();
                 $(this).text('Dual');
                 $('#btn_dualviewsel').hide();
             } else if ($(this).text() === 'Dual'){
+                //move to dual
+                $('#accordiondual').show();
+                $('#accordion').hide();
                 $(this).text('Mono');
                 $('#btn_dualviewsel').show();
             }
