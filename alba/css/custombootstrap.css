@@ -274,3 +274,7 @@ body.modal-open { overflow: auto; }
 .modal.in { pointer-events: none; }
 .modal-content { pointer-events:all; }
 .modal-backdrop { display: none; }
+
+.cesium-viewer-fullscreenContainer{
+    left:0;
+}
