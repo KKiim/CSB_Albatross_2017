@@ -27,17 +27,14 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'gui/weatherslider', 'misc/hel
             }
         }};
         $('#sceneproviders').data('f', sceneproviders);
-        //widget.terrainProvider = terrainProvider;
-
-        var birds = new Birds('#birds', widget);
-        var birdsdual = new Birds('#birdsdual', widgetdual);
 
 
-
-
+        var birds = new Birds('#birds', widget, '');
+        var birdsdual = new Birds('#birdsdual', widgetdual, 'dual');
 
         var dwrapperdual  = new DrawWrapper(birdsdual, widgetdual, 'dual');
         var dwrapper = new DrawWrapper(birds, widget,'');
+
         var gui1 = new GuiInit(birds, dwrapper, widget, '');
         gui1.initBasis();
         gui1.initListeners();

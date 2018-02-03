@@ -1,4 +1,4 @@
-var Birds = function(container, widget){
+var Birds = function(container, widget, addendum){
     var public = this;
     var promise_lookup = [];
     var filter_lookup = [];
@@ -52,8 +52,8 @@ var Birds = function(container, widget){
                     public.updateAreaFilter(d.data[0].includedbirds);
                     visbirds = [];
                     for (var i= 0; i<28; i++){
-                        var a = $('#areaFilterState').prop('checked') ? filter_lookup[i].spatial : true;
-                        var b = $('#weatherFilterState').prop('checked') ? filter_lookup[i].weather : true;
+                        var a = $('#areaFilterState'+addendum).prop('checked') ? filter_lookup[i].spatial : true;
+                        var b = $('#weatherFilterState'+addendum).prop('checked') ? filter_lookup[i].weather : true;
                         if (a && b) visbirds.push(i);
                     }
                     $('#areachart').data('public').update(visbirds);
@@ -68,8 +68,8 @@ var Birds = function(container, widget){
                     public.updateWeatherFilter(d.data[0].includedbirds);
                      visbirds = [];
                     for (var i= 0; i<28; i++){
-                        var a = $('#areaFilterState').prop('checked') ? filter_lookup[i].spatial : true;
-                        var b = $('#weatherFilterState').prop('checked') ? filter_lookup[i].weather : true;
+                        var a = $('#areaFilterState'+addendum).prop('checked') ? filter_lookup[i].spatial : true;
+                        var b = $('#weatherFilterState'+addendum).prop('checked') ? filter_lookup[i].weather : true;
                         if (a && b) visbirds.push(i);
                     }
                     $('#areachart').data('public').update(visbirds);
@@ -98,8 +98,8 @@ var Birds = function(container, widget){
             p.then(function (ds) {
                 ds.entities.values.forEach(function (e) {
                     if (Cesium.defined(e.polyline)) {
-                        var a = $('#areaFilterState').prop('checked') ? filter_lookup[i].spatial : true;
-                        var b = $('#weatherFilterState').prop('checked') ? filter_lookup[i].weather : true;
+                        var a = $('#areaFilterState'+addendum).prop('checked') ? filter_lookup[i].spatial : true;
+                        var b = $('#weatherFilterState'+addendum).prop('checked') ? filter_lookup[i].weather : true;
                         e.polyline.show =  a && b  ;
                     }
                 });
@@ -109,7 +109,7 @@ var Birds = function(container, widget){
 
     public.getVisibleBirds = function(){
         return visbirds;
-    }
+    };
 
 
 
