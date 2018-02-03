@@ -192,7 +192,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
                 dwrapper.hideAll();
                 birds.finalizeFilterUpdate();
                 $('#altcontainer'+addendum).hide();
-                $('.highlightedrow').removeClass('highlightedrow');
+                $('#drawoverview'+addendum+' tbody > .highlightedrow').removeClass('highlightedrow');
             }
         });
 
@@ -214,7 +214,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
             var tbl = $('#drawoverview'+addendum).DataTable();
             var d = tbl.row($(this).parent()).data();
             $(this).parent().toggleClass('highlightedrow');
-            if ($('.highlightedrow').length > 0){
+            if ($('#drawoverview'+addendum+' tbody > .highlightedrow').length > 0){
                 var selmin = parseInt(d[3].split('-')[0]);
                 var selmax = parseInt(d[3].split('-')[1]);
                 var w = ((selmax-selmin)/170) * $('#altwrapper').width();
@@ -234,7 +234,8 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
 
     function _onAltChange(){
         var tbl = $('#drawoverview'+addendum).DataTable();
-        var d = tbl.row($('.highlightedrow')).data();
+        var sel = $('#drawoverview'+addendum+' tbody > .highlightedrow');
+        var d = tbl.row(sel).data();
 
         if (d){
             var min = 0;
@@ -251,7 +252,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
     }
 
     function _onAltStop(){
-        $('#areaFilterState').prop('checked', true);
+        $('#areaFilterState'+addendum).prop('checked', true);
         var visibles = dwrapper.getVisibles();
         if (visibles.length > 0) birds.requestAreaFilter(visibles);
     };
@@ -282,16 +283,16 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
         }
     }, Cesium.ScreenSpaceEventType.RIGHT_CLICK);
 
-/*
+
     widget.screenSpaceEventHandler.setInputAction(function onLeftClick(movement) {
-        console.log("Leftclick at: " + movement.position);
         var pickedFeature = widget.scene.pick(movement.position);
         if (!pickedFeature || !pickedFeature.id || !pickedFeature.id.id) return;
         if (Cesium.defined(pickedFeature) && Cesium.defined(birds.getIdByEntityId(pickedFeature.id.id))) {
+            $('#detailsWrapper').data('public').updateVis(birds.getIdByEntityId(pickedFeature.id.id));
             $('#detailsDialog').modal('show');
-            $('#detailChart').data('public').updateVis(birds.getIdByEntityId(pickedFeature.id.id));
+
         }
-    }, Cesium.ScreenSpaceEventType.LEFT_CLICK);*/
+    }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
     return public;
 };

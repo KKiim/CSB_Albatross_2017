@@ -45,6 +45,6 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'gui/weatherslider', 'misc/hel
 
         new Weatherslider(birds);
         new AreaChart('#areachart');
-        new DetailView('#detailChart');
+        new DetailView('#detailsWrapper');
     });
 });
