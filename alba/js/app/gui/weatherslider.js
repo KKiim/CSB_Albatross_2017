@@ -3,6 +3,8 @@
  */
 var Weatherslider = function(birds, addendum){
 
+    var _windDir = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
+
     function _constructor(){
         var sel = '#tempselector'+addendum+', #humselector'+addendum+', #windselector'+addendum+', #winddirselector'+addendum+', #pressureselector'+addendum;
         $(sel).resizable({containment:'parent', handles:'e, w', maxWidth:150, resize: _onUpdate, stop: _onStop});
@@ -33,13 +35,26 @@ var Weatherslider = function(birds, addendum){
         var conditions = {};
         ['temp', 'hum', 'wind', 'winddir', 'pressure'].forEach(function(f){
             var tmp = $('#'+f+'range'+addendum).html().split('-');
-            conditions[f] = [parseFloat(tmp[0]), parseFloat(tmp[1])];
+            if (f === 'winddir') {
+                conditions[f] = _degToCompass(parseFloat(tmp[0]), parseFloat(tmp[1]))
+                console.log(_degToCompass(parseFloat(tmp[0]), parseFloat(tmp[1])));
+            } else {
+                conditions[f] = [parseFloat(tmp[0]), parseFloat(tmp[1])];
+            }
         });
         conditions.ratio = parseFloat($('#ratioslider'+addendum).val())/100.0;
         $('#pointratio'+addendum).html(conditions.ratio);
         birds.requestWeatherFilter(conditions);
     }
 
+    function _degToCompass(num1, num2 ) {
+        var i = Math.round((num1 / 22.5) + 0.5);
+        var j = Math.round((num2 / 22.5) + 0.5);
+        var tempArr;
+        var tempIndex = 0;
+        for (var c = i; c != (j + 1) % 16; c = (c + 1) % 16 ) tempArr[tempIndex++] = _windDir[c];
+        return tempArr;
+    }
 
 
     _constructor();
