@@ -13,6 +13,20 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'gui/weatherslider', 'misc/hel
             animation : false,
             timeline : false
         });
+
+        var sceneproviders = {left: function(){
+            return widget.scene;
+        }, right:function(){
+            return widgetdual.scene;
+        }, getActive: function(){
+            var curr = 'left';
+            if ($('#btn_dualviewsel').text() === 'L' && $('#btn_dualview').text() === 'Mono'){
+                return widgetdual.scene
+            } else {
+                return widget.scene;
+            }
+        }};
+        $('#sceneproviders').data('f', sceneproviders);
         //widget.terrainProvider = terrainProvider;
 
         var birds = new Birds('#birds', widget);
