@@ -101,8 +101,13 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
 
         $('#btn_dualviewsel').on('click', function(){
             if ($(this).text() === 'L'){
+                $('#accordiondual').hide();
+                $('#accordion').show();
                 $(this).text('R');
             } else if ($(this).text() === 'R'){
+                $('#accordion').hide();
+                $('#accordiondual').show();
+
                 $(this).text('L');
             }
         });
@@ -121,7 +126,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
 
 
         $('#searchGeom, #searchGeomdual').on('input', function(){ //filter data table, when you type:
-            var dt = $('#drawoverview').dataTable();
+            var dt = $('#drawoverview'+addendum).dataTable();
             var query = $(this).val();
             dt.fnFilter(query); //custom search on datatable
         });
@@ -206,7 +211,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
 
         $('#drawoverview'+addendum+' tbody').on('click', 'td:not(.select-checkbox)', function(){ //blue highlighting of table rows
             $('#drawoverview'+addendum+' tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
-            var tbl = $('#drawoverview').DataTable();
+            var tbl = $('#drawoverview'+addendum).DataTable();
             var d = tbl.row($(this).parent()).data();
             $(this).parent().toggleClass('highlightedrow');
             if ($('.highlightedrow').length > 0){
@@ -228,13 +233,13 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
     }
 
     function _onAltChange(){
-        var tbl = $('#drawoverview').DataTable();
+        var tbl = $('#drawoverview'+addendum).DataTable();
         var d = tbl.row($('.highlightedrow')).data();
 
         if (d){
             var min = 0;
             var max = 170;
-            var l = parseInt($('#altselector').css('left').replace("px", ""));
+            var l = parseInt($('#altselector'+addendum).css('left').replace("px", ""));
             var w = $('#altselector').parent().width();
             var selmin = min + (max-min)* l/w;
             selmin = Math.round(selmin * 100) / 100;

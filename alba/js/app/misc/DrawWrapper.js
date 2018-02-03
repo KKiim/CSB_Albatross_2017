@@ -15,7 +15,7 @@ var DrawWrapper = function(birds, widget, addendum){
             var visibles = public.getVisibles();
             if (visibles.length > 0) birds.requestAreaFilter(visibles);
         });
-        if (addendum.length > 0) return;
+        //if (addendum.length > 0) return;
         var toolbar = drawer.addToolbar(document.getElementById("drawer"+addendum), {
             buttons: ['polygon', 'circle']
         });
@@ -105,6 +105,7 @@ var DrawWrapper = function(birds, widget, addendum){
         public.unhighlightBounds();
         var type = (d[1][0] == 'c') ? 'circle' : 'polygon';
         var event = geomcache[type][parseInt(d[1].substring(1))];
+        console.log(d);
         event.o.setStrokeStyle(Cesium.Color.fromCssColorString('white'), 4);
     };
 

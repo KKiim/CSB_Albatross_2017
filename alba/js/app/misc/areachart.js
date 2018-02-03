@@ -63,10 +63,7 @@ var AreaChart = function(container){
             }).attr('width', w);
 
             g.selectAll('rect').transition(transition).attr('height', function (d) {
-                return Math.max(0,y(d.v))}).attr('y', function (d) {
-
-                return -y(d.v);
-            })
+                return Math.max(0,y(d.v))}).attr('y', function (d) {return -y(d.v);})
 
             var tx = xlabels.selectAll('text').data([$('#contextselection option:selected').attr('xlabel'), max / 2, max]);
             tx.exit().remove();

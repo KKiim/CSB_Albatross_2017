@@ -656,7 +656,8 @@ var DrawHelper = (function() {
     _.BillboardGroup = function(drawHelper, options) {
 
         this._drawHelper = drawHelper;
-        this._scene = drawHelper._scene;
+	this._scene = $('#sceneproviders').data('f').getActive(); 
+        //this._scene = drawHelper._scene;
 
         this._options = copyOptions(options, defaultBillboard);
 
@@ -1127,7 +1128,9 @@ var DrawHelper = (function() {
             var _self = this;
 
             function enableRotation(enable) {
-                drawHelper._scene.screenSpaceCameraController.enableRotate = enable;
+		               // var scene = drawHelper._scene;
+			var scene = $('#sceneproviders').data('f').getActive(); 
+                scene.screenSpaceCameraController.enableRotate = enable;
             }
 
             setListener(billboard, 'leftDown', function(position) {
@@ -1143,10 +1146,13 @@ var DrawHelper = (function() {
                     _self.executeListeners({name: 'dragEnd', positions: position});
                 }
 
-                var handler = new Cesium.ScreenSpaceEventHandler(drawHelper._scene.canvas);
+		
+	   var scene = $('#sceneproviders').data('f').getActive(); 
+                var handler = new Cesium.ScreenSpaceEventHandler(scene.canvas);
 
                 handler.setInputAction(function(movement) {
-                    var cartesian = drawHelper._scene.camera.pickEllipsoid(movement.endPosition, ellipsoid);
+			var scene = $('#sceneproviders').data('f').getActive(); 
+                    var cartesian = scene.camera.pickEllipsoid(movement.endPosition, ellipsoid);
                     if (cartesian) {
                         onDrag(cartesian);
                     } else {
@@ -1155,7 +1161,8 @@ var DrawHelper = (function() {
                 }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 
                 handler.setInputAction(function(movement) {
-                    onDragEnd(drawHelper._scene.camera.pickEllipsoid(movement.position, ellipsoid));
+			var scene = $('#sceneproviders').data('f').getActive(); 
+                    onDragEnd(scene.camera.pickEllipsoid(movement.position, ellipsoid));
                 }, Cesium.ScreenSpaceEventType.LEFT_UP);
 
                 enableRotation(false);
@@ -1168,7 +1175,8 @@ var DrawHelper = (function() {
 
         function setHighlighted(highlighted) {
 
-            var scene = drawHelper._scene;
+                       // var scene = drawHelper._scene;
+	   var scene = $('#sceneproviders').data('f').getActive(); 
 
             // if no change
             // if already highlighted, the outline polygon will be available
@@ -1206,7 +1214,8 @@ var DrawHelper = (function() {
             // display markers
             if(editMode) {
                 drawHelper.setEdited(this);
-                var scene = drawHelper._scene;
+                           // var scene = drawHelper._scene;
+	   var scene = $('#sceneproviders').data('f').getActive(); 
                 var _self = this;
                 // create the markers and handlers for the editing
                 if(this._markers == null) {
@@ -1579,7 +1588,9 @@ console.log(1303);
             }
 
             var circle = this;
-            var scene = drawHelper._scene;
+           // var scene = drawHelper._scene;
+	   var scene = $('#sceneproviders').data('f').getActive(); 
+	    //console.log(scene); 
 
             circle.asynchronous = false;
 
@@ -1708,7 +1719,8 @@ console.log(1303);
                 return div;
             }
 
-            var scene = drawHelper._scene;
+                       // var scene = drawHelper._scene;
+	   var scene = $('#sceneproviders').data('f').getActive(); 
 
 
             addIcon('polygon', options.polygonIcon, 'Click to start drawing a 2D polygon', function() {

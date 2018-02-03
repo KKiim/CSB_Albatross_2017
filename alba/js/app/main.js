@@ -13,30 +13,35 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'gui/weatherslider', 'misc/hel
             animation : false,
             timeline : false
         });
-        //widget.terrainProvider = terrainProvider;
 
-        var birds = new Birds('#birds', widget);
-       // var birdsdual = new Birds('#birdsdual', widgetdual);
+        var sceneproviders = {left: function(){
+            return widget.scene;
+        }, right:function(){
+            return widgetdual.scene;
+        }, getActive: function(){
+            var curr = 'left';
+            if ($('#btn_dualviewsel').text() === 'L' && $('#btn_dualview').text() === 'Mono'){
+                return widgetdual.scene
+            } else {
+                return widget.scene;
+            }
+        }};
+        $('#sceneproviders').data('f', sceneproviders);
 
 
+        var birds = new Birds('#birds', widget, '');
+        var birdsdual = new Birds('#birdsdual', widgetdual, 'dual');
 
-        //var stations = new Stations('#stations', widget);
-
-       // var birds = new Birds('#birds', widget2);
-        //var stations = new Stations('#stations', widget2);
-
-
-        //var dwrapperdual  = new DrawWrapper(birdsdual, widgetdual, 'dual');
+        var dwrapperdual  = new DrawWrapper(birdsdual, widgetdual, 'dual');
         var dwrapper = new DrawWrapper(birds, widget,'');
+
         var gui1 = new GuiInit(birds, dwrapper, widget, '');
         gui1.initBasis();
         gui1.initListeners();
 
 
-     //   var gui2 = new GuiInit(birdsdual, dwrapperdual, widgetdual, 'dual');
-
-
-       // gui2.initListeners();
+       var gui2 = new GuiInit(birdsdual, dwrapperdual, widgetdual, 'dual');
+       gui2.initListeners();
 
         new Weatherslider(birds);
         new AreaChart('#areachart');
