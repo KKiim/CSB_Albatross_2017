@@ -126,7 +126,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
 
 
         $('#searchGeom, #searchGeomdual').on('input', function(){ //filter data table, when you type:
-            var dt = $('#drawoverview').dataTable();
+            var dt = $('#drawoverview'+addendum).dataTable();
             var query = $(this).val();
             dt.fnFilter(query); //custom search on datatable
         });

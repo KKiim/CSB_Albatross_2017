@@ -239,7 +239,7 @@ table.dataTable tbody th, table.dataTable tbody td{
 #drawoverview_filter{
     display:none;
 }
-#drawoverview_filterdual{
+#drawoverviewdual_filter{
     display:none;
 }
 table.dataTable tbody td.select-checkbox:before, table.dataTable tbody th.select-checkbox:before{
