@@ -101,8 +101,13 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
 
         $('#btn_dualviewsel').on('click', function(){
             if ($(this).text() === 'L'){
+                $('#accordiondual').hide();
+                $('#accordion').show();
                 $(this).text('R');
             } else if ($(this).text() === 'R'){
+                $('#accordion').hide();
+                $('#accordiondual').show();
+
                 $(this).text('L');
             }
         });
