@@ -81,16 +81,20 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
         $('#btn_dualview').on('click', function(){
             if ($(this).text() === 'Mono'){
                 //move to mono
-                $('#areachart').data('public').hideSecond();
+
                 $('#accordiondual').hide();
                 $('#accordion').show();
                 $(this).text('Dual');
                 $('#btn_dualviewsel').hide();
                 var visbirds = $('#birds').data('public').getVisibleBirds();
-                $('#areachart').data('public').update(visbirds);
+                $('#areachart').data('public').update(visbirds,'left');
+
+                var visbirds2 = $('#birds').data('public').getVisibleBirds();
+                $('#areachart').data('public').update(visbirds2,'right');
+                $('#areachart').data('public').hideSecond();
             } else if ($(this).text() === 'Dual'){
                 var visbirds = $('#birdsdual').data('public').getVisibleBirds();
-                $('#areachart').data('public').update(visbirds);
+                $('#areachart').data('public').update(visbirds, 'right');
                 //move to dual
                 $('#accordiondual').show();
                 $('#accordion').hide();
@@ -104,9 +108,6 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
                 if ($('#secondView').css('display') == 'none') return '100%';
                 return 'calc(50% - 2px)';
             });
-
-
-            console.log(visbirds);
 
         });
 
@@ -127,8 +128,11 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
         });
 
         $('#contextselection').on('change', function(){
-            var visbirds = $('#birds'+addendum).data('public').getVisibleBirds();
-           $('#areachart').data('public').update(visbirds);
+            var visbirds1 = $('#birds').data('public').getVisibleBirds();
+           $('#areachart').data('public').update(visbirds1, 'left');
+
+            var visbirds2 = $('#birdsdual').data('public').getVisibleBirds();
+            $('#areachart').data('public').update(visbirds2, 'right');
         });
 
 

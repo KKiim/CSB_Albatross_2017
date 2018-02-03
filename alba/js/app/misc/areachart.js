@@ -46,10 +46,12 @@ var AreaChart = function(container){
         xlabels = svg.append('g').attr('transform', 'translate(20,117)');
         ylabels = svg.append('g').attr('transform', 'translate(10,110)');
         tooltip = svg.append('text').attr('transform', 'translate(220, 10)').text('').attr('font-size',10).attr('fill', 'white').attr('text-anchor', 'end');
+        svg.append('text').attr('transform', 'translate(100, 10)').text('L').attr('font-size',10).attr('fill', 'steelblue').attr('text-anchor', 'end');
+        svg.append('text').attr('transform', 'translate(110, 10)').text('R').attr('font-size',10).attr('fill', 'orange').attr('text-anchor', 'end');
         transition = d3.transition().duration(750).ease(d3.easeLinear);
     }
 
-    public.update = function(visbirds){
+    public.update = function(visbirds, view){
         _requestData(visbirds, function(data) {
 
             var stepsize = parseFloat($('#contextselection option:selected').attr('steps'));
@@ -66,8 +68,13 @@ var AreaChart = function(container){
             } else {
                 y = d3.scaleLinear().domain([0, maxval]).range([1, 108]);
             }
+            var g;
+            if (view){
+                g = (view === 'left') ? histos[0] : histos[1];
+            } else {
+                g = $('#accordion').is(':visible') ? histos[0] : histos[1];
+            }
 
-            var g =  $('#accordion').is(':visible') ? histos[0] : histos[1];
             var join = g.selectAll('rect').data(data);
             join.exit().remove();
             var fillval = $('#accordion').is(':visible') ? 'steelblue' : 'orange';
