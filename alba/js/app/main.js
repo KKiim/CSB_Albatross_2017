@@ -16,7 +16,7 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'gui/weatherslider', 'misc/hel
         //widget.terrainProvider = terrainProvider;
 
         var birds = new Birds('#birds', widget);
-       // var birdsdual = new Birds('#birdsdual', widgetdual);
+        var birdsdual = new Birds('#birdsdual', widgetdual);
 
 
 
@@ -26,17 +26,15 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'gui/weatherslider', 'misc/hel
         //var stations = new Stations('#stations', widget2);
 
 
-        //var dwrapperdual  = new DrawWrapper(birdsdual, widgetdual, 'dual');
+        var dwrapperdual  = new DrawWrapper(birdsdual, widgetdual, 'dual');
         var dwrapper = new DrawWrapper(birds, widget,'');
         var gui1 = new GuiInit(birds, dwrapper, widget, '');
         gui1.initBasis();
         gui1.initListeners();
 
 
-     //   var gui2 = new GuiInit(birdsdual, dwrapperdual, widgetdual, 'dual');
-
-
-       // gui2.initListeners();
+       var gui2 = new GuiInit(birdsdual, dwrapperdual, widgetdual, 'dual');
+       gui2.initListeners();
 
         new Weatherslider(birds);
         new AreaChart('#areachart');
