@@ -1,84 +1,48 @@
 var DetailView = function(container){
     var public = this;
-    var _data;
+    var optionscontainer = [];
+    var chartlookup = [];
 
 
     function _constructor() {
-        google.charts.load('current', {packages: ['corechart', 'line']});
+        optionscontainer = [{title:'Time vs. Height', hAxis: {title: 'Time'}, vAxis: {title: 'Height'}, colors: ['#4682B4'], width:720, height:120, chartArea:{width:'70%'}},
+            {title:'Time vs. Groundspeed', hAxis: {title: 'Time'}, vAxis: {title: 'Speed'}, colors: ['#4682B4'], width:720, height:120, chartArea:{width:'70%'}}
+        ];
+        google.charts.load('current', {packages: ['corechart', 'line'], callback:loadcb});
+        function loadcb(){
+            optionscontainer.forEach(function(_, i){
+                $('#detailsWrapper').append('<div id="detailsVis'+i+'" style="width:720px"></div>');
+                chartlookup.push(new google.visualization.LineChart($('#detailsVis'+i).get(0)));
+            });
+        }
 
         $(container).data('public', public);
     }
 
-    function _requestData(cb){
-        var d = [
-            [new Date(2015, 0, 1), 5],  [new Date(2015, 0, 2), 7],  [new Date(2015, 0, 3), 3],
-            [new Date(2015, 0, 4), 1],  [new Date(2015, 0, 5), 3],  [new Date(2015, 0, 6), 4],
-            [new Date(2015, 0, 7), 3],  [new Date(2015, 0, 8), 4],  [new Date(2015, 0, 9), 2],
-            [new Date(2015, 0, 10), 5], [new Date(2015, 0, 11), 8], [new Date(2015, 0, 12), 6],
-            [new Date(2015, 0, 13), 3], [new Date(2015, 0, 14), 3], [new Date(2015, 0, 15), 5],
-            [new Date(2015, 0, 16), 7], [new Date(2015, 0, 17), 6], [new Date(2015, 0, 18), 6],
-            [new Date(2015, 0, 19), 3], [new Date(2015, 0, 20), 1], [new Date(2015, 0, 21), 2],
-            [new Date(2015, 0, 22), 4], [new Date(2015, 0, 23), 6], [new Date(2015, 0, 24), 5],
-            [new Date(2015, 0, 25), 9], [new Date(2015, 0, 26), 4], [new Date(2015, 0, 27), 9],
-            [new Date(2015, 0, 28), 8], [new Date(2015, 0, 29), 6], [new Date(2015, 0, 30), 4],
-            [new Date(2015, 0, 31), 6], [new Date(2015, 1, 1), 7],  [new Date(2015, 1, 2), 9]
-        ];
-        console.log("I was here");
+    function _requestData(id, cb){
+        console.log("request data for bird", id);
+        var d = [];
+        for (var i= 0; i<optionscontainer.length; i++){ //generate some random data, in multidim array
+            var tmp = [];
+            for (var j= 0; j<=31; j++) tmp.push([new Date(2015, 0, j), Math.random()*10]);
+            d.push(tmp);
+        }
         cb(d);
     }
 
-    public.updateVis = function (birdID , ){
-        _requestData( function(d){
-            var dataTable = new google.visualization.DataTable();
-            dataTable.addColumn('date', 'X');
-            dataTable.addColumn('number', 'ID: ' + birdID.toString());
-
-
-            dataTable.addRows(d);
-
-            var options = {
-                hAxis: {
-                    title: 'Time',
-                    logScale: false
-                },
-                vAxis: {
-                    title: 'Hight',
-                    logScale: false
-                },
-                colors: ['#a52714']
-            };
-
-            var chart = new google.visualization.LineChart(document.getElementById('detailChart'));
-            chart.draw(dataTable, options);
-
+    public.updateVis = function (birdID){
+        _requestData(birdID, function(d){
+            $('#detailsTitle').text('Details for Albatross ' + birdID);
+            optionscontainer.forEach(function(o,i){
+                var dataTable = new google.visualization.DataTable();
+                dataTable.addColumn('date', 'X');
+                dataTable.addColumn('number', o.vAxis.title);
+                dataTable.addRows(d[i]);
+                chartlookup[i].draw(dataTable, o);
+            });
         });
+    };
 
-    }
-    //google.charts.setOnLoadCallback(drawLogScales);
-
-    function drawLogScales() {
-        var dataTable = new google.visualization.DataTable();
-        dataTable.addColumn('date', 'X');
-        dataTable.addColumn('number', 'Bird 1');
-
-
-        dataTable.addRows(_data);
-
-        var options = {
-            hAxis: {
-                title: 'Time',
-                logScale: false
-            },
-            vAxis: {
-                title: 'Hight',
-                logScale: false
-            },
-            colors: ['#a52714']
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-        chart.draw(dataTable, options);
-    }
 
     _constructor();
     return public;
