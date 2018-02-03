@@ -15,10 +15,11 @@ var DrawWrapper = function(birds, widget, addendum){
             var visibles = public.getVisibles();
             if (visibles.length > 0) birds.requestAreaFilter(visibles);
         });
-        if (addendum.length > 0) return;
+        //if (addendum.length > 0) return;
         var toolbar = drawer.addToolbar(document.getElementById("drawer"+addendum), {
             buttons: ['polygon', 'circle']
         });
+        console.log("addendum:", addendum, toolbar);
 
         function _onStartedEdit(event){
             $('#drawoverview'+addendum+' tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');
