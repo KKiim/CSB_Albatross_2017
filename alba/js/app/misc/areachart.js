@@ -6,6 +6,7 @@ var AreaChart = function(container){
     var xlabels;
     var ylabels;
     var transition;
+    var tooltip;
 
 
     function _constructor(){
@@ -33,6 +34,7 @@ var AreaChart = function(container){
         g = svg.append('g').attr('transform', 'translate(20,108)');
         xlabels = svg.append('g').attr('transform', 'translate(20,117)');
         ylabels = svg.append('g').attr('transform', 'translate(10,110)');
+        tooltip = svg.append('text').attr('transform', 'translate(220, 10)').text('').attr('fill', 'white').attr('text-anchor', 'end');
         transition = d3.transition().duration(750).ease(d3.easeLinear);
     }
 
@@ -41,6 +43,7 @@ var AreaChart = function(container){
             var stepsize = parseFloat($('#contextselection option:selected').attr('steps'));
             var min = parseFloat($('#contextselection option:selected').attr('min'));
             var max = parseFloat($('#contextselection option:selected').attr('max'));
+
             var l = (max - min) / stepsize;
 
             var maxval = d3.max(data, function (d) {
@@ -55,9 +58,13 @@ var AreaChart = function(container){
             var join = g.selectAll('rect').data(data);
             join.exit().remove();
             join.enter().append('rect').attr('fill', 'steelblue').on('mouseover', function (d) {
-                console.log(d);
+                var xunit = $('#contextselection option:selected').attr('xunit');
+                var yunit = $('#contextselection option:selected').attr('yunit');
+                tooltip.text(d.k +' ' +xunit+':' + d.v + ' ' + yunit);
+            }).on('mouseleave', function(){
+                tooltip.text('');
             });
-            var w = ($(container).width() - 10 - 17.5) / l;
+            var w = ($(container).width() - 10 - 20.5) / l;
             g.selectAll('rect').attr('x', function (d) {
                 return (d.k / stepsize) * w;
             }).attr('width', w);
@@ -76,11 +83,16 @@ var AreaChart = function(container){
                 if (i>0) return 'middle';
                 return 'start';
             });
+            var mid = maxval / 2;
+            mid = Math.round(mid*10)/10;
 
-            var ty = ylabels.selectAll('text').data([$('#contextselection option:selected').attr('ylabel'), max / 2, max]);
+            var ty = ylabels.selectAll('text').data([$('#contextselection option:selected').attr('ylabel'), mid, Math.round(maxval*10)/10]);
             ty.exit().remove();
             ty.enter().append('text').attr('transform', function (_, i) {
-                return 'translate(0,' + (i * 50*-1) + '),rotate(90)';
+                var addendum = 0;
+                if (i== 2) addendum = 8;
+                if (i == 1) addendum = -3;
+                return 'translate(0,' + (i * 50*-1 +addendum) + '),rotate(90)';
             }).attr('fill', 'white').attr('font-size',10);
             ylabels.selectAll('text').text(function (d) {
                 return d;

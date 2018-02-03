@@ -195,7 +195,7 @@
 
   </div>
   <div id="full" style="position:absolute;bottom:0;  z-index:1000;right:0px;width:40px; height:40px;"></div>
-  <div id="areachart" style="bottom:0; width:200px; height:120px; right:0px; position:absolute; z-index:1000"></div>
+  <div id="areachart" style="bottom:0; width:220px; height:120px; right:0px; position:absolute; z-index:1000"></div>
   <div style="width:100%;">
     <div id="cesiumContainer"></div>
     <div  id="sep" style="background:white; float:left; width:2px; height:10000px; z-index:1000; display:none"></div>
@@ -217,10 +217,10 @@
           <div style="display:block">
             <label for="contextselection" style="float:left">Context:</label>
             <select id="contextselection" class="selectpicker" style="height:30px;padding:0px;width:150px">
-              <option value="speedalt" steps="0.5" min="0" max="25.5" xlabel="speed" ylabel="avg-alt">Speed-Altitude</option>
-              <option value="altspeed" steps="15" min="0" max="180" xlabel="alt" ylabel="avg-speed">Altitude-Speed</option>
-              <option value="speedcount" steps="0.5" min="0" max="25.5" xlabel="speed" ylabel="log-#">Speed Count</option>
-              <option value="altcount" steps="15" min="0" max="180" xlabel="alt" ylabel="log-#">Altitude Count</option>
+              <option value="speedalt" steps="0.5" min="0" max="25.5" xlabel="speed" ylabel="avg-alt" xunit="m/s" yunit="m">Speed-Altitude</option>
+              <option value="altspeed" steps="15" min="0" max="180" xlabel="alt" ylabel="avg-speed" xunit="m" yunit="m/s">Altitude-Speed</option>
+              <option value="speedcount" steps="0.5" min="0" max="25.5" xlabel="speed" ylabel="log-#" xunit="m/s" yunit="">Speed Count</option>
+              <option value="altcount" steps="15" min="0" max="180" xlabel="alt" ylabel="log-#" xunit="m" yunit="">Altitude Count</option>
             </select>
           </div>
           <hr>

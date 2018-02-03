@@ -284,7 +284,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
         }
     }, Cesium.ScreenSpaceEventType.RIGHT_CLICK);
 
-/*
+
     widget.screenSpaceEventHandler.setInputAction(function onLeftClick(movement) {
         var pickedFeature = widget.scene.pick(movement.position);
         if (!pickedFeature || !pickedFeature.id || !pickedFeature.id.id) return;
@@ -294,7 +294,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
             $('body').removeClass('modal-open');
 
         }
-    }, Cesium.ScreenSpaceEventType.LEFT_CLICK);*/
+    }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
     return public;
 };
