@@ -81,16 +81,22 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
         $('#btn_dualview').on('click', function(){
             if ($(this).text() === 'Mono'){
                 //move to mono
+                $('#areachart').data('public').hideSecond();
                 $('#accordiondual').hide();
                 $('#accordion').show();
                 $(this).text('Dual');
                 $('#btn_dualviewsel').hide();
+                var visbirds = $('#birds').data('public').getVisibleBirds();
+                $('#areachart').data('public').update(visbirds);
             } else if ($(this).text() === 'Dual'){
+                var visbirds = $('#birdsdual').data('public').getVisibleBirds();
+                $('#areachart').data('public').update(visbirds);
                 //move to dual
                 $('#accordiondual').show();
                 $('#accordion').hide();
                 $(this).text('Mono');
                 $('#btn_dualviewsel').show();
+                $('#areachart').data('public').showSecond();
             }
             $('#secondView').toggle();
             $('#sep').toggle();
@@ -98,6 +104,10 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
                 if ($('#secondView').css('display') == 'none') return '100%';
                 return 'calc(50% - 2px)';
             });
+
+
+            console.log(visbirds);
+
         });
 
         $('#btn_dualviewsel').on('click', function(){

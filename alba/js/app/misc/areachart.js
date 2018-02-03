@@ -3,6 +3,7 @@ var AreaChart = function(container){
     var _data;
     var y;
     var g;
+    var histos =[];
     var xlabels;
     var ylabels;
     var transition;
@@ -31,15 +32,26 @@ var AreaChart = function(container){
 
 
         svg.append('rect').attr('fill', 'black').attr('width', '100%').attr('height',120);
-        g = svg.append('g').attr('transform', 'translate(20,108)');
+        histos.push(svg.append('g').attr('transform', 'translate(20,108)'));
+        histos.push(svg.append('g').attr('transform', 'translate(20,108)'));
+        histos.forEach(function(h,i){
+            h.on('contextmenu', function(){
+                d3.event.preventDefault();
+                histos[1-i].each(function(){
+                    this.parentNode.appendChild(this);
+                });
+            });
+        });
+
         xlabels = svg.append('g').attr('transform', 'translate(20,117)');
         ylabels = svg.append('g').attr('transform', 'translate(10,110)');
-        tooltip = svg.append('text').attr('transform', 'translate(220, 10)').text('').attr('fill', 'white').attr('text-anchor', 'end');
+        tooltip = svg.append('text').attr('transform', 'translate(220, 10)').text('').attr('font-size',10).attr('fill', 'white').attr('text-anchor', 'end');
         transition = d3.transition().duration(750).ease(d3.easeLinear);
     }
 
     public.update = function(visbirds){
         _requestData(visbirds, function(data) {
+
             var stepsize = parseFloat($('#contextselection option:selected').attr('steps'));
             var min = parseFloat($('#contextselection option:selected').attr('min'));
             var max = parseFloat($('#contextselection option:selected').attr('max'));
@@ -55,9 +67,12 @@ var AreaChart = function(container){
                 y = d3.scaleLinear().domain([0, maxval]).range([1, 108]);
             }
 
+            var g =  $('#accordion').is(':visible') ? histos[0] : histos[1];
             var join = g.selectAll('rect').data(data);
             join.exit().remove();
-            join.enter().append('rect').attr('fill', 'steelblue').on('mouseover', function (d) {
+            var fillval = $('#accordion').is(':visible') ? 'steelblue' : 'orange';
+            var transval = $('#accordion').is(':visible') ? 1 : 1;
+            join.enter().append('rect').attr('fill', fillval).on('mouseover', function (d) {
                 var xunit = $('#contextselection option:selected').attr('xunit');
                 var yunit = $('#contextselection option:selected').attr('yunit');
                 tooltip.text(d.k +' ' +xunit+':' + d.v + ' ' + yunit);
@@ -67,7 +82,7 @@ var AreaChart = function(container){
             var w = ($(container).width() - 10 - 20.5) / l;
             g.selectAll('rect').attr('x', function (d) {
                 return (d.k / stepsize) * w;
-            }).attr('width', w);
+            }).attr('width', w).attr('opacity', transval);
 
             g.selectAll('rect').transition(transition).attr('height', function (d) {
                 return Math.max(0,y(d.v))}).attr('y', function (d) {return -y(d.v);})
@@ -103,7 +118,13 @@ var AreaChart = function(container){
         });
         };
 
+    public.hideSecond = function(){
+        histos[1].attr('display', 'none');
+    };
 
+    public.showSecond = function(){
+        histos[1].attr('display', 'block');
+    };
     _constructor();
     return public;
 };
