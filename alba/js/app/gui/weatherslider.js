@@ -36,7 +36,7 @@ var Weatherslider = function(birds, addendum){
         ['temp', 'hum', 'wind', 'winddir', 'pressure'].forEach(function(f){
             var tmp = $('#'+f+'range'+addendum).html().split('-');
             if (f === 'winddir') {
-                conditions[f] = _degToCompass(parseFloat(tmp[0]), parseFloat(tmp[1]))
+                conditions[f] = _degToCompass(parseFloat(tmp[0]), parseFloat(tmp[1]));
                 console.log(_degToCompass(parseFloat(tmp[0]), parseFloat(tmp[1])));
             } else {
                 conditions[f] = [parseFloat(tmp[0]), parseFloat(tmp[1])];
@@ -48,9 +48,9 @@ var Weatherslider = function(birds, addendum){
     }
 
     function _degToCompass(num1, num2 ) {
-        var i = Math.round((num1 / 22.5) + 0.5);
-        var j = Math.round((num2 / 22.5) + 0.5);
-        var tempArr;
+        var i = Math.round((num1 / 22.5) );
+        var j = Math.round((num2 / 22.5) );
+        var tempArr = [];
         var tempIndex = 0;
         for (var c = i; c != (j + 1) % 16; c = (c + 1) % 16 ) tempArr[tempIndex++] = _windDir[c];
         return tempArr;
