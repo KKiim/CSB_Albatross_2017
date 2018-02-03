@@ -27,9 +27,8 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
             $(this).toggleClass('accordion-highlighted');
         });
         $('#settingsDialog, #detailsDialog').modal({backdrop: 'static', keyboard: false, show:false});
-        $("#settingsDialog, #detailsDialog").draggable({
-            handle: ".modal-header"
-        });
+
+        $("#settingsDialog, #detailsDialog").draggable({handle: ".modal-header"});
 
 
         $("#btn_viewsettings").on('click', function(){
@@ -57,7 +56,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
 
         $('#cesiumContainer .cesium-viewer-toolbar').detach().appendTo('#buttonbar-right')
 
-        $('#cesiumContainer .cesium-viewer-fullscreenContainer').detach().appendTo('#full')
+        $('#cesiumContainer .cesium-viewer-fullscreenContainer').detach().appendTo('#full');
         $('#cesiumContainer').css('height', $(document).height());
         $('#secondView').css('height', $(document).height());
 
