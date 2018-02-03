@@ -19,7 +19,6 @@ var DrawWrapper = function(birds, widget, addendum){
         var toolbar = drawer.addToolbar(document.getElementById("drawer"+addendum), {
             buttons: ['polygon', 'circle']
         });
-        console.log("addendum:", addendum, toolbar);
 
         function _onStartedEdit(event){
             $('#drawoverview'+addendum+' tbody > tr' ).not($(this).parent()).removeClass('highlightedrow');

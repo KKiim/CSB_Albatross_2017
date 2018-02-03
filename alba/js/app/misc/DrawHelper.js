@@ -1058,7 +1058,6 @@ var DrawHelper = (function() {
 
         var _self = this;
         var scene = this._scene;
-
         var primitives = this._scene.primitives;
         var tooltip = this._tooltip;
 
@@ -1197,7 +1196,7 @@ var DrawHelper = (function() {
         }
 
         function setEditMode(editMode) {
-            console.log("testz");
+
             // if no change
             if(this._editMode == editMode) {
                 return;
@@ -1208,7 +1207,6 @@ var DrawHelper = (function() {
             if(editMode) {
                 drawHelper.setEdited(this);
                 var scene = drawHelper._scene;
-                console.log(scene);
                 var _self = this;
                 // create the markers and handlers for the editing
                 if(this._markers == null) {
@@ -1242,6 +1240,7 @@ var DrawHelper = (function() {
                             }
                         },
                         onDoubleClick: function(index) {
+                            console.log("bla");
                             if(_self.positions.length < 4) {
                                 return;
                             }

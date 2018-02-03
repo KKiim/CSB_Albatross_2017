@@ -21,9 +21,9 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'gui/weatherslider', 'misc/hel
 
 
 
+
         var dwrapperdual  = new DrawWrapper(birdsdual, widgetdual, 'dual');
         var dwrapper = new DrawWrapper(birds, widget,'');
-
         var gui1 = new GuiInit(birds, dwrapper, widget, '');
         gui1.initBasis();
         gui1.initListeners();
