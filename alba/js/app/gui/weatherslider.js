@@ -1,13 +1,13 @@
 /**
  * Created by Phil on 12.01.2018.
  */
-var Weatherslider = function(birds){
+var Weatherslider = function(birds, addendum){
 
     function _constructor(){
-        var sel = '#tempselector, #humselector, #windselector, #winddirselector, #pressureselector';
+        var sel = '#tempselector'+addendum+', #humselector'+addendum+', #windselector'+addendum+', #winddirselector'+addendum+', #pressureselector'+addendum;
         $(sel).resizable({containment:'parent', handles:'e, w', maxWidth:150, resize: _onUpdate, stop: _onStop});
         $(sel).draggable({containment:'parent', drag: _onUpdate, stop: _onStop});
-        $('#ratioslider').on('change', _onStop);
+        $('#ratioslider'+addendum).on('change', _onStop);
     };
 
 
@@ -21,22 +21,22 @@ var Weatherslider = function(birds){
         selmin = Math.round(selmin * 100) / 100;
         var selmax = min + (max-min)* (l+$(this).width()) /w;
         selmax = Math.round(selmax * 100) / 100;
-        var label = '#' + $(this).attr('id').replace('selector', '') + 'range';
+        var label = '#' + $(this).attr('id').replace('selector', '').replace(addendum, '') + 'range' + addendum;
         $(label).html(selmin + '-' + selmax );
     }
 
     function _onStop(){
-            $('#weatherFilterState').prop('checked', true);
-            $('#weatherFilterState').removeAttr('disabled');
+            $('#weatherFilterState'+addendum).prop('checked', true);
+            $('#weatherFilterState'+addendum).removeAttr('disabled');
 
 
         var conditions = {};
         ['temp', 'hum', 'wind', 'winddir', 'pressure'].forEach(function(f){
-            var tmp = $('#'+f+'range').html().split('-');
+            var tmp = $('#'+f+'range'+addendum).html().split('-');
             conditions[f] = [parseFloat(tmp[0]), parseFloat(tmp[1])];
         });
-        conditions.ratio = parseFloat($('#ratioslider').val())/100.0;
-        $('#pointratio').html(conditions.ratio);
+        conditions.ratio = parseFloat($('#ratioslider'+addendum).val())/100.0;
+        $('#pointratio'+addendum).html(conditions.ratio);
         birds.requestWeatherFilter(conditions);
     }
 

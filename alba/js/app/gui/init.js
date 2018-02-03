@@ -208,8 +208,9 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
                 birds.finalizeFilterUpdate();
                 $('#altcontainer'+addendum).hide();
                 $('#drawoverview'+addendum+' tbody > .highlightedrow').removeClass('highlightedrow');
+                $('#areachart').data('public').update(birds.getVisibleBirds());
             }
-            $('#areachart').data('public').update(birds.getVisibleBirds());
+
         });
 
         $('#weatherFilterState'+addendum).on('click', function(){
@@ -222,6 +223,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
                 birds.requestWeatherFilter(conditions);
             } else {
                 birds.finalizeFilterUpdate();
+                $('#areachart').data('public').update(birds.getVisibleBirds());
             }
         });
 
