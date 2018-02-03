@@ -34,6 +34,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
 
         $("#btn_viewsettings").on('click', function(){
             $('#settingsDialog').modal('show');
+            $('body').removeClass('modal-open');
         });
         $('#widthselection').slider();
 
@@ -290,6 +291,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
         if (Cesium.defined(pickedFeature) && Cesium.defined(birds.getIdByEntityId(pickedFeature.id.id))) {
             $('#detailsWrapper').data('public').updateVis(birds.getIdByEntityId(pickedFeature.id.id));
             $('#detailsDialog').modal('show');
+            $('body').removeClass('modal-open');
 
         }
     }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
