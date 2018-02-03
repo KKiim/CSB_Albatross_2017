@@ -109,12 +109,18 @@ var Birds = function(container, widget, addendum){
     };
 
     public.getVisibleBirds = function(){
+        visbirds = [];
+        for (var i= 0; i<28; i++){
+            var a = $('#areaFilterState'+addendum).prop('checked') ? filter_lookup[i].spatial : true;
+            var b = $('#weatherFilterState'+addendum).prop('checked') ? filter_lookup[i].weather : true;
+            if (a && b) visbirds.push(i);
+        }
         return visbirds;
     };
 
     public.getOriginalID = function(birdID){
         return originalID[birdID];
-    }
+    };
 
 
 
