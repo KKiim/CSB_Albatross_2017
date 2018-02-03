@@ -4,7 +4,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
 
 
     public.initBasis= function(){
-        for (var i=0; i<28; i++) $('#birdselection').append('<option value="bird'+i+'">Albatross '+i+'</option>');
+        for (var i=0; i<28; i++) $('#birdselection').append('<option value="bird'+i+'">Alba ' + i +' ('+ birds.getOriginalID(i) +') ' +'</option>');
         $('.modal').on('shown.bs.modal', function() {
             $(".modal-header").css("padding",'2px');
             $(".modal-header").css("margin",'5px');
