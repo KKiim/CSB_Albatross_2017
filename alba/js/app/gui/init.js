@@ -209,6 +209,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
                 $('#altcontainer'+addendum).hide();
                 $('#drawoverview'+addendum+' tbody > .highlightedrow').removeClass('highlightedrow');
             }
+            $('#areachart').data('public').update(birds.getVisibleBirds());
         });
 
         $('#weatherFilterState'+addendum).on('click', function(){
