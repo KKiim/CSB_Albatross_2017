@@ -84,6 +84,8 @@ tr.selected.highlightedrow {
 }
 
 
-
+.detailVis > div {
+    display:inline-block;
+}
 
 

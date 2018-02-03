@@ -7,19 +7,22 @@ var DetailView = function(container){
 
 
     function _constructor() {
+        //var ex =    {actions: ['dragToZoom', 'rightClickToReset'], axis: 'horizontal', keepInBounds: true, maxZoomIn: 8.0};
+        var ex =    {axis: 'horizontal', keepInBounds: true, maxZoomIn: 12.0};
+        var ex2 =    {axis: 'both', keepInBounds: true, maxZoomIn: 12.0};
         optionscontainer = [{title:'Time vs. Height', hAxis: {title: 'Time'}, vAxis: {title: 'Height [m]'},
-                colors: ['#4682B4'], width:720, height:200, chartArea:{width:'80%'}, chartType:"LineChart", legend:'none'},
-            {title:'Time vs. Groundspeed', hAxis: {title: 'Time'}, vAxis: {title: 'Speed [m/s]'},
-                colors: ['#4682B4'], width:720, height:200, chartArea:{width:'80%'}, chartType:"LineChart", legend:'none'},
-            {title:'Hour vs. Height', hAxis: {title: 'Time of Day'}, vAxis: {title: 'Hight [m]'},
-                colors: ['#4682B4'], width:720, height:200, chartArea:{width:'80%'}, chartType:"ColumnChart", legend:'none'},
+                colors: ['#4682B4'], width:720, height:200, chartArea:{width:'80%'}, chartType:"LineChart", legend:'none', explorer:ex },
+            {title:'Time vs. Groundspeed', hAxis: {title: 'Time'}, vAxis: {title: 'Speed [m/s]', logScale:false},
+                colors: ['#4682B4'], width:720, height:200, chartArea:{width:'80%'}, chartType:"ScatterChart", legend:'none', explorer:ex, pointSize: 1.5},
             {title:'Groundspeed vs. Height', hAxis: {title: 'Groundspeed [m/s]'}, vAxis: {title: 'Height [m]'},
-                colors: ['#4682B4'], width:720, height:720, chartArea:{width:'80%'}, chartType:"ScatterChart", legend:'none'}
+                colors: ['#4682B4'], width:400, height:400, chartArea:{width:'80%'}, chartType:"ScatterChart", legend:'none', xtype:'number', explorer:ex2, pointSize:1.5},
+            {title:'Hour vs. Height', hAxis: {title: 'Time of Day'}, vAxis: {title: 'Height [m]'},
+                colors: ['#4682B4'], width:720, height:200, chartArea:{width:'80%'}, chartType:"ColumnChart", legend:'none'}
         ];
-        google.charts.load('current', {packages: ['corechart', 'line'], callback:loadcb});
+        google.charts.load('upcoming', {packages: ['corechart', 'line'], callback:loadcb});
         function loadcb(){
             optionscontainer.forEach(function(o, i){
-                $('#detailsWrapper').append('<div id="detailsVis'+i+'" style="width:720px"></div>');
+                $('#detailsWrapper').append('<div class="detailVis" id="detailsVis'+i+'" style="text-align:center"></div>');
                 var vis = $('#detailsVis'+i).get(0);
                 if (o.chartType === "LineChart")
                     chartlookup.push(new google.visualization.LineChart(vis));
@@ -34,25 +37,47 @@ var DetailView = function(container){
     }
 
     function _requestData(id, cb){
+
+        $.post('/r/details/statistics', {birdid:id}, function(res){
+            if (res.data){
+                var alt = [];
+                var speed = [];
+                var altspeed = [];
+                res.data.forEach(function(o){
+                    alt.push([new Date(o.ts),o.height]);
+                    speed.push([new Date(o.ts),o.groundspeed]);
+                    altspeed.push([o.groundspeed, o.height])
+                });
+                cb([alt,speed, altspeed]);
+            }
+        });
+
         console.log("request data for bird", id);
+        /*
         var d = [];
         for (var i= 0; i<optionscontainer.length; i++){ //generate some random data, in multidim array
             var tmp = [];
             for (var j= 0; j<=31; j++) tmp.push([new Date(2015, 0, j), Math.random()*10]);
             d.push(tmp);
-        }
-        cb(d);
+        }*/
+
     }
 
     public.updateVis = function (birdID){
         _requestData(birdID, function(d){
             $('#detailsTitle').text('Details for Albatross' + birdID + ' ('+ originalID[birdID] +')' );
             optionscontainer.forEach(function(o,i){
-                var dataTable = new google.visualization.DataTable();
-                dataTable.addColumn('date', 'X');
-                dataTable.addColumn('number', o.vAxis.title);
-                dataTable.addRows(d[i]);
-                chartlookup[i].draw(dataTable, o);
+                if (i < 3){
+                    var dataTable = new google.visualization.DataTable();
+                    var xtype = o.hasOwnProperty('xtype')? o.xtype : 'date';
+                    //var ytype = o.hasOwnProperty('ytype')? o.ytype : 'date';
+                    console.log(i);
+                    dataTable.addColumn(xtype, 'X');
+                    dataTable.addColumn('number', o.vAxis.title);
+                    dataTable.addRows(d[i]);
+                    chartlookup[i].draw(dataTable, o);
+                }
+
             });
         });
     };
