@@ -7,25 +7,31 @@ var Weatherslider = function(birds, addendum){
 
     function _constructor(){
         var sel = '#tempselector'+addendum+', #humselector'+addendum+', #windselector'+addendum+', #winddirselector'+addendum+', #pressureselector'+addendum;
-        $(sel).resizable({containment:'parent', handles:'e, w', maxWidth:150, resize: _onUpdate, stop: _onStop});
-        $(sel).draggable({containment:'parent', drag: _onUpdate, stop: _onStop});
+      
+       
+		  $(sel).each(function(){
+			  var perc = {min:0,max:1};
+			  $(this).rangeSlider({range:true, valueLabels: "hide", defaultValues: perc, range:perc, bounds:perc});
+			  var id = $(this).attr('id'); 
+			  var min = parseFloat($(this).attr('min'));
+			  var r = parseFloat($(this).attr('max')) - min; 
+			  var label = '#' + id.replace('selector', '').replace(addendum, '') + 'range' + addendum;
+			  
+			  $(this).bind('valuesChanging', function(e, d){
+				   var v1 = min + d.values.min*r; 
+				   v1 = Math.round(v1*100.0)/100.0;
+				   var v2 = min + d.values.max*r; 
+				   v2 = Math.round(v2*100.0)/100.0;				   
+				   $(label).html( v1+ '-' + v2); 
+			  }); 
+			  
+			  $(this).bind('valuesChanged', function(e, d){
+				  _onStop(); 
+			  }); 
+		  });
         $('#ratioslider'+addendum).on('change', _onStop);
     };
 
-
-    function _onUpdate(){
-        var min = parseFloat($(this).attr('min'));
-        var max =  parseFloat($(this).attr('max'));
-
-        var l = $(this).offset().left- $(this).parent().offset().left;
-        var w = $(this).parent().width();
-        var selmin = min + (max-min)* l/w;
-        selmin = Math.round(selmin * 100) / 100;
-        var selmax = min + (max-min)* (l+$(this).width()) /w;
-        selmax = Math.round(selmax * 100) / 100;
-        var label = '#' + $(this).attr('id').replace('selector', '').replace(addendum, '') + 'range' + addendum;
-        $(label).html(selmin + '-' + selmax );
-    }
 
     function _onStop(){
             $('#weatherFilterState'+addendum).prop('checked', true);
@@ -37,7 +43,6 @@ var Weatherslider = function(birds, addendum){
             var tmp = $('#'+f+'range'+addendum).html().split('-');
             if (f === 'winddir') {
                 conditions[f] = _degToCompass(parseFloat(tmp[0]), parseFloat(tmp[1]));
-                console.log(_degToCompass(parseFloat(tmp[0]), parseFloat(tmp[1])));
             } else {
                 conditions[f] = [parseFloat(tmp[0]), parseFloat(tmp[1])];
             }

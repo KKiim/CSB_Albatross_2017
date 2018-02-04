@@ -3,6 +3,7 @@ requirejs.config({
     "paths": {
         "app" : "../app",
         "listgroup": "../libs/external/listgroup.min",
+		"rangeslider": "../libs/external/rangeslider",
         "d3": "//d3js.org/d3.v4.min",
         "jquery": "//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min",
         "bootstrap": "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min",
@@ -13,7 +14,8 @@ requirejs.config({
     "shim": {
         "jquery-ui" : ["jquery", "bootstrap"], // why bootstrap? c.f. https://stackoverflow.com/questions/17367736/jquery-ui-dialog-missing-close-icon
         "bootstrap": ["jquery"],
-        "listgroup" : ["bootstrap", "jquery"]
+        "listgroup" : ["bootstrap", "jquery"], 
+		"rangeslider" : ["jquery", "jquery-ui"]
     }
 });
 

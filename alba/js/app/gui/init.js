@@ -144,7 +144,10 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
             dt.fnFilter(query); //custom search on datatable
         });
 
+		$("#accordion, #accordiondual").on("shown.bs.collapse", function () {
+			                      $(".selector").rangeSlider("resize");
 
+		}); 
         $('#drawoverview, #drawoverviewdual').DataTable({
                 paging: false,
                 info: false, //no 'displaying x/100 items'

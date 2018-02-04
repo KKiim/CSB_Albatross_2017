@@ -1,4 +1,4 @@
-#settingsDialog {
+﻿#settingsDialog {
     display:none;
 }
 
@@ -43,7 +43,7 @@ label {
     height:210px;
 }
 #weatherinner, #weatherinnerdual{
-    height:220px;
+    height:300px;
 }
 .cesium-viewer-toolbar{
     opacity:0.3;

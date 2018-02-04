@@ -1,4 +1,4 @@
-define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'gui/weatherslider', 'misc/helper', 'misc/DrawWrapper','misc/areachart','misc/DrawHelper', 'misc/detailView', 'gui/init',   "datatables.net", "datatables.net.select","wrapper/birds", "wrapper/stations"], function($) {
+define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'gui/weatherslider', 'misc/helper', 'misc/DrawWrapper','misc/areachart','misc/DrawHelper', 'rangeslider',  'misc/detailView', 'gui/init',   "datatables.net", "datatables.net.select","wrapper/birds", "wrapper/stations"], function($) {
     $(function() {
 
         var terrainProvider = new Cesium.CesiumTerrainProvider({
