@@ -43,8 +43,8 @@ define(['jquery', 'bootstrap', 'jquery-ui', 'd3', 'gui/weatherslider', 'misc/hel
        var gui2 = new GuiInit(birdsdual, dwrapperdual, widgetdual, 'dual');
        gui2.initListeners();
 
-        new Weatherslider(birds, dwrapper, '');
-        new Weatherslider(birdsdual, dwrapperdual, 'dual');
+        new Weatherslider(birds, '');
+        new Weatherslider(birdsdual, 'dual');
         new AreaChart('#areachart');
         new DetailView('#detailsWrapper');
     });

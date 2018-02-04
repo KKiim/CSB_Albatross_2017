@@ -77,16 +77,6 @@ var Birds = function(container, widget, addendum){
                 }
             });
     };
-	
-	public.requestBothFilter = function(conditions, geoms){
-		console.log("conditions", conditions); 
-		console.log("geoms", geoms); 
-		/*
-		 $.post('/r/filter/both', {conditions:conditions, geoms:geom},
-			function(d){
-				console.log(d); 
-			}); */
-	}
 
     public.updateAreaFilter = function(includedbirds){
         if (!includedbirds) includedbirds = [];
