@@ -10,6 +10,7 @@ var DetailView = function(container){
         //var ex =    {actions: ['dragToZoom', 'rightClickToReset'], axis: 'horizontal', keepInBounds: true, maxZoomIn: 8.0};
         var ex =    {axis: 'horizontal', keepInBounds: true, maxZoomIn: 12.0};
         var ex2 =    {axis: 'both', keepInBounds: true, maxZoomIn: 12.0};
+		var ex3 =    {actions: ['dragToZoom', 'rightClickToReset'], axis: 'horizontal', keepInBounds: true, maxZoomIn: 8.0};
         optionscontainer = [{title:'Time vs. Height', hAxis: {title: 'Time'}, vAxis: {title: 'Height [m]'},
                 colors: ['#4682B4'], width:720, height:200, chartArea:{width:'80%'}, chartType:"LineChart", legend:'none', explorer:ex },
             {title:'Time vs. Groundspeed', hAxis: {title: 'Time'}, vAxis: {title: 'Speed [m/s]', logScale:false},
@@ -17,7 +18,7 @@ var DetailView = function(container){
             {title:'Groundspeed vs. Height', hAxis: {title: 'Groundspeed [m/s]'}, vAxis: {title: 'Height [m]'},
                 colors: ['#4682B4'], width:400, height:400, chartArea:{width:'80%'}, chartType:"ScatterChart", legend:'none', xtype:'number', explorer:ex2, pointSize:1.5},
             {title:'Wind Speed vs. Bird Height', hAxis: {title: 'Wind Speed'}, vAxis: {title: 'Bird Height'},
-                colors: ['#4682B4'], width:400, height:400, chartArea:{width:'80%'}, chartType:"ScatterChart", legend:'none', pointSize:1.5, explorer:ex2, xtype:'number'}
+                colors: ['#4682B4'], width:400, height:400, chartArea:{width:'80%'}, chartType:"ScatterChart", legend:'none', pointSize:1.5, explorer:ex3, xtype:'number'}
         ];
         google.charts.load('upcoming', {packages: ['corechart', 'line'], callback:loadcb});
         function loadcb(){
