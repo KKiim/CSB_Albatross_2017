@@ -146,11 +146,6 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
 
 
 
-        $('#searchGeom, #searchGeomdual').on('input', function(){ //filter data table, when you type:
-            var dt = $('#drawoverview'+addendum).dataTable();
-            var query = $(this).val();
-            dt.fnFilter(query); //custom search on datatable
-        });
 
 		$("#accordion, #accordiondual").on("shown.bs.collapse", function () {
 			                      $(".selector").rangeSlider("resize");
@@ -190,6 +185,12 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
     }
 
     public.initListeners = function(){
+		
+        $('#searchGeom'+addendum).on('input', function(){ //filter data table, when you type:
+            var dt = $('#drawoverview'+addendum).dataTable();
+            var query = $(this).val();
+            dt.fnFilter(query); //custom search on datatable
+        });
         $('#drawoverview'+addendum+' tbody').on('click','input.geomcheck', function(){
             var tbl = $('#drawoverview'+addendum).DataTable();
             var d = tbl.row($(this).parent().parent()).data();

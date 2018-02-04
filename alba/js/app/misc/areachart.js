@@ -79,11 +79,14 @@ var AreaChart = function(container){
             join.exit().remove();
             var fillval = $('#accordion').is(':visible') ? 'steelblue' : 'orange';
             var transval = $('#accordion').is(':visible') ? 1 : 1;
-            join.enter().append('rect').attr('fill', fillval).on('mouseover', function (d) {
+            join.enter().append('rect').attr('fill', fillval).attr('oldfill', fillval).on('mouseover', function (d) {
+				d3.select(this).attr('fill', 'white'); 
                 var xunit = $('#contextselection option:selected').attr('xunit');
                 var yunit = $('#contextselection option:selected').attr('yunit');
                 tooltip.text(d.k +' ' +xunit+':' + d.v + ' ' + yunit);
             }).on('mouseleave', function(){
+				var oldfill = d3.select(this).attr('oldfill'); 
+				d3.select(this).attr('fill', oldfill); 
                 tooltip.text('');
             });
             var w = ($(container).width() - 10 - 20.5) / l;
@@ -107,8 +110,10 @@ var AreaChart = function(container){
             });
             var mid = maxval / 2;
             mid = Math.round(mid*10)/10;
+			var midtext = mid ? mid : ''; 
+			var maxtext = maxval ? Math.round(maxval*10)/10 : ''
 
-            var ty = ylabels.selectAll('text').data([$('#contextselection option:selected').attr('ylabel'), mid, Math.round(maxval*10)/10]);
+            var ty = ylabels.selectAll('text').data([$('#contextselection option:selected').attr('ylabel'), midtext,maxtext ]);
             ty.exit().remove();
             ty.enter().append('text').attr('transform', function (_, i) {
                 var addendum = 0;
