@@ -118,9 +118,9 @@ var AreaChart = function(container){
             ty.exit().remove();
             ty.enter().append('text').attr('transform', function (_, i) {
                 var addendum = 0;
-                if (i== 2) addendum = 8;
+                if (i== 2) addendum = 10;
                 if (i == 1) addendum = -3;
-                return 'translate(0,' + (i * 50*-1 +addendum) + '),rotate(90)';
+                return 'translate(0,' + ((i/2) * y.range()[1]*-1 +addendum) + '),rotate(90)';
             }).attr('fill', 'white').attr('font-size',10);
             ylabels.selectAll('text').text(function (d) {
                 return d;
