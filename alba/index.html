@@ -81,7 +81,7 @@
 			
 			<label style="padding-top:13px">Humidity (<span id="humrange">16-100</span>%)</label>
 			<div id="humselector" class="selector" min="16" max="100" ></div>
-		<label style="padding-top:13px">Wind Speed (<span id="windrange">0-42</span> mph)</label>
+		<label style="padding-top:13px">Wind Speed (<span id="windrange">0-42</span> m/s)</label>
 		 <div id="windselector" class="selector" min="0" max="42"></div>
 		  <label style="padding-top:13px">Wind Dir (<span id="winddirrange">0-360</span>°)</label>
 		   <div id="winddirselector" class="selector" min="0" max="360"></div>
@@ -146,7 +146,7 @@
 			<div id="tempselectordual" class="selector" min="16" max="31"></div>
 			<label style="padding-top:13px">Humidity (<span id="humrangedual">16-100</span>%)</label>
 			<div id="humselectordual" class="selector" min="16" max="100" ></div>
-		<label style="padding-top:13px">Wind Speed (<span id="windrangedual">0-42</span> mph)</label>
+		<label style="padding-top:13px">Wind Speed (<span id="windrangedual">0-42</span> m/s)</label>
 		 <div id="windselectordual" class="selector" min="0" max="42"></div>
 		  <label style="padding-top:13px">Wind Dir (<span id="winddirrangedual">0-360</span>°)</label>
 		   <div id="winddirselectordual" class="selector" min="0" max="360"></div>
@@ -269,9 +269,9 @@
 <div id="stationsdual"></div>
 <div id="sceneproviders"></div>
 <div id="chartsel" style="display:none">
-<select id="weatherdim"><option value="windspeed">Wind Speed</option><option value="temperature">Temperature</option></select>
+<select id="weatherdim"><option unit="m/s" value="windspeed">Wind Speed</option><option unit="°C" value="temperature">Temperature</option></select>
 - 
-<select id="birddim"><option value="birdheight">Bird Height</option><option value="birdspeed">Ground Speed</option></select>
+<select id="birddim"><option unit="m" value="birdheight">Bird Height</option><option unit="m/s" value="birdspeed">Ground Speed</option></select>
 </div>
 
 </body>

@@ -91,9 +91,9 @@ var DetailView = function(container){
 					var rows; 
 					if (i == 3){
 						rows = weatherhelper[$('#weatherdim').val()][$('#birddim').val()]
-						o.hAxis.title = $('#weatherdim option:selected').text(); 
-						o.vAxis.title = $('#birddim option:selected').text(); 
-						o.title = o.hAxis.title + ' vs. ' + o.vAxis.title; 
+						o.hAxis.title =  $('#weatherdim option:selected').text() + ' ('+ $('#weatherdim option:selected').attr('unit')+')'
+						o.vAxis.title = $('#birddim option:selected').text()  + '('+$('#birddim option:selected').attr('unit')+')'; 
+						o.title = $('#weatherdim option:selected').text() + ' vs. ' + $('#birddim option:selected').text(); 
 					} else {
 						rows = d[i]; 
 					}
@@ -116,9 +116,9 @@ var DetailView = function(container){
 		var o = optionscontainer[3]; 
 		var rows = weatherhelper[$('#weatherdim').val()][$('#birddim').val()]
 		console.log(rows); 
-		o.hAxis.title = $('#weatherdim option:selected').text(); 
-		o.vAxis.title = $('#birddim option:selected').text(); 
-		o.title = o.hAxis.title + ' vs. ' + o.vAxis.title; 
+		o.hAxis.title =  $('#weatherdim option:selected').text() + ' ('+ $('#weatherdim option:selected').attr('unit')+')'
+		o.vAxis.title = $('#birddim option:selected').text()  + '('+$('#birddim option:selected').attr('unit')+')'; 
+		o.title = $('#weatherdim option:selected').text() + ' vs. ' + $('#birddim option:selected').text(); 
 		var dataTable = new google.visualization.DataTable();
 		              dataTable.addColumn('number', o.hAxis.title);
                     dataTable.addColumn('number', o.vAxis.title);
