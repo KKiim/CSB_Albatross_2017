@@ -2,6 +2,7 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
     var public = this;
     var left_lookup = {};
 
+	    var _windDir = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
 
     public.initBasis= function(){
         for (var i=0; i<28; i++) $('#birdselection').append('<option value="bird'+i+'">Alba ' + i +' ('+ birds.getOriginalID(i) +') ' +'</option>');
@@ -203,7 +204,11 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
             if (visibles.length > 0){
                 $('#areaFilterState'+addendum).prop('checked', true);
                 $('#areaFilterState'+addendum).attr('disabled', false);
-                birds.requestAreaFilter(visibles);
+				if ($('#weatherFilterState'+addendum).prop('checked')){
+					birds.requestBothFilter(getWeatherConditions(), visibles); 
+				} else {
+					 birds.requestAreaFilter(visibles);
+				}
             } else {
                 $('#areaFilterState'+addendum).prop('checked', false);
                 $('#areaFilterState'+addendum).attr('disabled', true);
@@ -217,25 +222,37 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
             if ($(this).prop('checked')){
                 dwrapper.showAllChecked();
                 var visibles = dwrapper.getVisibles();
-                if (visibles.length > 0) birds.requestAreaFilter(visibles);
+                if (visibles.length > 0){
+					if ($('#weatherFilterState'+addendum).prop('checked')){
+						birds.requestBothFilter(getWeatherConditions(), visibles); 
+					} else {
+						birds.requestAreaFilter(visibles);
+					}
+				}
             } else {
                 dwrapper.hideAll();
-                birds.finalizeFilterUpdate();
+				if ($('#weatherFilterState'+addendum).prop('checked')){
+					birds.requestWeatherFilter(getWeatherConditions());
+				} else {
+					birds.finalizeFilterUpdate();
+					$('#areachart').data('public').update(birds.getVisibleBirds());
+				}
+                
                 $('#altcontainer'+addendum).hide();
                 $('#drawoverview'+addendum+' tbody > .highlightedrow').removeClass('highlightedrow');
-                $('#areachart').data('public').update(birds.getVisibleBirds());
             }
 
         });
 
         $('#weatherFilterState'+addendum).on('click', function(){
-            var conditions = {};
             if ($(this).prop('checked')){
-                ['temp', 'hum', 'wind', 'winddir', 'pressure'].forEach(function(f){
-                    var tmp = $('#'+f+'range'+addendum).html().split('-');
-                    conditions[f] = [parseFloat(tmp[0]), parseFloat(tmp[1])];
-                });
-                birds.requestWeatherFilter(conditions);
+				if ($('#areaFilterState'+addendum).prop('checked')){
+					var visibles = dwrapper.getVisibles(); 
+					if (visibles.length > 0) birds.requestBothFilter(getWeatherConditions(), visibles); 
+				} else {
+					birds.requestWeatherFilter(getWeatherConditions());
+				}
+                
             } else {
                 birds.finalizeFilterUpdate();
                 $('#areachart').data('public').update(birds.getVisibleBirds());
@@ -266,7 +283,32 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
 		$('#altselector'+addendum).bind('valuesChanging', _onAltChange); 
 		$('#altselector'+addendum).bind('valuesChanged', _onAltStop); 
     }
-
+	
+	function getWeatherConditions(){
+		        var conditions = {};
+        ['temp', 'hum', 'wind', 'winddir', 'pressure'].forEach(function(f){
+            var tmp = $('#'+f+'range'+addendum).html().split('-');
+            if (f === 'winddir') {
+                conditions[f] = _degToCompass(parseFloat(tmp[0]), parseFloat(tmp[1]));
+            } else {
+                conditions[f] = [parseFloat(tmp[0]), parseFloat(tmp[1])];
+            }
+        });
+        conditions.ratio = parseFloat($('#ratioslider'+addendum).val())/100.0;
+		return conditions; 
+	}
+	    function _degToCompass(num1, num2 ) {
+        var i = Math.round((num1 / 22.5) );
+        var j = Math.round((num2 / 22.5) );
+        var tempArr = [];
+        var tempIndex = 0;
+        if (j - i >= 15 ) {
+            tempArr = _windDir; //otherwise only N is included in this case
+        } else {
+            for (var c = i; c != (j + 1) % 16; c = (c + 1) % 16) tempArr[tempIndex++] = _windDir[c];
+        }
+        return tempArr;
+    }
     function _onAltChange(){
         var tbl = $('#drawoverview'+addendum).DataTable();
         var sel = $('#drawoverview'+addendum+' tbody > .highlightedrow');
@@ -283,7 +325,13 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
     function _onAltStop(){
         $('#areaFilterState'+addendum).prop('checked', true);
         var visibles = dwrapper.getVisibles();
-        if (visibles.length > 0) birds.requestAreaFilter(visibles);
+        if (visibles.length > 0){
+			if ($('#areaFilterState'+addendum).prop('checked')){
+				birds.requestAreaFilter(getWeatherConditions(), visibles);
+			} else {
+				birds.requestAreaFilter(visibles);
+			}
+		}
     };
 
     function _styleUpdate(){

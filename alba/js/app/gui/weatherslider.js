@@ -1,7 +1,7 @@
 /**
  * Created by Phil on 12.01.2018.
  */
-var Weatherslider = function(birds, addendum){
+var Weatherslider = function(birds, dwrapper, addendum){
 
     var _windDir = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
 
@@ -47,7 +47,12 @@ var Weatherslider = function(birds, addendum){
         });
         conditions.ratio = parseFloat($('#ratioslider'+addendum).val())/100.0;
         $('#pointratio'+addendum).html(conditions.ratio);
-        birds.requestWeatherFilter(conditions);
+		if ($('#areaFilterState'+addendum).prop('checked')){
+			var visibles = dwrapper.getVisibles(); 
+			if (visibles.length > 0) birds.requestBothFilter(conditions, visibles); 
+		} else {
+			birds.requestWeatherFilter(conditions);
+		}
     }
 
     function _degToCompass(num1, num2 ) {
