@@ -49,7 +49,7 @@
               <th></th>
               <th align="center">ID</th>
               <th align="center">Ts</th>
-              <th align="center">Alt</th>
+              <th align="center">Alt (m)</th>
               <th></th>
             </tr>
             </thead>
@@ -60,9 +60,7 @@
         <hr style="border:black;background:black; height:0px;top:90px;margin-top:70px !important;margin-left:0px;margin-right:0px">
         <div id="altcontainer" style="display:none">
           Selected Alt:
-          <div id="altwrapper" style="width:150px; height:10px; background:white; margin-left:30px;">
-            <div id="altselector" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
-          </div>
+		  <div id="altselector" class="selector"></div>
         </div>
       </div>
     </div>
@@ -116,7 +114,7 @@
                 <th></th>
                 <th align="center">ID</th>
                 <th align="center">Ts</th>
-                <th align="center">Alt</th>
+                <th align="center">Alt (m)</th>
                 <th></th>
               </tr>
               </thead>
@@ -127,9 +125,8 @@
           <hr style="border:black;background:black; height:0px;top:90px;margin-top:70px !important;margin-left:0px;margin-right:0px">
           <div id="altcontainerdual" style="display:none">
             Selected Alt:
-            <div id="altwrapperdual" style="width:150px; height:10px; background:white; margin-left:30px;">
-              <div id="altselectordual" class="ui-widget-content" style="width:150px; height:10px; background:steelblue"></div>
-            </div>
+			<div id="altselectordual" class="selector"></div>
+
           </div>
         </div>
       </div>
@@ -147,7 +144,6 @@
           <div id="weatherinnerdual">
 						<label>Temp. (<span id="temprangedual">16-31</span>)</label>
 			<div id="tempselectordual" class="selector" min="16" max="31"></div>
-			
 			<label style="padding-top:13px">Humidity (<span id="humrangedual">16-100</span>)</label>
 			<div id="humselectordual" class="selector" min="16" max="100" ></div>
 		<label style="padding-top:13px">Wind Speed (<span id="windrangedual">1-150</span>)</label>

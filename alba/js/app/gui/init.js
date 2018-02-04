@@ -91,6 +91,8 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
                 var visbirds2 = $('#birds').data('public').getVisibleBirds();
                 $('#areachart').data('public').update(visbirds2,'right');
                 $('#areachart').data('public').hideSecond();
+				$('#weatherinner > .selector').rangeSlider('resize'); 
+				$('#altselector').rangeSlider('resize');
             } else if ($(this).text() === 'Dual'){
                 var visbirds = $('#birdsdual').data('public').getVisibleBirds();
                 $('#areachart').data('public').update(visbirds, 'right');
@@ -100,6 +102,8 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
                 $(this).text('Mono');
                 $('#btn_dualviewsel').show();
                 $('#areachart').data('public').showSecond();
+				$('#weatherinnerdual > .selector').rangeSlider('resize'); 
+				$('#altselectordual').rangeSlider('resize');
             }
             $('#secondView').toggle();
             $('#sep').toggle();
@@ -115,10 +119,14 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
                 $('#accordiondual').hide();
                 $('#accordion').show();
                 $(this).text('R');
+				$('#weatherinner > .selector').rangeSlider('resize'); 
+				$('#altselector').rangeSlider('resize');
             } else if ($(this).text() === 'R'){
                 $('#accordion').hide();
                 $('#accordiondual').show();
                 $(this).text('L');
+				$('#weatherinnerdual > .selector').rangeSlider('resize'); 
+				$('#altselectordual').rangeSlider('resize');
             }
         });
 
@@ -235,21 +243,23 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
             var d = tbl.row($(this).parent()).data();
             $(this).parent().toggleClass('highlightedrow');
             if ($('#drawoverview'+addendum+' tbody > .highlightedrow').length > 0){
+				  $('#altcontainer'+addendum).show();
+				    $('#altselector'+addendum).rangeSlider('resize');
                 var selmin = parseInt(d[3].split('-')[0]);
                 var selmax = parseInt(d[3].split('-')[1]);
                 var w = ((selmax-selmin)/170) * $('#altwrapper').width();
                 var l = left_lookup.hasOwnProperty(d[1])? left_lookup[d[1]] : 0;
-                $('#altselector'+addendum).width(w);
-                $('#altselector'+addendum).css('left', l );
+                $('#altselector'+addendum).rangeSlider('values', selmin, selmax); 
                 dwrapper.highlightBounds(d);
-                $('#altcontainer'+addendum).show();
+              
             } else {
                 dwrapper.unhighlightBounds();
                 $('#altcontainer'+addendum).hide();
             }
         });
-        $('#altselector'+addendum).resizable({containment:'parent', handles:'e, w', resize:_onAltChange, maxWidth:200, stop: _onAltStop});
-        $('#altselector'+addendum).draggable({containment:'parent', drag: _onAltChange, stop: _onAltStop});
+        $('#altselector'+addendum).rangeSlider({range:true, valueLabels: "hide",defaultValues: {min:0,max:170}, range:{min:0,max:170}, bounds:{min:0,max:170}});
+		$('#altselector'+addendum).bind('valuesChanging', _onAltChange); 
+		$('#altselector'+addendum).bind('valuesChanged', _onAltStop); 
     }
 
     function _onAltChange(){
@@ -258,16 +268,10 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
         var d = tbl.row(sel).data();
 
         if (d){
-            var min = 0;
-            var max = 170;
-            var l = parseInt($('#altselector'+addendum).css('left').replace("px", ""));
-            var w = $('#altselector').parent().width();
-            var selmin = min + (max-min)* l/w;
-            selmin = Math.round(selmin * 100) / 100;
-            var selmax = min + (max-min)* (l+$('#altselector').width()) /w;
-            selmax = Math.round(selmax * 100) / 100;
-            dwrapper.setHeights(d, selmin+"-"+selmax);
-            left_lookup[d[1]] = l;
+            var selected = $("#altselector"+addendum).rangeSlider("values");
+			var min = Math.round(selected.min*100.0)/100.0; 
+			var max = Math.round(selected.max*100.0)/100.0; 
+            dwrapper.setHeights(d, min+"-"+max);
         }
     }
 

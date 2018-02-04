@@ -25,9 +25,7 @@ var Weatherslider = function(birds, addendum){
 				   $(label).html( v1+ '-' + v2); 
 			  }); 
 			  
-			  $(this).bind('valuesChanged', function(e, d){
-				  _onStop(); 
-			  }); 
+			  $(this).bind('valuesChanged', _onStop); 
 		  });
         $('#ratioslider'+addendum).on('change', _onStop);
     };
