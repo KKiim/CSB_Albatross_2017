@@ -136,10 +136,13 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
 
         $('#contextselection').on('change', function(){
             var visbirds1 = $('#birds').data('public').getVisibleBirds();
+			
            $('#areachart').data('public').update(visbirds1, 'left');
-
-            var visbirds2 = $('#birdsdual').data('public').getVisibleBirds();
+		   if ($('#accordiondual').is(':visible')){
+			   var visbirds2 = $('#birdsdual').data('public').getVisibleBirds();
             $('#areachart').data('public').update(visbirds2, 'right');
+		   }
+
         });
 
 

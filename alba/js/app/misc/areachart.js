@@ -63,9 +63,12 @@ var AreaChart = function(container){
             var maxval = d3.max(data, function (d) {
                 return +d.v;
             });
+			
             if (['speedcount', 'altcount'].indexOf($('#contextselection').val()) > -1) {
+				if (!maxval) maxval = 0.02
                 y = d3.scaleLog().base(10).domain([0.01, maxval]).range([1, 108]);
             } else {
+				if (!maxval) maxval = 1
                 y = d3.scaleLinear().domain([0, maxval]).range([1, 108]);
             }
             var g;
@@ -109,18 +112,24 @@ var AreaChart = function(container){
                 if (i>0) return 'end';
                 return 'start';
             });
-            var mid = y.invert(y.range()[1]/2);
-            mid = Math.round(mid*10)/10;
-			var midtext = mid ? mid : ''; 
-			var maxtext = maxval ? Math.round(maxval*10)/10 : ''
+			if (['speedcount', 'altcount'].indexOf($('#contextselection').val()) < 0){
+				var mid = y.domain()[1]/2;
+			} else {
+				var mid = y.invert(y.range()[1]/2); 
+			}
+            
+    
+			
+			var maxtext = y.domain()[1];
+          
 
-            var ty = ylabels.selectAll('text').data([$('#contextselection option:selected').attr('ylabel'), midtext,maxtext ]);
+            var ty = ylabels.selectAll('text').data([$('#contextselection option:selected').attr('ylabel'), Math.round(mid*10)/10,Math.round(maxtext*10)/10 ]);
             ty.exit().remove();
             ty.enter().append('text').attr('transform', function (_, i) {
                 var addendum = 0;
-                if (i== 2) addendum = 10;
+                if (i== 2) addendum = 8;
                 if (i == 1) addendum = -3;
-                return 'translate(0,' + ((i/2) * y.range()[1]*-1 +addendum) + '),rotate(90)';
+                return 'translate(0,' + (i * 50*-1 +addendum) + '),rotate(90)';
             }).attr('fill', 'white').attr('font-size',10);
             ylabels.selectAll('text').text(function (d) {
                 return d;
