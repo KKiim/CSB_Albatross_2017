@@ -108,7 +108,7 @@ var AreaChart = function(container){
                 if (i>0) return 'middle';
                 return 'start';
             });
-            var mid = maxval / 2;
+            var mid = y.invert(y.range()[1]/2);
             mid = Math.round(mid*10)/10;
 			var midtext = mid ? mid : ''; 
 			var maxtext = maxval ? Math.round(maxval*10)/10 : ''
