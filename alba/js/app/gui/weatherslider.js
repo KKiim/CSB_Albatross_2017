@@ -50,11 +50,13 @@ var Weatherslider = function(birds, addendum){
     function _degToCompass(num1, num2 ) {
         var i = Math.round((num1 / 22.5) );
         var j = Math.round((num2 / 22.5) );
-        if (j == 16 && i == 0)
-            j=15;//otherwise only N is included in this case
         var tempArr = [];
         var tempIndex = 0;
-        for (var c = i; c != (j + 1) % 16; c = (c + 1) % 16 ) tempArr[tempIndex++] = _windDir[c];
+        if (j - i >= 15 ) {
+            tempArr = _windDir; //otherwise only N is included in this case
+        } else {
+            for (var c = i; c != (j + 1) % 16; c = (c + 1) % 16) tempArr[tempIndex++] = _windDir[c];
+        }
         return tempArr;
     }
 
