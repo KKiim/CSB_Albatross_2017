@@ -113,7 +113,9 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
             });
 
         });
-
+		$('#chartsel').on('change', function(){
+			$('#detailsWrapper').data('public').updateWeatherChart()
+		}); 
         $('#btn_dualviewsel').on('click', function(){
             if ($(this).text() === 'L'){
                 $('#accordiondual').hide();
@@ -140,9 +142,8 @@ var GuiInit = function(birds, dwrapper, widget, addendum){
            $('#areachart').data('public').update(visbirds1, 'left');
 		   if ($('#accordiondual').is(':visible')){
 			   var visbirds2 = $('#birdsdual').data('public').getVisibleBirds();
-            $('#areachart').data('public').update(visbirds2, 'right');
+				$('#areachart').data('public').update(visbirds2, 'right');
 		   }
-
         });
 
 
