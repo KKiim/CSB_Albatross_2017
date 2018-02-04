@@ -100,12 +100,13 @@ var AreaChart = function(container){
             var tx = xlabels.selectAll('text').data([$('#contextselection option:selected').attr('xlabel'), max / 2, max]);
             tx.exit().remove();
             tx.enter().append('text').attr('transform', function (_, i) {
-                return 'translate(' + (i * 85) + ',0)';
+				if (i > 0)  return 'translate('+((i/2) * w*l)+',0)';
+                return 'translate(0,0)';
             }).attr('fill', 'white').attr('font-size',10);
             xlabels.selectAll('text').text(function (d) {
                 return d;
             }).attr('text-anchor', function(_,i){
-                if (i>0) return 'middle';
+                if (i>0) return 'end';
                 return 'start';
             });
             var mid = y.invert(y.range()[1]/2);
